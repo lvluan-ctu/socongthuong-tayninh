@@ -1,0 +1,18 @@
+{
+  "plannedClusters": 108,
+  "plannedAreaHa": 6228,
+  "operatingClusters": 24,
+  "operatingAreaHa": 1179,
+  "leasedAreaHa": 717.8,
+  "occupancyPct": 84.38,
+  "completedInfrastructureOccupancyPct": 93.77,
+  "remainingIndustrialLandHa": 47,
+  "investmentProjects": 533,
+  "fdiProjects": 92,
+  "underInvestmentClusters": 30,
+  "promotingInvestmentClusters": 54,
+  "source": "Sở Công Thương tỉnh Tây Ninh; đối chiếu bài tổng hợp công khai ngày 15/06/2026",
+  "sourceUrl": "https://sct.tayninh.gov.vn/cong-nghiep",
+  "asOf": "2026-06-15",
+  "detailCoverage": 20
+}

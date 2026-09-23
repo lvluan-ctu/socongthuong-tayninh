@@ -1,0 +1,21 @@
+# Keep the Docker build context small and avoid leaking local secrets into image layers.
+node_modules
+.next
+.git
+.gitignore
+.lovable
+.vscode
+.idea
+docs
+temp
+*.md
+!README.md
+.env
+.env.*
+!.env.example
+*.log
+pnpm-debug.log*
+tsconfig.tsbuildinfo
+Dockerfile
+docker-compose*.yml
+.dockerignore

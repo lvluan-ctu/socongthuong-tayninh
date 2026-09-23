@@ -1,0 +1,29 @@
+[
+  {
+    "id": "IMP-2026-001",
+    "source": "ECOSYS",
+    "fileName": "ecosys_export_2026_06.xlsx",
+    "totalRecords": 45,
+    "acceptedRecords": 43,
+    "rejectedRecords": 2,
+    "status": "COMPLETED",
+    "importedAt": "2026-06-30T08:00:00Z",
+    "importedBy": "admin",
+    "errors": [
+      { "row": 12, "message": "Ma HS 40019999 khong thuoc danh muc" },
+      { "row": 38, "message": "Thieu thong tin nguoi nhap khau" }
+    ]
+  },
+  {
+    "id": "IMP-2026-002",
+    "source": "CO_MOIT",
+    "fileName": "co_moit_import_2026_06.csv",
+    "totalRecords": 32,
+    "acceptedRecords": 32,
+    "rejectedRecords": 0,
+    "status": "COMPLETED",
+    "importedAt": "2026-06-30T09:30:00Z",
+    "importedBy": "admin",
+    "errors": []
+  }
+]

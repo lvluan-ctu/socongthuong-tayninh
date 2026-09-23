@@ -1,0 +1,31 @@
+{
+  "items": [
+    {
+      "id": "dk1",
+      "met": true,
+      "note": "08 chuyên viên C/O trực tiếp xử lý hồ sơ"
+    },
+    {
+      "id": "dk2",
+      "met": true,
+      "note": "03 người ký đã tập huấn kiến thức xuất xứ hàng hóa"
+    },
+    {
+      "id": "dk3",
+      "met": true,
+      "note": "Đã mở tài khoản thu phí chứng nhận xuất xứ"
+    },
+    {
+      "id": "dk4",
+      "met": true,
+      "note": "Đường truyền độc lập, tài khoản eCoSys và chữ ký số hoạt động ổn định"
+    },
+    {
+      "id": "dk5",
+      "met": true,
+      "note": "Khu lưu trữ riêng tại trụ sở Sở, thiết bị phòng chống côn trùng"
+    }
+  ],
+  "assessedBy": "Sở Công Thương tỉnh Tây Ninh",
+  "assessedAt": "2026-09-23"
+}

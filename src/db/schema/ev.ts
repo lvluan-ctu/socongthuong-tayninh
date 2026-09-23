@@ -1,0 +1,150 @@
+import { index, integer, jsonb, numeric, pgTable, text, timestamp, uniqueIndex, uuid } from 'drizzle-orm/pg-core';
+import { energyAssets, energyParties, energySites, geography } from './core';
+
+export const energyEvStationApplications = pgTable('energy_ev_station_applications', {
+  id: uuid('id').defaultRandom().primaryKey(),
+  code: text('code').notNull(),
+  applicantPartyId: uuid('applicant_party_id').notNull().references(() => energyParties.id, { onDelete: 'restrict' }),
+  siteId: uuid('site_id').references(() => energySites.id, { onDelete: 'set null' }),
+  address: text('address').notNull(),
+  location: geography('location'),
+  requestedPowerKw: numeric('requested_power_kw', { precision: 14, scale: 3 }).notNull(),
+  requestedConnectorCount: integer('requested_connector_count').notNull().default(1),
+  requestedConnectorTypes: jsonb('requested_connector_types').$type<string[]>().notNull().default([]),
+  gridAssetId: uuid('grid_asset_id').references(() => energyAssets.id, { onDelete: 'set null' }),
+  availableGridCapacityKw: numeric('available_grid_capacity_kw', { precision: 14, scale: 3 }),
+  approvedPowerKw: numeric('approved_power_kw', { precision: 14, scale: 3 }),
+  approvedAt: timestamp('approved_at', { withTimezone: true }),
+  approvalNo: text('approval_no'),
+  connectionCapacityKw: numeric('connection_capacity_kw', { precision: 14, scale: 3 }),
+  connectionPointAssetId: uuid('connection_point_asset_id').references(() => energyAssets.id, { onDelete: 'set null' }),
+  connectionMethod: text('connection_method'),
+  connectionSourceRef: text('connection_source_ref'),
+  plannedCommissioningAt: timestamp('planned_commissioning_at', { withTimezone: true }),
+  status: text('status').notNull().default('DRAFT'),
+  submittedAt: timestamp('submitted_at', { withTimezone: true }),
+  reviewedBy: text('reviewed_by'),
+  reviewedAt: timestamp('reviewed_at', { withTimezone: true }),
+  reviewNote: text('review_note'),
+}, (t) => [uniqueIndex('energy_ev_applications_code_uq').on(t.code), index('energy_ev_applications_status_idx').on(t.status, t.submittedAt)]);
+
+export const energyEvApplicationHistory = pgTable('energy_ev_application_history', {
+  id: uuid('id').defaultRandom().primaryKey(),
+  applicationId: uuid('application_id').notNull().references(() => energyEvStationApplications.id, { onDelete: 'cascade' }),
+  fromStatus: text('from_status'),
+  toStatus: text('to_status').notNull(),
+  action: text('action').notNull(),
+  actor: text('actor'),
+  note: text('note'),
+  metadata: jsonb('metadata').$type<Record<string, unknown>>().notNull().default({}),
+  createdAt: timestamp('created_at', { withTimezone: true }).notNull().defaultNow(),
+}, (t) => [index('energy_ev_application_history_idx').on(t.applicationId, t.createdAt)]);
+
+export const energyEvApplicationDocuments = pgTable('energy_ev_application_documents', {
+  id: uuid('id').defaultRandom().primaryKey(),
+  applicationId: uuid('application_id').notNull().references(() => energyEvStationApplications.id, { onDelete: 'cascade' }),
+  documentType: text('document_type').notNull(),
+  documentRef: text('document_ref').notNull(),
+  title: text('title'),
+  version: integer('version').notNull().default(1),
+  status: text('status').notNull().default('ACTIVE'),
+  uploadedAt: timestamp('uploaded_at', { withTimezone: true }).notNull().defaultNow(),
+  uploadedBy: text('uploaded_by'),
+  checksum: text('checksum'),
+  notes: text('notes'),
+  metadata: jsonb('metadata').$type<Record<string, unknown>>().notNull().default({}),
+  createdAt: timestamp('created_at', { withTimezone: true }).notNull().defaultNow(),
+}, (t) => [index('energy_ev_application_documents_idx').on(t.applicationId, t.documentType)]);
+
+export const energyEvStations = pgTable('energy_ev_stations', {
+  assetId: uuid('asset_id').primaryKey().references(() => energyAssets.id, { onDelete: 'cascade' }),
+  applicationId: uuid('application_id').references(() => energyEvStationApplications.id, { onDelete: 'set null' }),
+  operatorPartyId: uuid('operator_party_id').references(() => energyParties.id, { onDelete: 'set null' }),
+  siteId: uuid('site_id').references(() => energySites.id, { onDelete: 'set null' }),
+  totalPowerKw: numeric('total_power_kw', { precision: 14, scale: 3 }).notNull(),
+  connectorCount: integer('connector_count').notNull(),
+  availableCount: integer('available_count').notNull().default(0),
+  occupiedCount: integer('occupied_count').notNull().default(0),
+  faultedCount: integer('faulted_count').notNull().default(0),
+  utilizationPct: numeric('utilization_pct', { precision: 7, scale: 3 }).notNull().default('0'),
+  gridAssetId: uuid('grid_asset_id').references(() => energyAssets.id, { onDelete: 'set null' }),
+  installedPowerKw: numeric('installed_power_kw', { precision: 14, scale: 3 }),
+  connectionCapacityKw: numeric('connection_capacity_kw', { precision: 14, scale: 3 }),
+  connectionPointAssetId: uuid('connection_point_asset_id').references(() => energyAssets.id, { onDelete: 'set null' }),
+  connectionMethod: text('connection_method'),
+  connectionSourceRef: text('connection_source_ref'),
+  actualPeakPowerKw: numeric('actual_peak_power_kw', { precision: 14, scale: 3 }),
+  operationStatus: text('operation_status').notNull().default('ACTIVE'),
+});
+
+export const energyEvGridAssessments = pgTable('energy_ev_grid_assessments', {
+  id: uuid('id').defaultRandom().primaryKey(),
+  applicationId: uuid('application_id').notNull().references(() => energyEvStationApplications.id, { onDelete: 'cascade' }),
+  assessmentType: text('assessment_type').notNull(),
+  assessedAt: timestamp('assessed_at', { withTimezone: true }).notNull().defaultNow(),
+  assessedBy: text('assessed_by'),
+  requestedPowerKw: numeric('requested_power_kw', { precision: 14, scale: 3 }).notNull(),
+  candidateGridAssetId: uuid('candidate_grid_asset_id').references(() => energyAssets.id, { onDelete: 'set null' }),
+  confirmedGridAssetId: uuid('confirmed_grid_asset_id').references(() => energyAssets.id, { onDelete: 'set null' }),
+  availableCapacityKw: numeric('available_capacity_kw', { precision: 14, scale: 3 }),
+  approvedCapacityKw: numeric('approved_capacity_kw', { precision: 14, scale: 3 }),
+  voltageLevelKv: numeric('voltage_level_kv', { precision: 10, scale: 3 }),
+  distanceM: numeric('distance_m', { precision: 16, scale: 3 }),
+  method: text('method').notNull(),
+  methodVersion: text('method_version').notNull(),
+  sourceRef: text('source_ref'),
+  inputSnapshot: jsonb('input_snapshot').$type<Record<string, unknown>>().notNull().default({}),
+  result: jsonb('result').$type<Record<string, unknown>>().notNull().default({}),
+  constraints: jsonb('constraints').$type<Record<string, unknown>>().notNull().default({}),
+  recommendation: text('recommendation'),
+  status: text('status').notNull().default('PRELIMINARY'),
+}, (t) => [index('energy_ev_grid_assessments_application_time_idx').on(t.applicationId, t.assessedAt), index('energy_ev_grid_assessments_asset_time_idx').on(t.candidateGridAssetId, t.assessedAt)]);
+
+export const energyEvApplicationReviews = pgTable('energy_ev_application_reviews', {
+  id: uuid('id').defaultRandom().primaryKey(),
+  applicationId: uuid('application_id').notNull().references(() => energyEvStationApplications.id, { onDelete: 'cascade' }),
+  reviewType: text('review_type').notNull(),
+  reviewer: text('reviewer').notNull(),
+  reviewedAt: timestamp('reviewed_at', { withTimezone: true }).notNull().defaultNow(),
+  result: text('result').notNull(),
+  approvedPowerKw: numeric('approved_power_kw', { precision: 14, scale: 3 }),
+  conditions: text('conditions'),
+  note: text('note'),
+  documentRef: text('document_ref'),
+  assessmentId: uuid('assessment_id').references(() => energyEvGridAssessments.id, { onDelete: 'set null' }),
+  metadata: jsonb('metadata').$type<Record<string, unknown>>().notNull().default({}),
+}, (t) => [index('energy_ev_application_reviews_application_time_idx').on(t.applicationId, t.reviewedAt), index('energy_ev_application_reviews_assessment_idx').on(t.assessmentId)]);
+
+export const energyEvStationSnapshots = pgTable('energy_ev_station_snapshots', {
+  id: uuid('id').defaultRandom().primaryKey(),
+  stationAssetId: uuid('station_asset_id').notNull().references(() => energyAssets.id, { onDelete: 'cascade' }),
+  measuredAt: timestamp('measured_at', { withTimezone: true }).notNull(),
+  availableCount: integer('available_count').notNull().default(0),
+  occupiedCount: integer('occupied_count').notNull().default(0),
+  faultedCount: integer('faulted_count').notNull().default(0),
+  utilizationPct: numeric('utilization_pct', { precision: 7, scale: 3 }).notNull().default('0'),
+  energyDeliveredKwh: numeric('energy_delivered_kwh', { precision: 18, scale: 3 }),
+  peakPowerKw: numeric('peak_power_kw', { precision: 14, scale: 3 }),
+  source: text('source').notNull().default('MANUAL'),
+  metadata: jsonb('metadata').$type<Record<string, unknown>>().notNull().default({}),
+}, (t) => [index('energy_ev_station_snapshots_idx').on(t.stationAssetId, t.measuredAt)]);
+
+export const energyEvConnectors = pgTable('energy_ev_connectors', {
+  id: uuid('id').defaultRandom().primaryKey(),
+  stationAssetId: uuid('station_asset_id').notNull().references(() => energyAssets.id, { onDelete: 'cascade' }),
+  code: text('code').notNull(),
+  connectorType: text('connector_type').notNull(),
+  chargingMode: text('charging_mode').notNull(),
+  powerKw: numeric('power_kw', { precision: 12, scale: 3 }).notNull(),
+  status: text('status').notNull().default('AVAILABLE'),
+}, (t) => [uniqueIndex('energy_ev_connectors_code_uq').on(t.code), index('energy_ev_connectors_station_status_idx').on(t.stationAssetId, t.status)]);
+
+export const energyEvSessions = pgTable('energy_ev_sessions', {
+  id: uuid('id').defaultRandom().primaryKey(),
+  connectorId: uuid('connector_id').notNull().references(() => energyEvConnectors.id, { onDelete: 'cascade' }),
+  startedAt: timestamp('started_at', { withTimezone: true }).notNull(),
+  endedAt: timestamp('ended_at', { withTimezone: true }),
+  energyKwh: numeric('energy_kwh', { precision: 14, scale: 3 }),
+  peakPowerKw: numeric('peak_power_kw', { precision: 12, scale: 3 }),
+  status: text('status').notNull().default('ACTIVE'),
+}, (t) => [index('energy_ev_sessions_connector_time_idx').on(t.connectorId, t.startedAt)]);

@@ -1,0 +1,11 @@
+{
+  "registeredEnterprisesLowerBound": 35500,
+  "newEnterprisesFirstEightMonths": 4900,
+  "businessHouseholdsTotal": null,
+  "businessHouseholdsDisplay": "Chưa có số tổng hợp công khai",
+  "detailCoverage": 8,
+  "asOf": "2026-08-31",
+  "source": "Cổng thông tin điện tử tỉnh Tây Ninh và Cục Thống kê tỉnh Tây Ninh",
+  "sourceUrl": "https://tayninh.gov.vn/so-lieu-kinh-te-xa-hoi/cuc-thong-ke-bao-cao-tinh-hinh-kinh-te-xa-hoi-thang-tam-va-8-thang-dau-nam-2026-1094182",
+  "note": "Hơn 35.500 doanh nghiệp đăng ký hoạt động là số liệu công khai dạng ngưỡng; chưa phải số doanh nghiệp đang hoạt động thực tế. Số hộ kinh doanh cần xác nhận từ cơ quan thuế hoặc kết quả Tổng điều tra kinh tế 2026."
+}

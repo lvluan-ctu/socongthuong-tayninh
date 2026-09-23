@@ -1,0 +1,2590 @@
+[
+  {
+    "id": "CO-2026-001",
+    "applicationNo": "TN/CO/2026/000123",
+    "formCode": "D",
+    "ftaCode": "ATIGA",
+    "certificateType": "CO",
+    "receivingAgency": "Sở Công Thương tỉnh Tây Ninh",
+    "exporter": {
+      "name": "Công ty TNHH Cao su Tây Ninh",
+      "address": "KCN Trảng Bàng, tỉnh Tây Ninh",
+      "taxCode": "3702890123",
+      "country": "VN"
+    },
+    "consignee": {
+      "name": "Phnom Penh Rubber Trading Co., Ltd",
+      "address": "Phnom Penh, Cambodia",
+      "country": "KH"
+    },
+    "transport": {
+      "departureDate": "2026-01-15",
+      "vessel": "Sailing",
+      "portLoading": "Cửa khẩu Mộc Bài",
+      "portDischarge": "Bavet, Cambodia"
+    },
+    "items": [
+      {
+        "itemNumber": 1,
+        "hsCode": "40012100",
+        "description": "Cao su thiên nhiên dạng RSS1",
+        "quantity": 50000,
+        "unit": "Kg",
+        "fobValue": 75000,
+        "originCriterion": "WO",
+        "countryOfOrigin": "VN",
+        "invoiceNumber": "INV-2026/0112",
+        "invoiceDate": "2026-01-10"
+      }
+    ],
+    "declaration": {
+      "exportingCountry": "VIET NAM",
+      "importingCountry": "CAMBODIA",
+      "signDate": "2026-01-14",
+      "signerName": "Nguyen Van A"
+    },
+    "status": "ISSUED",
+    "coNumber": "CO/TN/2026/000123",
+    "coIssuedDate": "2026-01-15",
+    "approvedBy": "Tran Thi B",
+    "reviewerNote": null,
+    "statusHistory": [
+      {
+        "from": null,
+        "to": "DRAFT",
+        "action": "CREATE",
+        "by": "Công ty TNHH Cao su Tây Ninh",
+        "at": "2026-01-10T08:30:00Z"
+      },
+      {
+        "from": "DRAFT",
+        "to": "SUBMITTED",
+        "action": "SUBMIT",
+        "by": "Công ty TNHH Cao su Tây Ninh",
+        "at": "2026-01-10T08:30:00Z"
+      },
+      {
+        "from": "SUBMITTED",
+        "to": "PROCESSING",
+        "action": "ACCEPT",
+        "by": "Tran Thi B",
+        "at": "2026-01-15T10:00:00Z"
+      },
+      {
+        "from": "PROCESSING",
+        "to": "APPROVED",
+        "action": "APPROVE",
+        "by": "Tran Thi B",
+        "at": "2026-01-15T10:00:00Z"
+      },
+      {
+        "from": "APPROVED",
+        "to": "ISSUED",
+        "action": "ISSUE",
+        "by": "Tran Thi B",
+        "at": "2026-01-15"
+      }
+    ],
+    "dataSource": "MANUAL",
+    "metadata": {},
+    "createdAt": "2026-01-10T08:30:00Z",
+    "updatedAt": "2026-01-15T10:00:00Z"
+  },
+  {
+    "id": "CO-2026-002",
+    "applicationNo": "TN/CO/2026/000124",
+    "formCode": "E",
+    "ftaCode": "ACFTA",
+    "certificateType": "CO",
+    "receivingAgency": "Sở Công Thương tỉnh Tây Ninh",
+    "exporter": {
+      "name": "Công ty CP Dệt may Tây Ninh",
+      "address": "KCN Long Đức, Trảng Bàng, Tây Ninh",
+      "taxCode": "3702890456",
+      "country": "VN"
+    },
+    "consignee": {
+      "name": "Shanghai Import Export Trading Co.",
+      "address": "Shanghai, China",
+      "country": "CN"
+    },
+    "transport": {
+      "departureDate": "2026-01-22",
+      "vessel": "SITC Shanghai",
+      "portLoading": "Cảng Cát Lái, HCM",
+      "portDischarge": "Shanghai, China"
+    },
+    "items": [
+      {
+        "itemNumber": 1,
+        "hsCode": "61091000",
+        "description": "Áo thun cotton 100%",
+        "quantity": 10000,
+        "unit": "Cái",
+        "fobValue": 35000,
+        "originCriterion": "CTC",
+        "countryOfOrigin": "VN",
+        "invoiceNumber": "INV-2026/0118",
+        "invoiceDate": "2026-01-18"
+      }
+    ],
+    "declaration": {
+      "exportingCountry": "VIET NAM",
+      "importingCountry": "CHINA",
+      "signDate": "2026-01-21",
+      "signerName": "Le Van C"
+    },
+    "status": "ISSUED",
+    "coNumber": "CO/TN/2026/000124",
+    "coIssuedDate": "2026-01-22",
+    "approvedBy": "Tran Thi B",
+    "reviewerNote": null,
+    "statusHistory": [
+      {
+        "from": null,
+        "to": "DRAFT",
+        "action": "CREATE",
+        "by": "Công ty CP Dệt may Tây Ninh",
+        "at": "2026-01-18T09:00:00Z"
+      },
+      {
+        "from": "DRAFT",
+        "to": "SUBMITTED",
+        "action": "SUBMIT",
+        "by": "Công ty CP Dệt may Tây Ninh",
+        "at": "2026-01-18T09:00:00Z"
+      },
+      {
+        "from": "SUBMITTED",
+        "to": "PROCESSING",
+        "action": "ACCEPT",
+        "by": "Tran Thi B",
+        "at": "2026-01-22T14:00:00Z"
+      },
+      {
+        "from": "PROCESSING",
+        "to": "APPROVED",
+        "action": "APPROVE",
+        "by": "Tran Thi B",
+        "at": "2026-01-22T14:00:00Z"
+      },
+      {
+        "from": "APPROVED",
+        "to": "ISSUED",
+        "action": "ISSUE",
+        "by": "Tran Thi B",
+        "at": "2026-01-22"
+      }
+    ],
+    "dataSource": "MANUAL",
+    "metadata": {},
+    "createdAt": "2026-01-18T09:00:00Z",
+    "updatedAt": "2026-01-22T14:00:00Z"
+  },
+  {
+    "id": "CO-2026-003",
+    "applicationNo": "TN/CO/2026/000125",
+    "formCode": "AANZ",
+    "ftaCode": "AANZFTA",
+    "certificateType": "CO",
+    "receivingAgency": "Sở Công Thương tỉnh Tây Ninh",
+    "exporter": {
+      "name": "Công ty TNHH Giày Da Tây Ninh",
+      "address": "KCN Phước Đông, Gò Dầu, Tây Ninh",
+      "taxCode": "3702890789",
+      "country": "VN"
+    },
+    "consignee": {
+      "name": "Sydney Fashion Pty Ltd",
+      "address": "Sydney, Australia",
+      "country": "AU"
+    },
+    "transport": {
+      "departureDate": "2026-01-28",
+      "vessel": "Maersk Sydney",
+      "portLoading": "Cảng Cát Lái, HCM",
+      "portDischarge": "Sydney, Australia"
+    },
+    "items": [
+      {
+        "itemNumber": 1,
+        "hsCode": "64039100",
+        "description": "Giày dép da cổ ankle",
+        "quantity": 5000,
+        "unit": "Đôi",
+        "fobValue": 85000,
+        "originCriterion": "CTC",
+        "countryOfOrigin": "VN",
+        "invoiceNumber": "INV-2026/0125",
+        "invoiceDate": "2026-01-25"
+      }
+    ],
+    "declaration": {
+      "exportingCountry": "VIET NAM",
+      "importingCountry": "AUSTRALIA",
+      "signDate": "2026-01-27",
+      "signerName": "Pham Thi D"
+    },
+    "status": "ISSUED",
+    "coNumber": "CO/TN/2026/000125",
+    "coIssuedDate": "2026-01-28",
+    "approvedBy": "Tran Thi B",
+    "reviewerNote": null,
+    "statusHistory": [
+      {
+        "from": null,
+        "to": "DRAFT",
+        "action": "CREATE",
+        "by": "Công ty TNHH Giày Da Tây Ninh",
+        "at": "2026-01-25T10:00:00Z"
+      },
+      {
+        "from": "DRAFT",
+        "to": "SUBMITTED",
+        "action": "SUBMIT",
+        "by": "Công ty TNHH Giày Da Tây Ninh",
+        "at": "2026-01-25T10:00:00Z"
+      },
+      {
+        "from": "SUBMITTED",
+        "to": "PROCESSING",
+        "action": "ACCEPT",
+        "by": "Tran Thi B",
+        "at": "2026-01-28T11:00:00Z"
+      },
+      {
+        "from": "PROCESSING",
+        "to": "APPROVED",
+        "action": "APPROVE",
+        "by": "Tran Thi B",
+        "at": "2026-01-28T11:00:00Z"
+      },
+      {
+        "from": "APPROVED",
+        "to": "ISSUED",
+        "action": "ISSUE",
+        "by": "Tran Thi B",
+        "at": "2026-01-28"
+      }
+    ],
+    "dataSource": "MANUAL",
+    "metadata": {},
+    "createdAt": "2026-01-25T10:00:00Z",
+    "updatedAt": "2026-01-28T11:00:00Z"
+  },
+  {
+    "id": "CO-2026-004",
+    "applicationNo": "TN/CO/2026/000126",
+    "formCode": "D",
+    "ftaCode": "ATIGA",
+    "certificateType": "CO",
+    "receivingAgency": "Sở Công Thương tỉnh Tây Ninh",
+    "exporter": {
+      "name": "Công ty TNHH Sản xuất TM Tây Ninh",
+      "address": "KCN Xuân Phước, Dầu Tiếng, Tây Ninh",
+      "taxCode": "3702890234",
+      "country": "VN"
+    },
+    "consignee": {
+      "name": "Phnom Penh Garment Factory",
+      "address": "Phnom Penh, Cambodia",
+      "country": "KH"
+    },
+    "transport": {
+      "departureDate": "2026-02-05",
+      "vessel": "Sailing",
+      "portLoading": "Cửa khẩu Xa Mát",
+      "portDischarge": "Tây Ninh, Cambodia"
+    },
+    "items": [
+      {
+        "itemNumber": 1,
+        "hsCode": "62034300",
+        "description": "Quần nam tổng hợp",
+        "quantity": 8000,
+        "unit": "Cái",
+        "fobValue": 42000,
+        "originCriterion": "CTC",
+        "countryOfOrigin": "VN",
+        "invoiceNumber": "INV-2026/0201",
+        "invoiceDate": "2026-02-01"
+      }
+    ],
+    "declaration": {
+      "exportingCountry": "VIET NAM",
+      "importingCountry": "CAMBODIA",
+      "signDate": "2026-02-04",
+      "signerName": "Nguyen Van E"
+    },
+    "status": "ISSUED",
+    "coNumber": "CO/TN/2026/000126",
+    "coIssuedDate": "2026-02-05",
+    "approvedBy": "Tran Thi B",
+    "reviewerNote": null,
+    "statusHistory": [
+      {
+        "from": null,
+        "to": "DRAFT",
+        "action": "CREATE",
+        "by": "Công ty TNHH Sản xuất TM Tây Ninh",
+        "at": "2026-02-01T08:00:00Z"
+      },
+      {
+        "from": "DRAFT",
+        "to": "SUBMITTED",
+        "action": "SUBMIT",
+        "by": "Công ty TNHH Sản xuất TM Tây Ninh",
+        "at": "2026-02-01T08:00:00Z"
+      },
+      {
+        "from": "SUBMITTED",
+        "to": "PROCESSING",
+        "action": "ACCEPT",
+        "by": "Tran Thi B",
+        "at": "2026-02-05T09:00:00Z"
+      },
+      {
+        "from": "PROCESSING",
+        "to": "APPROVED",
+        "action": "APPROVE",
+        "by": "Tran Thi B",
+        "at": "2026-02-05T09:00:00Z"
+      },
+      {
+        "from": "APPROVED",
+        "to": "ISSUED",
+        "action": "ISSUE",
+        "by": "Tran Thi B",
+        "at": "2026-02-05"
+      }
+    ],
+    "dataSource": "MANUAL",
+    "metadata": {},
+    "createdAt": "2026-02-01T08:00:00Z",
+    "updatedAt": "2026-02-05T09:00:00Z"
+  },
+  {
+    "id": "CO-2026-005",
+    "applicationNo": "TN/CO/2026/000127",
+    "formCode": "AK",
+    "ftaCode": "AKFTA",
+    "certificateType": "CO",
+    "receivingAgency": "Sở Công Thương tỉnh Tây Ninh",
+    "exporter": {
+      "name": "Công ty TNHH Cao su Tây Ninh",
+      "address": "KCN Trảng Bàng, tỉnh Tây Ninh",
+      "taxCode": "3702890123",
+      "country": "VN"
+    },
+    "consignee": {
+      "name": "Seoul Trading Co., Ltd",
+      "address": "Busan, South Korea",
+      "country": "KR"
+    },
+    "transport": {
+      "departureDate": "2026-02-12",
+      "vessel": "Hyundai Brave",
+      "portLoading": "Cảng Cát Lái, HCM",
+      "portDischarge": "Busan, Korea"
+    },
+    "items": [
+      {
+        "itemNumber": 1,
+        "hsCode": "40012100",
+        "description": "Cao su thiên nhiên dạng RSS1",
+        "quantity": 40000,
+        "unit": "Kg",
+        "fobValue": 62000,
+        "originCriterion": "WO",
+        "countryOfOrigin": "VN",
+        "invoiceNumber": "INV-2026/0208",
+        "invoiceDate": "2026-02-08"
+      }
+    ],
+    "declaration": {
+      "exportingCountry": "VIET NAM",
+      "importingCountry": "KOREA",
+      "signDate": "2026-02-11",
+      "signerName": "Tran Van F"
+    },
+    "status": "ISSUED",
+    "coNumber": "CO/TN/2026/000127",
+    "coIssuedDate": "2026-02-12",
+    "approvedBy": "Tran Thi B",
+    "reviewerNote": null,
+    "statusHistory": [
+      {
+        "from": null,
+        "to": "DRAFT",
+        "action": "CREATE",
+        "by": "Công ty TNHH Cao su Tây Ninh",
+        "at": "2026-02-08T09:00:00Z"
+      },
+      {
+        "from": "DRAFT",
+        "to": "SUBMITTED",
+        "action": "SUBMIT",
+        "by": "Công ty TNHH Cao su Tây Ninh",
+        "at": "2026-02-08T09:00:00Z"
+      },
+      {
+        "from": "SUBMITTED",
+        "to": "PROCESSING",
+        "action": "ACCEPT",
+        "by": "Tran Thi B",
+        "at": "2026-02-12T10:00:00Z"
+      },
+      {
+        "from": "PROCESSING",
+        "to": "APPROVED",
+        "action": "APPROVE",
+        "by": "Tran Thi B",
+        "at": "2026-02-12T10:00:00Z"
+      },
+      {
+        "from": "APPROVED",
+        "to": "ISSUED",
+        "action": "ISSUE",
+        "by": "Tran Thi B",
+        "at": "2026-02-12"
+      }
+    ],
+    "dataSource": "MANUAL",
+    "metadata": {},
+    "createdAt": "2026-02-08T09:00:00Z",
+    "updatedAt": "2026-02-12T10:00:00Z"
+  },
+  {
+    "id": "CO-2026-006",
+    "applicationNo": "TN/CO/2026/000128",
+    "formCode": "E",
+    "ftaCode": "ACFTA",
+    "certificateType": "CO",
+    "receivingAgency": "Sở Công Thương tỉnh Tây Ninh",
+    "exporter": {
+      "name": "Công ty CP Dệt may Tây Ninh",
+      "address": "KCN Long Đức, Trảng Bàng, Tây Ninh",
+      "taxCode": "3702890456",
+      "country": "VN"
+    },
+    "consignee": {
+      "name": "Guangzhou Textile Import Co.",
+      "address": "Guangzhou, China",
+      "country": "CN"
+    },
+    "transport": {
+      "departureDate": "2026-02-18",
+      "vessel": "COSCO Guangzhou",
+      "portLoading": "Cảng Cát Lái, HCM",
+      "portDischarge": "Guangzhou, China"
+    },
+    "items": [
+      {
+        "itemNumber": 1,
+        "hsCode": "61051000",
+        "description": "Áo sơ mi nam cotton",
+        "quantity": 6000,
+        "unit": "Cái",
+        "fobValue": 48000,
+        "originCriterion": "CTC",
+        "countryOfOrigin": "VN",
+        "invoiceNumber": "INV-2026/0215",
+        "invoiceDate": "2026-02-15"
+      }
+    ],
+    "declaration": {
+      "exportingCountry": "VIET NAM",
+      "importingCountry": "CHINA",
+      "signDate": "2026-02-17",
+      "signerName": "Le Van C"
+    },
+    "status": "ISSUED",
+    "coNumber": "CO/TN/2026/000128",
+    "coIssuedDate": "2026-02-18",
+    "approvedBy": "Tran Thi B",
+    "reviewerNote": null,
+    "statusHistory": [
+      {
+        "from": null,
+        "to": "DRAFT",
+        "action": "CREATE",
+        "by": "Công ty CP Dệt may Tây Ninh",
+        "at": "2026-02-15T10:00:00Z"
+      },
+      {
+        "from": "DRAFT",
+        "to": "SUBMITTED",
+        "action": "SUBMIT",
+        "by": "Công ty CP Dệt may Tây Ninh",
+        "at": "2026-02-15T10:00:00Z"
+      },
+      {
+        "from": "SUBMITTED",
+        "to": "PROCESSING",
+        "action": "ACCEPT",
+        "by": "Tran Thi B",
+        "at": "2026-02-18T14:00:00Z"
+      },
+      {
+        "from": "PROCESSING",
+        "to": "APPROVED",
+        "action": "APPROVE",
+        "by": "Tran Thi B",
+        "at": "2026-02-18T14:00:00Z"
+      },
+      {
+        "from": "APPROVED",
+        "to": "ISSUED",
+        "action": "ISSUE",
+        "by": "Tran Thi B",
+        "at": "2026-02-18"
+      }
+    ],
+    "dataSource": "MANUAL",
+    "metadata": {},
+    "createdAt": "2026-02-15T10:00:00Z",
+    "updatedAt": "2026-02-18T14:00:00Z"
+  },
+  {
+    "id": "CO-2026-007",
+    "applicationNo": "TN/CO/2026/000129",
+    "formCode": "EUR.1",
+    "ftaCode": "EVFTA",
+    "certificateType": "CO",
+    "receivingAgency": "Sở Công Thương tỉnh Tây Ninh",
+    "exporter": {
+      "name": "Công ty TNHH Cơ khí.precision Tây Ninh",
+      "address": "KCN Trảng Bàng, Tây Ninh",
+      "taxCode": "3702890567",
+      "country": "VN"
+    },
+    "consignee": {
+      "name": "Hamburg Precision Parts GmbH",
+      "address": "Hamburg, Germany",
+      "country": "DE"
+    },
+    "transport": {
+      "departureDate": "2026-02-25",
+      "vessel": "Maersk Hamburg",
+      "portLoading": "Cảng Cát Lái, HCM",
+      "portDischarge": "Hamburg, Germany"
+    },
+    "items": [
+      {
+        "itemNumber": 1,
+        "hsCode": "73269090",
+        "description": "Sản phẩm sắt thép khác",
+        "quantity": 3000,
+        "unit": "Cái",
+        "fobValue": 55000,
+        "originCriterion": "CTC",
+        "countryOfOrigin": "VN",
+        "invoiceNumber": "INV-2026/0220",
+        "invoiceDate": "2026-02-20"
+      }
+    ],
+    "declaration": {
+      "exportingCountry": "VIET NAM",
+      "importingCountry": "GERMANY",
+      "signDate": "2026-02-24",
+      "signerName": "Pham Thi G"
+    },
+    "status": "ISSUED",
+    "coNumber": "CO/TN/2026/000129",
+    "coIssuedDate": "2026-02-25",
+    "approvedBy": "Tran Thi B",
+    "reviewerNote": null,
+    "statusHistory": [
+      {
+        "from": null,
+        "to": "DRAFT",
+        "action": "CREATE",
+        "by": "Công ty TNHH Cơ khí.precision Tây Ninh",
+        "at": "2026-02-20T08:30:00Z"
+      },
+      {
+        "from": "DRAFT",
+        "to": "SUBMITTED",
+        "action": "SUBMIT",
+        "by": "Công ty TNHH Cơ khí.precision Tây Ninh",
+        "at": "2026-02-20T08:30:00Z"
+      },
+      {
+        "from": "SUBMITTED",
+        "to": "PROCESSING",
+        "action": "ACCEPT",
+        "by": "Tran Thi B",
+        "at": "2026-02-25T11:00:00Z"
+      },
+      {
+        "from": "PROCESSING",
+        "to": "APPROVED",
+        "action": "APPROVE",
+        "by": "Tran Thi B",
+        "at": "2026-02-25T11:00:00Z"
+      },
+      {
+        "from": "APPROVED",
+        "to": "ISSUED",
+        "action": "ISSUE",
+        "by": "Tran Thi B",
+        "at": "2026-02-25"
+      }
+    ],
+    "dataSource": "MANUAL",
+    "metadata": {},
+    "createdAt": "2026-02-20T08:30:00Z",
+    "updatedAt": "2026-02-25T11:00:00Z"
+  },
+  {
+    "id": "CO-2026-008",
+    "applicationNo": "TN/CO/2026/000130",
+    "formCode": "CPTPP",
+    "ftaCode": "CPTPP",
+    "certificateType": "CO",
+    "receivingAgency": "Sở Công Thương tỉnh Tây Ninh",
+    "exporter": {
+      "name": "Công ty TNHH Năng lượng mặt trời Tây Ninh",
+      "address": "KCN Phước Đông, Gò Dầu, Tây Ninh",
+      "taxCode": "3702890890",
+      "country": "VN"
+    },
+    "consignee": {
+      "name": "SolarTech Japan K.K.",
+      "address": "Osaka, Japan",
+      "country": "JP"
+    },
+    "transport": {
+      "departureDate": "2026-03-05",
+      "vessel": "Maersk Tokyo",
+      "portLoading": "Cảng Cát Lái, HCM",
+      "portDischarge": "Osaka, Japan"
+    },
+    "items": [
+      {
+        "itemNumber": 1,
+        "hsCode": "85414010",
+        "description": "Tấm pin mặt trời quang điện",
+        "quantity": 5000,
+        "unit": "Cái",
+        "fobValue": 120000,
+        "originCriterion": "PE",
+        "countryOfOrigin": "VN",
+        "invoiceNumber": "INV-2026/0301",
+        "invoiceDate": "2026-03-01"
+      }
+    ],
+    "declaration": {
+      "exportingCountry": "VIET NAM",
+      "importingCountry": "JAPAN",
+      "signDate": "2026-03-04",
+      "signerName": "Pham Thi D"
+    },
+    "status": "ISSUED",
+    "coNumber": "CO/TN/2026/000130",
+    "coIssuedDate": "2026-03-05",
+    "approvedBy": "Tran Thi B",
+    "reviewerNote": null,
+    "statusHistory": [
+      {
+        "from": null,
+        "to": "DRAFT",
+        "action": "CREATE",
+        "by": "Công ty TNHH Năng lượng mặt trời Tây Ninh",
+        "at": "2026-03-01T08:00:00Z"
+      },
+      {
+        "from": "DRAFT",
+        "to": "SUBMITTED",
+        "action": "SUBMIT",
+        "by": "Công ty TNHH Năng lượng mặt trời Tây Ninh",
+        "at": "2026-03-01T08:00:00Z"
+      },
+      {
+        "from": "SUBMITTED",
+        "to": "PROCESSING",
+        "action": "ACCEPT",
+        "by": "Tran Thi B",
+        "at": "2026-03-05T10:00:00Z"
+      },
+      {
+        "from": "PROCESSING",
+        "to": "APPROVED",
+        "action": "APPROVE",
+        "by": "Tran Thi B",
+        "at": "2026-03-05T10:00:00Z"
+      },
+      {
+        "from": "APPROVED",
+        "to": "ISSUED",
+        "action": "ISSUE",
+        "by": "Tran Thi B",
+        "at": "2026-03-05"
+      }
+    ],
+    "dataSource": "MANUAL",
+    "metadata": {},
+    "createdAt": "2026-03-01T08:00:00Z",
+    "updatedAt": "2026-03-05T10:00:00Z"
+  },
+  {
+    "id": "CO-2026-009",
+    "applicationNo": "TN/CO/2026/000131",
+    "formCode": "D",
+    "ftaCode": "ATIGA",
+    "certificateType": "CO",
+    "receivingAgency": "Sở Công Thương tỉnh Tây Ninh",
+    "exporter": {
+      "name": "Công ty TNHH Cao su Tây Ninh",
+      "address": "KCN Trảng Bàng, tỉnh Tây Ninh",
+      "taxCode": "3702890123",
+      "country": "VN"
+    },
+    "consignee": {
+      "name": "Vientiane Rubber Supply Co.",
+      "address": "Vientiane, Laos",
+      "country": "LA"
+    },
+    "transport": {
+      "departureDate": "2026-03-12",
+      "vessel": "Sailing",
+      "portLoading": "Cửa khẩu Lộc Ninh",
+      "portDischarge": "Lao Bao, Laos"
+    },
+    "items": [
+      {
+        "itemNumber": 1,
+        "hsCode": "40012100",
+        "description": "Cao su thiên nhiên dạng RSS3",
+        "quantity": 35000,
+        "unit": "Kg",
+        "fobValue": 52000,
+        "originCriterion": "WO",
+        "countryOfOrigin": "VN",
+        "invoiceNumber": "INV-2026/0308",
+        "invoiceDate": "2026-03-08"
+      }
+    ],
+    "declaration": {
+      "exportingCountry": "VIET NAM",
+      "importingCountry": "LAOS",
+      "signDate": "2026-03-11",
+      "signerName": "Nguyen Van A"
+    },
+    "status": "ISSUED",
+    "coNumber": "CO/TN/2026/000131",
+    "coIssuedDate": "2026-03-12",
+    "approvedBy": "Tran Thi B",
+    "reviewerNote": null,
+    "statusHistory": [
+      {
+        "from": null,
+        "to": "DRAFT",
+        "action": "CREATE",
+        "by": "Công ty TNHH Cao su Tây Ninh",
+        "at": "2026-03-08T09:00:00Z"
+      },
+      {
+        "from": "DRAFT",
+        "to": "SUBMITTED",
+        "action": "SUBMIT",
+        "by": "Công ty TNHH Cao su Tây Ninh",
+        "at": "2026-03-08T09:00:00Z"
+      },
+      {
+        "from": "SUBMITTED",
+        "to": "PROCESSING",
+        "action": "ACCEPT",
+        "by": "Tran Thi B",
+        "at": "2026-03-12T10:00:00Z"
+      },
+      {
+        "from": "PROCESSING",
+        "to": "APPROVED",
+        "action": "APPROVE",
+        "by": "Tran Thi B",
+        "at": "2026-03-12T10:00:00Z"
+      },
+      {
+        "from": "APPROVED",
+        "to": "ISSUED",
+        "action": "ISSUE",
+        "by": "Tran Thi B",
+        "at": "2026-03-12"
+      }
+    ],
+    "dataSource": "MANUAL",
+    "metadata": {},
+    "createdAt": "2026-03-08T09:00:00Z",
+    "updatedAt": "2026-03-12T10:00:00Z"
+  },
+  {
+    "id": "CO-2026-010",
+    "applicationNo": "TN/CO/2026/000132",
+    "formCode": "AK",
+    "ftaCode": "AKFTA",
+    "certificateType": "CO",
+    "receivingAgency": "Sở Công Thương tỉnh Tây Ninh",
+    "exporter": {
+      "name": "Công ty TNHH Giày Da Tây Ninh",
+      "address": "KCN Phước Đông, Gò Dầu, Tây Ninh",
+      "taxCode": "3702890789",
+      "country": "VN"
+    },
+    "consignee": {
+      "name": "Korean Fashion Inc.",
+      "address": "Seoul, South Korea",
+      "country": "KR"
+    },
+    "transport": {
+      "departureDate": "2026-03-20",
+      "vessel": "Evergreen Star",
+      "portLoading": "Cảng Cát Lái, HCM",
+      "portDischarge": "Busan, Korea"
+    },
+    "items": [
+      {
+        "itemNumber": 1,
+        "hsCode": "64039100",
+        "description": "Giày dép da cổ ankle",
+        "quantity": 4000,
+        "unit": "Đôi",
+        "fobValue": 68000,
+        "originCriterion": "RVC",
+        "countryOfOrigin": "VN",
+        "rvcPercentage": 58,
+        "invoiceNumber": "INV-2026/0315",
+        "invoiceDate": "2026-03-15"
+      }
+    ],
+    "declaration": {
+      "exportingCountry": "VIET NAM",
+      "importingCountry": "KOREA",
+      "signDate": "2026-03-19",
+      "signerName": "Nguyen Van E"
+    },
+    "status": "ISSUED",
+    "coNumber": "CO/TN/2026/000132",
+    "coIssuedDate": "2026-03-20",
+    "approvedBy": "Tran Thi B",
+    "reviewerNote": null,
+    "statusHistory": [
+      {
+        "from": null,
+        "to": "DRAFT",
+        "action": "CREATE",
+        "by": "Công ty TNHH Giày Da Tây Ninh",
+        "at": "2026-03-15T10:00:00Z"
+      },
+      {
+        "from": "DRAFT",
+        "to": "SUBMITTED",
+        "action": "SUBMIT",
+        "by": "Công ty TNHH Giày Da Tây Ninh",
+        "at": "2026-03-15T10:00:00Z"
+      },
+      {
+        "from": "SUBMITTED",
+        "to": "PROCESSING",
+        "action": "ACCEPT",
+        "by": "Tran Thi B",
+        "at": "2026-03-20T11:00:00Z"
+      },
+      {
+        "from": "PROCESSING",
+        "to": "APPROVED",
+        "action": "APPROVE",
+        "by": "Tran Thi B",
+        "at": "2026-03-20T11:00:00Z"
+      },
+      {
+        "from": "APPROVED",
+        "to": "ISSUED",
+        "action": "ISSUE",
+        "by": "Tran Thi B",
+        "at": "2026-03-20"
+      }
+    ],
+    "dataSource": "MANUAL",
+    "metadata": {},
+    "createdAt": "2026-03-15T10:00:00Z",
+    "updatedAt": "2026-03-20T11:00:00Z"
+  },
+  {
+    "id": "CO-2026-011",
+    "applicationNo": "TN/CO/2026/000133",
+    "formCode": "E",
+    "ftaCode": "ACFTA",
+    "certificateType": "CO",
+    "receivingAgency": "Sở Công Thương tỉnh Tây Ninh",
+    "exporter": {
+      "name": "Công ty CP Thức ăn chăn nuôi Tây Ninh",
+      "address": "KCN Hiệp Đức, Hòa Thành, Tây Ninh",
+      "taxCode": "3702891011",
+      "country": "VN"
+    },
+    "consignee": {
+      "name": "Shenzhen Food Trading Co.",
+      "address": "Shenzhen, China",
+      "country": "CN"
+    },
+    "transport": {
+      "departureDate": "2026-03-28",
+      "vessel": "COSCO Shenzhen",
+      "portLoading": "Cảng Cát Lái, HCM",
+      "portDischarge": "Shenzhen, China"
+    },
+    "items": [
+      {
+        "itemNumber": 1,
+        "hsCode": "19059090",
+        "description": "Bánh kẹo các loại",
+        "quantity": 12000,
+        "unit": "Kg",
+        "fobValue": 28000,
+        "originCriterion": "WO",
+        "countryOfOrigin": "VN",
+        "invoiceNumber": "INV-2026/0324",
+        "invoiceDate": "2026-03-24"
+      }
+    ],
+    "declaration": {
+      "exportingCountry": "VIET NAM",
+      "importingCountry": "CHINA",
+      "signDate": "2026-03-27",
+      "signerName": "Le Van C"
+    },
+    "status": "ISSUED",
+    "coNumber": "CO/TN/2026/000133",
+    "coIssuedDate": "2026-03-28",
+    "approvedBy": "Tran Thi B",
+    "reviewerNote": null,
+    "statusHistory": [
+      {
+        "from": null,
+        "to": "DRAFT",
+        "action": "CREATE",
+        "by": "Công ty CP Thức ăn chăn nuôi Tây Ninh",
+        "at": "2026-03-24T08:00:00Z"
+      },
+      {
+        "from": "DRAFT",
+        "to": "SUBMITTED",
+        "action": "SUBMIT",
+        "by": "Công ty CP Thức ăn chăn nuôi Tây Ninh",
+        "at": "2026-03-24T08:00:00Z"
+      },
+      {
+        "from": "SUBMITTED",
+        "to": "PROCESSING",
+        "action": "ACCEPT",
+        "by": "Tran Thi B",
+        "at": "2026-03-28T10:00:00Z"
+      },
+      {
+        "from": "PROCESSING",
+        "to": "APPROVED",
+        "action": "APPROVE",
+        "by": "Tran Thi B",
+        "at": "2026-03-28T10:00:00Z"
+      },
+      {
+        "from": "APPROVED",
+        "to": "ISSUED",
+        "action": "ISSUE",
+        "by": "Tran Thi B",
+        "at": "2026-03-28"
+      }
+    ],
+    "dataSource": "MANUAL",
+    "metadata": {},
+    "createdAt": "2026-03-24T08:00:00Z",
+    "updatedAt": "2026-03-28T10:00:00Z"
+  },
+  {
+    "id": "CO-2026-012",
+    "applicationNo": "TN/CO/2026/000134",
+    "formCode": "RCEP",
+    "ftaCode": "RCEP",
+    "certificateType": "CO",
+    "receivingAgency": "Sở Công Thương tỉnh Tây Ninh",
+    "exporter": {
+      "name": "Công ty TNHH Gỗ Tây Ninh",
+      "address": "Xã Trung Ban, Trảng Bàng, Tây Ninh",
+      "taxCode": "3702891212",
+      "country": "VN"
+    },
+    "consignee": {
+      "name": "Bangkok Wood Products Co.",
+      "address": "Bangkok, Thailand",
+      "country": "TH"
+    },
+    "transport": {
+      "departureDate": "2026-04-03",
+      "vessel": "MSC Bangkok",
+      "portLoading": "Cảng Cát Lái, HCM",
+      "portDischarge": "Bangkok, Thailand"
+    },
+    "items": [
+      {
+        "itemNumber": 1,
+        "hsCode": "94036000",
+        "description": "Đồ nội thất gỗ",
+        "quantity": 200,
+        "unit": "Cái",
+        "fobValue": 35000,
+        "originCriterion": "WO",
+        "countryOfOrigin": "VN",
+        "invoiceNumber": "INV-2026/0328",
+        "invoiceDate": "2026-03-28"
+      }
+    ],
+    "declaration": {
+      "exportingCountry": "VIET NAM",
+      "importingCountry": "THAILAND",
+      "signDate": "2026-04-02",
+      "signerName": "Tran Van F"
+    },
+    "status": "ISSUED",
+    "coNumber": "CO/TN/2026/000134",
+    "coIssuedDate": "2026-04-03",
+    "approvedBy": "Tran Thi B",
+    "reviewerNote": null,
+    "statusHistory": [
+      {
+        "from": null,
+        "to": "DRAFT",
+        "action": "CREATE",
+        "by": "Công ty TNHH Gỗ Tây Ninh",
+        "at": "2026-03-28T09:00:00Z"
+      },
+      {
+        "from": "DRAFT",
+        "to": "SUBMITTED",
+        "action": "SUBMIT",
+        "by": "Công ty TNHH Gỗ Tây Ninh",
+        "at": "2026-03-28T09:00:00Z"
+      },
+      {
+        "from": "SUBMITTED",
+        "to": "PROCESSING",
+        "action": "ACCEPT",
+        "by": "Tran Thi B",
+        "at": "2026-04-03T10:00:00Z"
+      },
+      {
+        "from": "PROCESSING",
+        "to": "APPROVED",
+        "action": "APPROVE",
+        "by": "Tran Thi B",
+        "at": "2026-04-03T10:00:00Z"
+      },
+      {
+        "from": "APPROVED",
+        "to": "ISSUED",
+        "action": "ISSUE",
+        "by": "Tran Thi B",
+        "at": "2026-04-03"
+      }
+    ],
+    "dataSource": "MANUAL",
+    "metadata": {},
+    "createdAt": "2026-03-28T09:00:00Z",
+    "updatedAt": "2026-04-03T10:00:00Z"
+  },
+  {
+    "id": "CO-2026-013",
+    "applicationNo": "TN/CO/2026/000135",
+    "formCode": "EUR.1",
+    "ftaCode": "EVFTA",
+    "certificateType": "CO",
+    "receivingAgency": "Sở Công Thương tỉnh Tây Ninh",
+    "exporter": {
+      "name": "Công ty TNHH Sản xuất TM Tây Ninh",
+      "address": "KCN Xuân Phước, Dầu Tiếng, Tây Ninh",
+      "taxCode": "3702890234",
+      "country": "VN"
+    },
+    "consignee": {
+      "name": "Rotterdam Fresh Produce B.V.",
+      "address": "Rotterdam, Netherlands",
+      "country": "NL"
+    },
+    "transport": {
+      "departureDate": "2026-04-10",
+      "vessel": "Maersk Rotterdam",
+      "portLoading": "Cảng Cát Lái, HCM",
+      "portDischarge": "Rotterdam, Netherlands"
+    },
+    "items": [
+      {
+        "itemNumber": 1,
+        "hsCode": "08039090",
+        "description": "Chuối tươi",
+        "quantity": 20000,
+        "unit": "Kg",
+        "fobValue": 18000,
+        "originCriterion": "WO",
+        "countryOfOrigin": "VN",
+        "invoiceNumber": "INV-2026/0405",
+        "invoiceDate": "2026-04-05"
+      }
+    ],
+    "declaration": {
+      "exportingCountry": "VIET NAM",
+      "importingCountry": "NETHERLANDS",
+      "signDate": "2026-04-09",
+      "signerName": "Pham Thi G"
+    },
+    "status": "ISSUED",
+    "coNumber": "CO/TN/2026/000135",
+    "coIssuedDate": "2026-04-10",
+    "approvedBy": "Tran Thi B",
+    "reviewerNote": null,
+    "statusHistory": [
+      {
+        "from": null,
+        "to": "DRAFT",
+        "action": "CREATE",
+        "by": "Công ty TNHH Sản xuất TM Tây Ninh",
+        "at": "2026-04-05T08:00:00Z"
+      },
+      {
+        "from": "DRAFT",
+        "to": "SUBMITTED",
+        "action": "SUBMIT",
+        "by": "Công ty TNHH Sản xuất TM Tây Ninh",
+        "at": "2026-04-05T08:00:00Z"
+      },
+      {
+        "from": "SUBMITTED",
+        "to": "PROCESSING",
+        "action": "ACCEPT",
+        "by": "Tran Thi B",
+        "at": "2026-04-10T10:00:00Z"
+      },
+      {
+        "from": "PROCESSING",
+        "to": "APPROVED",
+        "action": "APPROVE",
+        "by": "Tran Thi B",
+        "at": "2026-04-10T10:00:00Z"
+      },
+      {
+        "from": "APPROVED",
+        "to": "ISSUED",
+        "action": "ISSUE",
+        "by": "Tran Thi B",
+        "at": "2026-04-10"
+      }
+    ],
+    "dataSource": "MANUAL",
+    "metadata": {},
+    "createdAt": "2026-04-05T08:00:00Z",
+    "updatedAt": "2026-04-10T10:00:00Z"
+  },
+  {
+    "id": "CO-2026-014",
+    "applicationNo": "TN/CO/2026/000136",
+    "formCode": "D",
+    "ftaCode": "ATIGA",
+    "certificateType": "CO",
+    "receivingAgency": "Sở Công Thương tỉnh Tây Ninh",
+    "exporter": {
+      "name": "Công ty TNHH Điện tử Tân Đông",
+      "address": "KCN Trảng Bàng, Tây Ninh",
+      "taxCode": "3702891313",
+      "country": "VN"
+    },
+    "consignee": {
+      "name": "Phnom Penh Electronics Co.",
+      "address": "Phnom Penh, Cambodia",
+      "country": "KH"
+    },
+    "transport": {
+      "departureDate": "2026-04-18",
+      "vessel": "Sailing",
+      "portLoading": "Cửa khẩu Mộc Bài",
+      "portDischarge": "Bavet, Cambodia"
+    },
+    "items": [
+      {
+        "itemNumber": 1,
+        "hsCode": "85044090",
+        "description": "Bộ chuyển đổi tĩnh",
+        "quantity": 2000,
+        "unit": "Cái",
+        "fobValue": 25000,
+        "originCriterion": "CTC",
+        "countryOfOrigin": "VN",
+        "invoiceNumber": "INV-2026/0412",
+        "invoiceDate": "2026-04-12"
+      }
+    ],
+    "declaration": {
+      "exportingCountry": "VIET NAM",
+      "importingCountry": "CAMBODIA",
+      "signDate": "2026-04-17",
+      "signerName": "Nguyen Van A"
+    },
+    "status": "ISSUED",
+    "coNumber": "CO/TN/2026/000136",
+    "coIssuedDate": "2026-04-18",
+    "approvedBy": "Tran Thi B",
+    "reviewerNote": null,
+    "statusHistory": [
+      {
+        "from": null,
+        "to": "DRAFT",
+        "action": "CREATE",
+        "by": "Công ty TNHH Điện tử Tân Đông",
+        "at": "2026-04-12T09:00:00Z"
+      },
+      {
+        "from": "DRAFT",
+        "to": "SUBMITTED",
+        "action": "SUBMIT",
+        "by": "Công ty TNHH Điện tử Tân Đông",
+        "at": "2026-04-12T09:00:00Z"
+      },
+      {
+        "from": "SUBMITTED",
+        "to": "PROCESSING",
+        "action": "ACCEPT",
+        "by": "Tran Thi B",
+        "at": "2026-04-18T10:00:00Z"
+      },
+      {
+        "from": "PROCESSING",
+        "to": "APPROVED",
+        "action": "APPROVE",
+        "by": "Tran Thi B",
+        "at": "2026-04-18T10:00:00Z"
+      },
+      {
+        "from": "APPROVED",
+        "to": "ISSUED",
+        "action": "ISSUE",
+        "by": "Tran Thi B",
+        "at": "2026-04-18"
+      }
+    ],
+    "dataSource": "MANUAL",
+    "metadata": {},
+    "createdAt": "2026-04-12T09:00:00Z",
+    "updatedAt": "2026-04-18T10:00:00Z"
+  },
+  {
+    "id": "CO-2026-015",
+    "applicationNo": "TN/CO/2026/000137",
+    "formCode": "AK",
+    "ftaCode": "AKFTA",
+    "certificateType": "CO",
+    "receivingAgency": "Sở Công Thương tỉnh Tây Ninh",
+    "exporter": {
+      "name": "Công ty TNHH Dược phẩm Tây Ninh",
+      "address": "KCN Long Đức, Trảng Bàng, Tây Ninh",
+      "taxCode": "3702891414",
+      "country": "VN"
+    },
+    "consignee": {
+      "name": "Korea Pharma Distribution",
+      "address": "Incheon, South Korea",
+      "country": "KR"
+    },
+    "transport": {
+      "departureDate": "2026-04-25",
+      "vessel": "Hanjin Incheon",
+      "portLoading": "Cảng Cát Lái, HCM",
+      "portDischarge": "Incheon, Korea"
+    },
+    "items": [
+      {
+        "itemNumber": 1,
+        "hsCode": "30049090",
+        "description": "Thuốc dạng viên nén",
+        "quantity": 500,
+        "unit": "Hộp",
+        "fobValue": 92000,
+        "originCriterion": "CTC",
+        "countryOfOrigin": "VN",
+        "invoiceNumber": "INV-2026/0420",
+        "invoiceDate": "2026-04-20"
+      }
+    ],
+    "declaration": {
+      "exportingCountry": "VIET NAM",
+      "importingCountry": "KOREA",
+      "signDate": "2026-04-24",
+      "signerName": "Nguyen Van E"
+    },
+    "status": "APPROVED",
+    "coNumber": "CO/TN/2026/000137",
+    "coIssuedDate": "2026-04-25",
+    "approvedBy": "Tran Thi B",
+    "reviewerNote": null,
+    "statusHistory": [
+      {
+        "from": null,
+        "to": "DRAFT",
+        "action": "CREATE",
+        "by": "Công ty TNHH Dược phẩm Tây Ninh",
+        "at": "2026-04-20T10:00:00Z"
+      },
+      {
+        "from": "DRAFT",
+        "to": "SUBMITTED",
+        "action": "SUBMIT",
+        "by": "Công ty TNHH Dược phẩm Tây Ninh",
+        "at": "2026-04-20T10:00:00Z"
+      },
+      {
+        "from": "SUBMITTED",
+        "to": "PROCESSING",
+        "action": "ACCEPT",
+        "by": "Tran Thi B",
+        "at": "2026-04-25T11:00:00Z"
+      },
+      {
+        "from": "PROCESSING",
+        "to": "APPROVED",
+        "action": "APPROVE",
+        "by": "Tran Thi B",
+        "at": "2026-04-25T11:00:00Z"
+      }
+    ],
+    "dataSource": "MANUAL",
+    "metadata": {},
+    "createdAt": "2026-04-20T10:00:00Z",
+    "updatedAt": "2026-04-25T11:00:00Z"
+  },
+  {
+    "id": "CO-2026-016",
+    "applicationNo": "TN/CO/2026/000138",
+    "formCode": "AHK",
+    "ftaCode": "AHKFTA",
+    "certificateType": "CO",
+    "receivingAgency": "Sở Công Thương tỉnh Tây Ninh",
+    "exporter": {
+      "name": "Công ty TNHH Giày Da Tây Ninh",
+      "address": "KCN Phước Đông, Gò Dầu, Tây Ninh",
+      "taxCode": "3702890789",
+      "country": "VN"
+    },
+    "consignee": {
+      "name": "Hong Kong Fashion Ltd.",
+      "address": "Hong Kong, China",
+      "country": "HK"
+    },
+    "transport": {
+      "departureDate": "2026-05-05",
+      "vessel": "COSCO Hong Kong",
+      "portLoading": "Cảng Cát Lái, HCM",
+      "portDischarge": "Hong Kong"
+    },
+    "items": [
+      {
+        "itemNumber": 1,
+        "hsCode": "64039100",
+        "description": "Giày dép da cổ ankle",
+        "quantity": 3500,
+        "unit": "Đôi",
+        "fobValue": 58000,
+        "originCriterion": "CTC",
+        "countryOfOrigin": "VN",
+        "invoiceNumber": "INV-2026/0428",
+        "invoiceDate": "2026-04-28"
+      }
+    ],
+    "declaration": {
+      "exportingCountry": "VIET NAM",
+      "importingCountry": "HONG KONG",
+      "signDate": "2026-05-04",
+      "signerName": "Pham Thi D"
+    },
+    "status": "ISSUED",
+    "coNumber": "CO/TN/2026/000138",
+    "coIssuedDate": "2026-05-05",
+    "approvedBy": "Tran Thi B",
+    "reviewerNote": null,
+    "statusHistory": [
+      {
+        "from": null,
+        "to": "DRAFT",
+        "action": "CREATE",
+        "by": "Công ty TNHH Giày Da Tây Ninh",
+        "at": "2026-04-28T08:00:00Z"
+      },
+      {
+        "from": "DRAFT",
+        "to": "SUBMITTED",
+        "action": "SUBMIT",
+        "by": "Công ty TNHH Giày Da Tây Ninh",
+        "at": "2026-04-28T08:00:00Z"
+      },
+      {
+        "from": "SUBMITTED",
+        "to": "PROCESSING",
+        "action": "ACCEPT",
+        "by": "Tran Thi B",
+        "at": "2026-05-05T10:00:00Z"
+      },
+      {
+        "from": "PROCESSING",
+        "to": "APPROVED",
+        "action": "APPROVE",
+        "by": "Tran Thi B",
+        "at": "2026-05-05T10:00:00Z"
+      },
+      {
+        "from": "APPROVED",
+        "to": "ISSUED",
+        "action": "ISSUE",
+        "by": "Tran Thi B",
+        "at": "2026-05-05"
+      }
+    ],
+    "dataSource": "MANUAL",
+    "metadata": {},
+    "createdAt": "2026-04-28T08:00:00Z",
+    "updatedAt": "2026-05-05T10:00:00Z"
+  },
+  {
+    "id": "CO-2026-017",
+    "applicationNo": "TN/CO/2026/000139",
+    "formCode": "CPTPP",
+    "ftaCode": "CPTPP",
+    "certificateType": "CO",
+    "receivingAgency": "Sở Công Thương tỉnh Tây Ninh",
+    "exporter": {
+      "name": "Công ty TNHH Năng lượng mặt trời Tây Ninh",
+      "address": "KCN Phước Đông, Gò Dầu, Tây Ninh",
+      "taxCode": "3702890890",
+      "country": "VN"
+    },
+    "consignee": {
+      "name": "Canadian Solar Solutions Inc.",
+      "address": "Toronto, Canada",
+      "country": "CA"
+    },
+    "transport": {
+      "departureDate": "2026-05-12",
+      "vessel": "Maersk Vancouver",
+      "portLoading": "Cảng Cát Lái, HCM",
+      "portDischarge": "Vancouver, Canada"
+    },
+    "items": [
+      {
+        "itemNumber": 1,
+        "hsCode": "85414010",
+        "description": "Tấm pin mặt trời quang điện",
+        "quantity": 8000,
+        "unit": "Cái",
+        "fobValue": 195000,
+        "originCriterion": "PE",
+        "countryOfOrigin": "VN",
+        "invoiceNumber": "INV-2026/0508",
+        "invoiceDate": "2026-05-08"
+      }
+    ],
+    "declaration": {
+      "exportingCountry": "VIET NAM",
+      "importingCountry": "CANADA",
+      "signDate": "2026-05-11",
+      "signerName": "Pham Thi D"
+    },
+    "status": "ISSUED",
+    "coNumber": "CO/TN/2026/000139",
+    "coIssuedDate": "2026-05-12",
+    "approvedBy": "Tran Thi B",
+    "reviewerNote": null,
+    "statusHistory": [
+      {
+        "from": null,
+        "to": "DRAFT",
+        "action": "CREATE",
+        "by": "Công ty TNHH Năng lượng mặt trời Tây Ninh",
+        "at": "2026-05-08T09:00:00Z"
+      },
+      {
+        "from": "DRAFT",
+        "to": "SUBMITTED",
+        "action": "SUBMIT",
+        "by": "Công ty TNHH Năng lượng mặt trời Tây Ninh",
+        "at": "2026-05-08T09:00:00Z"
+      },
+      {
+        "from": "SUBMITTED",
+        "to": "PROCESSING",
+        "action": "ACCEPT",
+        "by": "Tran Thi B",
+        "at": "2026-05-12T10:00:00Z"
+      },
+      {
+        "from": "PROCESSING",
+        "to": "APPROVED",
+        "action": "APPROVE",
+        "by": "Tran Thi B",
+        "at": "2026-05-12T10:00:00Z"
+      },
+      {
+        "from": "APPROVED",
+        "to": "ISSUED",
+        "action": "ISSUE",
+        "by": "Tran Thi B",
+        "at": "2026-05-12"
+      }
+    ],
+    "dataSource": "MANUAL",
+    "metadata": {},
+    "createdAt": "2026-05-08T09:00:00Z",
+    "updatedAt": "2026-05-12T10:00:00Z"
+  },
+  {
+    "id": "CO-2026-018",
+    "applicationNo": "TN/CO/2026/000140",
+    "formCode": "VJ",
+    "ftaCode": "VJEPA",
+    "certificateType": "CO",
+    "receivingAgency": "Sở Công Thương tỉnh Tây Ninh",
+    "exporter": {
+      "name": "Công ty TNHH Cơ khí.precision Tây Ninh",
+      "address": "KCN Trảng Bàng, Tây Ninh",
+      "taxCode": "3702890567",
+      "country": "VN"
+    },
+    "consignee": {
+      "name": "Osaka Machinery Co., Ltd",
+      "address": "Nagoya, Japan",
+      "country": "JP"
+    },
+    "transport": {
+      "departureDate": "2026-05-20",
+      "vessel": "NYK Nagoya",
+      "portLoading": "Cảng Cát Lái, HCM",
+      "portDischarge": "Nagoya, Japan"
+    },
+    "items": [
+      {
+        "itemNumber": 1,
+        "hsCode": "73269090",
+        "description": "Sản phẩm sắt thép CNC",
+        "quantity": 1500,
+        "unit": "Cái",
+        "fobValue": 72000,
+        "originCriterion": "CTC",
+        "countryOfOrigin": "VN",
+        "invoiceNumber": "INV-2026/0515",
+        "invoiceDate": "2026-05-15"
+      }
+    ],
+    "declaration": {
+      "exportingCountry": "VIET NAM",
+      "importingCountry": "JAPAN",
+      "signDate": "2026-05-19",
+      "signerName": "Tran Van F"
+    },
+    "status": "ISSUED",
+    "coNumber": "CO/TN/2026/000140",
+    "coIssuedDate": "2026-05-20",
+    "approvedBy": "Tran Thi B",
+    "reviewerNote": null,
+    "statusHistory": [
+      {
+        "from": null,
+        "to": "DRAFT",
+        "action": "CREATE",
+        "by": "Công ty TNHH Cơ khí.precision Tây Ninh",
+        "at": "2026-05-15T08:00:00Z"
+      },
+      {
+        "from": "DRAFT",
+        "to": "SUBMITTED",
+        "action": "SUBMIT",
+        "by": "Công ty TNHH Cơ khí.precision Tây Ninh",
+        "at": "2026-05-15T08:00:00Z"
+      },
+      {
+        "from": "SUBMITTED",
+        "to": "PROCESSING",
+        "action": "ACCEPT",
+        "by": "Tran Thi B",
+        "at": "2026-05-20T10:00:00Z"
+      },
+      {
+        "from": "PROCESSING",
+        "to": "APPROVED",
+        "action": "APPROVE",
+        "by": "Tran Thi B",
+        "at": "2026-05-20T10:00:00Z"
+      },
+      {
+        "from": "APPROVED",
+        "to": "ISSUED",
+        "action": "ISSUE",
+        "by": "Tran Thi B",
+        "at": "2026-05-20"
+      }
+    ],
+    "dataSource": "MANUAL",
+    "metadata": {},
+    "createdAt": "2026-05-15T08:00:00Z",
+    "updatedAt": "2026-05-20T10:00:00Z"
+  },
+  {
+    "id": "CO-2026-019",
+    "applicationNo": "TN/CO/2026/000141",
+    "formCode": "D",
+    "ftaCode": "ATIGA",
+    "certificateType": "CO",
+    "receivingAgency": "Sở Công Thương tỉnh Tây Ninh",
+    "exporter": {
+      "name": "Công ty CP Dệt may Tây Ninh",
+      "address": "KCN Long Đức, Trảng Bàng, Tây Ninh",
+      "taxCode": "3702890456",
+      "country": "VN"
+    },
+    "consignee": {
+      "name": "Siem Reap Garment Co.",
+      "address": "Siem Reap, Cambodia",
+      "country": "KH"
+    },
+    "transport": {
+      "departureDate": "2026-05-28",
+      "vessel": "Sailing",
+      "portLoading": "Cửa khẩu Xa Mát",
+      "portDischarge": "Tây Ninh, Cambodia"
+    },
+    "items": [
+      {
+        "itemNumber": 1,
+        "hsCode": "61091000",
+        "description": "Áo thun cotton 100%",
+        "quantity": 15000,
+        "unit": "Cái",
+        "fobValue": 52000,
+        "originCriterion": "CTC",
+        "countryOfOrigin": "VN",
+        "invoiceNumber": "INV-2026/0522",
+        "invoiceDate": "2026-05-22"
+      }
+    ],
+    "declaration": {
+      "exportingCountry": "VIET NAM",
+      "importingCountry": "CAMBODIA",
+      "signDate": "2026-05-27",
+      "signerName": "Le Van C"
+    },
+    "status": "ISSUED",
+    "coNumber": "CO/TN/2026/000141",
+    "coIssuedDate": "2026-05-28",
+    "approvedBy": "Tran Thi B",
+    "reviewerNote": null,
+    "statusHistory": [
+      {
+        "from": null,
+        "to": "DRAFT",
+        "action": "CREATE",
+        "by": "Công ty CP Dệt may Tây Ninh",
+        "at": "2026-05-22T09:00:00Z"
+      },
+      {
+        "from": "DRAFT",
+        "to": "SUBMITTED",
+        "action": "SUBMIT",
+        "by": "Công ty CP Dệt may Tây Ninh",
+        "at": "2026-05-22T09:00:00Z"
+      },
+      {
+        "from": "SUBMITTED",
+        "to": "PROCESSING",
+        "action": "ACCEPT",
+        "by": "Tran Thi B",
+        "at": "2026-05-28T10:00:00Z"
+      },
+      {
+        "from": "PROCESSING",
+        "to": "APPROVED",
+        "action": "APPROVE",
+        "by": "Tran Thi B",
+        "at": "2026-05-28T10:00:00Z"
+      },
+      {
+        "from": "APPROVED",
+        "to": "ISSUED",
+        "action": "ISSUE",
+        "by": "Tran Thi B",
+        "at": "2026-05-28"
+      }
+    ],
+    "dataSource": "MANUAL",
+    "metadata": {},
+    "createdAt": "2026-05-22T09:00:00Z",
+    "updatedAt": "2026-05-28T10:00:00Z"
+  },
+  {
+    "id": "CO-2026-020",
+    "applicationNo": "TN/CO/2026/000142",
+    "formCode": "EUR.1",
+    "ftaCode": "EVFTA",
+    "certificateType": "CO",
+    "receivingAgency": "Sở Công Thương tỉnh Tây Ninh",
+    "exporter": {
+      "name": "Công ty CP Thức ăn chăn nuôi Tây Ninh",
+      "address": "KCN Hiệp Đức, Hòa Thành, Tây Ninh",
+      "taxCode": "3702891011",
+      "country": "VN"
+    },
+    "consignee": {
+      "name": "Paris Gourmet SAS",
+      "address": "Paris, France",
+      "country": "FR"
+    },
+    "transport": {
+      "departureDate": "2026-06-05",
+      "vessel": "Maersk Le Havre",
+      "portLoading": "Cảng Cát Lái, HCM",
+      "portDischarge": "Le Havre, France"
+    },
+    "items": [
+      {
+        "itemNumber": 1,
+        "hsCode": "18063200",
+        "description": "Sô cô la không nhân",
+        "quantity": 6000,
+        "unit": "Kg",
+        "fobValue": 42000,
+        "originCriterion": "WO",
+        "countryOfOrigin": "VN",
+        "invoiceNumber": "INV-2026/0530",
+        "invoiceDate": "2026-05-30"
+      }
+    ],
+    "declaration": {
+      "exportingCountry": "VIET NAM",
+      "importingCountry": "FRANCE",
+      "signDate": "2026-06-04",
+      "signerName": "Pham Thi G"
+    },
+    "status": "ISSUED",
+    "coNumber": "CO/TN/2026/000142",
+    "coIssuedDate": "2026-06-05",
+    "approvedBy": "Tran Thi B",
+    "reviewerNote": null,
+    "statusHistory": [
+      {
+        "from": null,
+        "to": "DRAFT",
+        "action": "CREATE",
+        "by": "Công ty CP Thức ăn chăn nuôi Tây Ninh",
+        "at": "2026-05-30T08:00:00Z"
+      },
+      {
+        "from": "DRAFT",
+        "to": "SUBMITTED",
+        "action": "SUBMIT",
+        "by": "Công ty CP Thức ăn chăn nuôi Tây Ninh",
+        "at": "2026-05-30T08:00:00Z"
+      },
+      {
+        "from": "SUBMITTED",
+        "to": "PROCESSING",
+        "action": "ACCEPT",
+        "by": "Tran Thi B",
+        "at": "2026-06-05T10:00:00Z"
+      },
+      {
+        "from": "PROCESSING",
+        "to": "APPROVED",
+        "action": "APPROVE",
+        "by": "Tran Thi B",
+        "at": "2026-06-05T10:00:00Z"
+      },
+      {
+        "from": "APPROVED",
+        "to": "ISSUED",
+        "action": "ISSUE",
+        "by": "Tran Thi B",
+        "at": "2026-06-05"
+      }
+    ],
+    "dataSource": "MANUAL",
+    "metadata": {},
+    "createdAt": "2026-05-30T08:00:00Z",
+    "updatedAt": "2026-06-05T10:00:00Z"
+  },
+  {
+    "id": "CO-2026-021",
+    "applicationNo": "TN/CO/2026/000143",
+    "formCode": "X",
+    "ftaCode": "VNCAMFTA",
+    "certificateType": "CO",
+    "receivingAgency": "Sở Công Thương tỉnh Tây Ninh",
+    "exporter": {
+      "name": "Công ty TNHH Gỗ Tây Ninh",
+      "address": "Xã Trung Ban, Trảng Bàng, Tây Ninh",
+      "taxCode": "3702891212",
+      "country": "VN"
+    },
+    "consignee": {
+      "name": "Phnom Penh Furniture Co.",
+      "address": "Phnom Penh, Cambodia",
+      "country": "KH"
+    },
+    "transport": {
+      "departureDate": "2026-06-12",
+      "vessel": "Sailing",
+      "portLoading": "Cửa khẩu Mộc Bài",
+      "portDischarge": "Bavet, Cambodia"
+    },
+    "items": [
+      {
+        "itemNumber": 1,
+        "hsCode": "94036000",
+        "description": "Bàn ghế gỗ nội thất",
+        "quantity": 300,
+        "unit": "Cái",
+        "fobValue": 55000,
+        "originCriterion": "WO",
+        "countryOfOrigin": "VN",
+        "invoiceNumber": "INV-2026/0608",
+        "invoiceDate": "2026-06-08"
+      }
+    ],
+    "declaration": {
+      "exportingCountry": "VIET NAM",
+      "importingCountry": "CAMBODIA",
+      "signDate": "2026-06-11",
+      "signerName": "Tran Van F"
+    },
+    "status": "ISSUED",
+    "coNumber": "CO/TN/2026/000143",
+    "coIssuedDate": "2026-06-12",
+    "approvedBy": "Tran Thi B",
+    "reviewerNote": null,
+    "statusHistory": [
+      {
+        "from": null,
+        "to": "DRAFT",
+        "action": "CREATE",
+        "by": "Công ty TNHH Gỗ Tây Ninh",
+        "at": "2026-06-08T09:00:00Z"
+      },
+      {
+        "from": "DRAFT",
+        "to": "SUBMITTED",
+        "action": "SUBMIT",
+        "by": "Công ty TNHH Gỗ Tây Ninh",
+        "at": "2026-06-08T09:00:00Z"
+      },
+      {
+        "from": "SUBMITTED",
+        "to": "PROCESSING",
+        "action": "ACCEPT",
+        "by": "Tran Thi B",
+        "at": "2026-06-12T10:00:00Z"
+      },
+      {
+        "from": "PROCESSING",
+        "to": "APPROVED",
+        "action": "APPROVE",
+        "by": "Tran Thi B",
+        "at": "2026-06-12T10:00:00Z"
+      },
+      {
+        "from": "APPROVED",
+        "to": "ISSUED",
+        "action": "ISSUE",
+        "by": "Tran Thi B",
+        "at": "2026-06-12"
+      }
+    ],
+    "dataSource": "MANUAL",
+    "metadata": {},
+    "createdAt": "2026-06-08T09:00:00Z",
+    "updatedAt": "2026-06-12T10:00:00Z"
+  },
+  {
+    "id": "CO-2026-022",
+    "applicationNo": "TN/CO/2026/000144",
+    "formCode": "AK",
+    "ftaCode": "AKFTA",
+    "certificateType": "CO",
+    "receivingAgency": "Sở Công Thương tỉnh Tây Ninh",
+    "exporter": {
+      "name": "Công ty TNHH Giày Da Tây Ninh",
+      "address": "KCN Phước Đông, Gò Dầu, Tây Ninh",
+      "taxCode": "3702890789",
+      "country": "VN"
+    },
+    "consignee": {
+      "name": "Daegu Footwear Co., Ltd",
+      "address": "Daegu, South Korea",
+      "country": "KR"
+    },
+    "transport": {
+      "departureDate": "2026-06-22",
+      "vessel": "Evergreen Daegu",
+      "portLoading": "Cảng Cát Lái, HCM",
+      "portDischarge": "Busan, Korea"
+    },
+    "items": [
+      {
+        "itemNumber": 1,
+        "hsCode": "64039900",
+        "description": "Giày dép da loại khác",
+        "quantity": 6000,
+        "unit": "Đôi",
+        "fobValue": 98000,
+        "originCriterion": "RVC",
+        "countryOfOrigin": "VN",
+        "rvcPercentage": 62,
+        "invoiceNumber": "INV-2026/0618",
+        "invoiceDate": "2026-06-18"
+      }
+    ],
+    "declaration": {
+      "exportingCountry": "VIET NAM",
+      "importingCountry": "KOREA",
+      "signDate": "2026-06-21",
+      "signerName": "Nguyen Van E"
+    },
+    "status": "ISSUED",
+    "coNumber": "CO/TN/2026/000144",
+    "coIssuedDate": "2026-06-22",
+    "approvedBy": "Tran Thi B",
+    "reviewerNote": null,
+    "statusHistory": [
+      {
+        "from": null,
+        "to": "DRAFT",
+        "action": "CREATE",
+        "by": "Công ty TNHH Giày Da Tây Ninh",
+        "at": "2026-06-18T10:00:00Z"
+      },
+      {
+        "from": "DRAFT",
+        "to": "SUBMITTED",
+        "action": "SUBMIT",
+        "by": "Công ty TNHH Giày Da Tây Ninh",
+        "at": "2026-06-18T10:00:00Z"
+      },
+      {
+        "from": "SUBMITTED",
+        "to": "PROCESSING",
+        "action": "ACCEPT",
+        "by": "Tran Thi B",
+        "at": "2026-06-22T11:00:00Z"
+      },
+      {
+        "from": "PROCESSING",
+        "to": "APPROVED",
+        "action": "APPROVE",
+        "by": "Tran Thi B",
+        "at": "2026-06-22T11:00:00Z"
+      },
+      {
+        "from": "APPROVED",
+        "to": "ISSUED",
+        "action": "ISSUE",
+        "by": "Tran Thi B",
+        "at": "2026-06-22"
+      }
+    ],
+    "dataSource": "MANUAL",
+    "metadata": {},
+    "createdAt": "2026-06-18T10:00:00Z",
+    "updatedAt": "2026-06-22T11:00:00Z"
+  },
+  {
+    "id": "CO-2026-023",
+    "applicationNo": "TN/CO/2026/000145",
+    "formCode": "D",
+    "ftaCode": "ATIGA",
+    "certificateType": "CO",
+    "receivingAgency": "Sở Công Thương tỉnh Tây Ninh",
+    "exporter": {
+      "name": "Công ty TNHH Cao su Tây Ninh",
+      "address": "KCN Trảng Bàng, tỉnh Tây Ninh",
+      "taxCode": "3702890123",
+      "country": "VN"
+    },
+    "consignee": {
+      "name": "Bangkok Rubber Trading Co.",
+      "address": "Bangkok, Thailand",
+      "country": "TH"
+    },
+    "transport": {
+      "departureDate": "2026-06-30",
+      "vessel": "MSC Bangkok",
+      "portLoading": "Cảng Cát Lái, HCM",
+      "portDischarge": "Bangkok, Thailand"
+    },
+    "items": [
+      {
+        "itemNumber": 1,
+        "hsCode": "40111000",
+        "description": "Lốp xe ô tô mới",
+        "quantity": 2000,
+        "unit": "Cái",
+        "fobValue": 125000,
+        "originCriterion": "WO",
+        "countryOfOrigin": "VN",
+        "invoiceNumber": "INV-2026/0625",
+        "invoiceDate": "2026-06-25"
+      }
+    ],
+    "declaration": {
+      "exportingCountry": "VIET NAM",
+      "importingCountry": "THAILAND",
+      "signDate": "2026-06-29",
+      "signerName": "Nguyen Van A"
+    },
+    "status": "APPROVED",
+    "coNumber": "CO/TN/2026/000145",
+    "coIssuedDate": null,
+    "approvedBy": "Tran Thi B",
+    "reviewerNote": null,
+    "statusHistory": [
+      {
+        "from": null,
+        "to": "DRAFT",
+        "action": "CREATE",
+        "by": "Công ty TNHH Cao su Tây Ninh",
+        "at": "2026-06-25T08:00:00Z"
+      },
+      {
+        "from": "DRAFT",
+        "to": "SUBMITTED",
+        "action": "SUBMIT",
+        "by": "Công ty TNHH Cao su Tây Ninh",
+        "at": "2026-06-25T08:00:00Z"
+      },
+      {
+        "from": "SUBMITTED",
+        "to": "PROCESSING",
+        "action": "ACCEPT",
+        "by": "Tran Thi B",
+        "at": "2026-06-30T10:00:00Z"
+      },
+      {
+        "from": "PROCESSING",
+        "to": "APPROVED",
+        "action": "APPROVE",
+        "by": "Tran Thi B",
+        "at": "2026-06-30T10:00:00Z"
+      }
+    ],
+    "dataSource": "MANUAL",
+    "metadata": {},
+    "createdAt": "2026-06-25T08:00:00Z",
+    "updatedAt": "2026-06-30T10:00:00Z"
+  },
+  {
+    "id": "CO-2026-024",
+    "applicationNo": "TN/CO/2026/000146",
+    "formCode": "E",
+    "ftaCode": "ACFTA",
+    "certificateType": "CO",
+    "receivingAgency": "Sở Công Thương tỉnh Tây Ninh",
+    "exporter": {
+      "name": "Công ty TNHH Điện tử Tân Đông",
+      "address": "KCN Trảng Bàng, Tây Ninh",
+      "taxCode": "3702891313",
+      "country": "VN"
+    },
+    "consignee": {
+      "name": "Beijing Electronics Import Co.",
+      "address": "Beijing, China",
+      "country": "CN"
+    },
+    "transport": {
+      "departureDate": "2026-07-08",
+      "vessel": "COSCO Beijing",
+      "portLoading": "Cảng Cát Lái, HCM",
+      "portDischarge": "Tianjin, China"
+    },
+    "items": [
+      {
+        "itemNumber": 1,
+        "hsCode": "85044090",
+        "description": "Bộ chuyển đổi tĩnh công suất lớn",
+        "quantity": 3000,
+        "unit": "Cái",
+        "fobValue": 65000,
+        "originCriterion": "CTC",
+        "countryOfOrigin": "VN",
+        "invoiceNumber": "INV-2026/0702",
+        "invoiceDate": "2026-07-02"
+      }
+    ],
+    "declaration": {
+      "exportingCountry": "VIET NAM",
+      "importingCountry": "CHINA",
+      "signDate": "2026-07-07",
+      "signerName": "Le Van C"
+    },
+    "status": "SUBMITTED",
+    "coNumber": null,
+    "coIssuedDate": null,
+    "approvedBy": null,
+    "reviewerNote": null,
+    "statusHistory": [
+      {
+        "from": null,
+        "to": "DRAFT",
+        "action": "CREATE",
+        "by": "Công ty TNHH Điện tử Tân Đông",
+        "at": "2026-07-02T09:00:00Z"
+      },
+      {
+        "from": "DRAFT",
+        "to": "SUBMITTED",
+        "action": "SUBMIT",
+        "by": "Công ty TNHH Điện tử Tân Đông",
+        "at": "2026-07-02T09:00:00Z"
+      }
+    ],
+    "dataSource": "MANUAL",
+    "metadata": {},
+    "createdAt": "2026-07-02T09:00:00Z",
+    "updatedAt": "2026-07-08T10:00:00Z"
+  },
+  {
+    "id": "CO-2026-025",
+    "applicationNo": "TN/CO/2026/000147",
+    "formCode": "CPTPP",
+    "ftaCode": "CPTPP",
+    "certificateType": "CO",
+    "receivingAgency": "Sở Công Thương tỉnh Tây Ninh",
+    "exporter": {
+      "name": "Công ty CP Dệt may Tây Ninh",
+      "address": "KCN Long Đức, Trảng Bàng, Tây Ninh",
+      "taxCode": "3702890456",
+      "country": "VN"
+    },
+    "consignee": {
+      "name": "Mexico Textil S.A. de C.V.",
+      "address": "Mexico City, Mexico",
+      "country": "MX"
+    },
+    "transport": {
+      "departureDate": "2026-07-15",
+      "vessel": "Maersk Manzanillo",
+      "portLoading": "Cảng Cát Lái, HCM",
+      "portDischarge": "Manzanillo, Mexico"
+    },
+    "items": [
+      {
+        "itemNumber": 1,
+        "hsCode": "62034300",
+        "description": "Quần nam tổng hợp polyester",
+        "quantity": 12000,
+        "unit": "Cái",
+        "fobValue": 56000,
+        "originCriterion": "CTC",
+        "countryOfOrigin": "VN",
+        "invoiceNumber": "INV-2026/0710",
+        "invoiceDate": "2026-07-10"
+      }
+    ],
+    "declaration": {
+      "exportingCountry": "VIET NAM",
+      "importingCountry": "MEXICO",
+      "signDate": "2026-07-14",
+      "signerName": "Le Van C"
+    },
+    "status": "PROCESSING",
+    "coNumber": null,
+    "coIssuedDate": null,
+    "approvedBy": null,
+    "reviewerNote": null,
+    "statusHistory": [
+      {
+        "from": null,
+        "to": "DRAFT",
+        "action": "CREATE",
+        "by": "Công ty CP Dệt may Tây Ninh",
+        "at": "2026-07-10T08:00:00Z"
+      },
+      {
+        "from": "DRAFT",
+        "to": "SUBMITTED",
+        "action": "SUBMIT",
+        "by": "Công ty CP Dệt may Tây Ninh",
+        "at": "2026-07-10T08:00:00Z"
+      },
+      {
+        "from": "SUBMITTED",
+        "to": "PROCESSING",
+        "action": "ACCEPT",
+        "by": "Chuyên viên C/O",
+        "at": "2026-07-15T09:00:00Z"
+      }
+    ],
+    "dataSource": "MANUAL",
+    "metadata": {},
+    "createdAt": "2026-07-10T08:00:00Z",
+    "updatedAt": "2026-07-15T09:00:00Z"
+  },
+  {
+    "id": "CO-2026-026",
+    "applicationNo": "TN/CO/2026/000148",
+    "formCode": "AI",
+    "ftaCode": "AIFTA",
+    "certificateType": "CO",
+    "receivingAgency": "Sở Công Thương tỉnh Tây Ninh",
+    "exporter": {
+      "name": "Công ty TNHH Sản xuất TM Tây Ninh",
+      "address": "KCN Xuân Phước, Dầu Tiếng, Tây Ninh",
+      "taxCode": "3702890234",
+      "country": "VN"
+    },
+    "consignee": {
+      "name": "Mumbai Import House Pvt. Ltd",
+      "address": "Mumbai, India",
+      "country": "IN"
+    },
+    "transport": {
+      "departureDate": "2026-07-22",
+      "vessel": "Evergreen Mumbai",
+      "portLoading": "Cảng Cát Lái, HCM",
+      "portDischarge": "Mumbai, India"
+    },
+    "items": [
+      {
+        "itemNumber": 1,
+        "hsCode": "61099000",
+        "description": "Áo thun sợi polyester",
+        "quantity": 20000,
+        "unit": "Cái",
+        "fobValue": 38000,
+        "originCriterion": "CTC",
+        "countryOfOrigin": "VN",
+        "invoiceNumber": "INV-2026/0718",
+        "invoiceDate": "2026-07-18"
+      }
+    ],
+    "declaration": {
+      "exportingCountry": "VIET NAM",
+      "importingCountry": "INDIA",
+      "signDate": "2026-07-21",
+      "signerName": "Nguyen Van A"
+    },
+    "status": "SUBMITTED",
+    "coNumber": null,
+    "coIssuedDate": null,
+    "approvedBy": null,
+    "reviewerNote": null,
+    "statusHistory": [
+      {
+        "from": null,
+        "to": "DRAFT",
+        "action": "CREATE",
+        "by": "Công ty TNHH Sản xuất TM Tây Ninh",
+        "at": "2026-07-18T10:00:00Z"
+      },
+      {
+        "from": "DRAFT",
+        "to": "SUBMITTED",
+        "action": "SUBMIT",
+        "by": "Công ty TNHH Sản xuất TM Tây Ninh",
+        "at": "2026-07-18T10:00:00Z"
+      }
+    ],
+    "dataSource": "MANUAL",
+    "metadata": {},
+    "createdAt": "2026-07-18T10:00:00Z",
+    "updatedAt": "2026-07-22T11:00:00Z"
+  },
+  {
+    "id": "CO-2026-027",
+    "applicationNo": "TN/CO/2026/000149",
+    "formCode": "E",
+    "ftaCode": "ACFTA",
+    "certificateType": "CO",
+    "receivingAgency": "Sở Công Thương tỉnh Tây Ninh",
+    "exporter": {
+      "name": "Công ty TNHH Giày Da Tây Ninh",
+      "address": "KCN Phước Đông, Gò Dầu, Tây Ninh",
+      "taxCode": "3702890789",
+      "country": "VN"
+    },
+    "consignee": {
+      "name": "Guangzhou Footwear Ltd.",
+      "address": "Guangzhou, China",
+      "country": "CN"
+    },
+    "transport": {
+      "departureDate": "2026-08-01",
+      "vessel": "COSCO Guangzhou",
+      "portLoading": "Cảng Cát Lái, HCM",
+      "portDischarge": "Guangzhou, China"
+    },
+    "items": [
+      {
+        "itemNumber": 1,
+        "hsCode": "64039100",
+        "description": "Giày thể thao da",
+        "quantity": 8000,
+        "unit": "Đôi",
+        "fobValue": 135000,
+        "originCriterion": "CTC",
+        "countryOfOrigin": "VN",
+        "invoiceNumber": "INV-2026/0728",
+        "invoiceDate": "2026-07-28"
+      }
+    ],
+    "declaration": {
+      "exportingCountry": "VIET NAM",
+      "importingCountry": "CHINA",
+      "signDate": "2026-07-31",
+      "signerName": "Pham Thi D"
+    },
+    "status": "PROCESSING",
+    "coNumber": null,
+    "coIssuedDate": null,
+    "approvedBy": null,
+    "reviewerNote": null,
+    "statusHistory": [
+      {
+        "from": null,
+        "to": "DRAFT",
+        "action": "CREATE",
+        "by": "Công ty TNHH Giày Da Tây Ninh",
+        "at": "2026-07-28T08:00:00Z"
+      },
+      {
+        "from": "DRAFT",
+        "to": "SUBMITTED",
+        "action": "SUBMIT",
+        "by": "Công ty TNHH Giày Da Tây Ninh",
+        "at": "2026-07-28T08:00:00Z"
+      },
+      {
+        "from": "SUBMITTED",
+        "to": "PROCESSING",
+        "action": "ACCEPT",
+        "by": "Chuyên viên C/O",
+        "at": "2026-08-01T09:00:00Z"
+      }
+    ],
+    "dataSource": "MANUAL",
+    "metadata": {},
+    "createdAt": "2026-07-28T08:00:00Z",
+    "updatedAt": "2026-08-01T09:00:00Z"
+  },
+  {
+    "id": "CO-2026-028",
+    "applicationNo": "TN/CO/2026/000150",
+    "formCode": "RCEP",
+    "ftaCode": "RCEP",
+    "certificateType": "CO",
+    "receivingAgency": "Sở Công Thương tỉnh Tây Ninh",
+    "exporter": {
+      "name": "Công ty TNHH Năng lượng mặt trời Tây Ninh",
+      "address": "KCN Phước Đông, Gò Dầu, Tây Ninh",
+      "taxCode": "3702890890",
+      "country": "VN"
+    },
+    "consignee": {
+      "name": "Sydney Solar Solutions Pty",
+      "address": "Melbourne, Australia",
+      "country": "AU"
+    },
+    "transport": {
+      "departureDate": "2026-08-10",
+      "vessel": "MSC Melbourne",
+      "portLoading": "Cảng Cát Lái, HCM",
+      "portDischarge": "Melbourne, Australia"
+    },
+    "items": [
+      {
+        "itemNumber": 1,
+        "hsCode": "85414010",
+        "description": "Tấm pin mặt trời quang điện",
+        "quantity": 6000,
+        "unit": "Cái",
+        "fobValue": 145000,
+        "originCriterion": "PE",
+        "countryOfOrigin": "VN",
+        "invoiceNumber": "INV-2026/0805",
+        "invoiceDate": "2026-08-05"
+      }
+    ],
+    "declaration": {
+      "exportingCountry": "VIET NAM",
+      "importingCountry": "AUSTRALIA",
+      "signDate": "2026-08-09",
+      "signerName": "Pham Thi D"
+    },
+    "status": "DRAFT",
+    "coNumber": null,
+    "coIssuedDate": null,
+    "approvedBy": null,
+    "reviewerNote": null,
+    "statusHistory": [
+      {
+        "from": null,
+        "to": "DRAFT",
+        "action": "CREATE",
+        "by": "Công ty TNHH Năng lượng mặt trời Tây Ninh",
+        "at": "2026-08-05T09:00:00Z"
+      }
+    ],
+    "dataSource": "MANUAL",
+    "metadata": {},
+    "createdAt": "2026-08-05T09:00:00Z",
+    "updatedAt": "2026-08-10T10:00:00Z"
+  },
+  {
+    "id": "CO-2026-029",
+    "applicationNo": "TN/CO/2026/000151",
+    "formCode": "D",
+    "ftaCode": "ATIGA",
+    "certificateType": "CO",
+    "receivingAgency": "Sở Công Thương tỉnh Tây Ninh",
+    "exporter": {
+      "name": "Công ty TNHH Cao su Tây Ninh",
+      "address": "KCN Trảng Bàng, tỉnh Tây Ninh",
+      "taxCode": "3702890123",
+      "country": "VN"
+    },
+    "consignee": {
+      "name": "Jakarta Rubber Supply PT",
+      "address": "Surabaya, Indonesia",
+      "country": "ID"
+    },
+    "transport": {
+      "departureDate": "2026-08-18",
+      "vessel": "Maersk Surabaya",
+      "portLoading": "Cảng Cát Lái, HCM",
+      "portDischarge": "Surabaya, Indonesia"
+    },
+    "items": [
+      {
+        "itemNumber": 1,
+        "hsCode": "40012100",
+        "description": "Cao su thiên nhiên RSS1",
+        "quantity": 60000,
+        "unit": "Kg",
+        "fobValue": 90000,
+        "originCriterion": "WO",
+        "countryOfOrigin": "VN",
+        "invoiceNumber": "INV-2026/0812",
+        "invoiceDate": "2026-08-12"
+      }
+    ],
+    "declaration": {
+      "exportingCountry": "VIET NAM",
+      "importingCountry": "INDONESIA",
+      "signDate": "2026-08-17",
+      "signerName": "Nguyen Van A"
+    },
+    "status": "REJECTED",
+    "coNumber": null,
+    "coIssuedDate": null,
+    "approvedBy": null,
+    "reviewerNote": null,
+    "statusHistory": [
+      {
+        "from": null,
+        "to": "DRAFT",
+        "action": "CREATE",
+        "by": "Công ty TNHH Cao su Tây Ninh",
+        "at": "2026-08-12T08:00:00Z"
+      },
+      {
+        "from": "DRAFT",
+        "to": "SUBMITTED",
+        "action": "SUBMIT",
+        "by": "Công ty TNHH Cao su Tây Ninh",
+        "at": "2026-08-12T08:00:00Z"
+      },
+      {
+        "from": "SUBMITTED",
+        "to": "PROCESSING",
+        "action": "ACCEPT",
+        "by": "Chuyên viên C/O",
+        "at": "2026-08-18T15:00:00Z"
+      },
+      {
+        "from": "PROCESSING",
+        "to": "REJECTED",
+        "action": "REJECT",
+        "by": "Chuyên viên C/O",
+        "at": "2026-08-18T15:00:00Z",
+        "note": "Không đáp ứng quy tắc xuất xứ"
+      }
+    ],
+    "dataSource": "MANUAL",
+    "metadata": {
+      "rejectReason": "Thiếu chứng từ chứng minh xuất xứ"
+    },
+    "createdAt": "2026-08-12T08:00:00Z",
+    "updatedAt": "2026-08-18T15:00:00Z"
+  },
+  {
+    "id": "CO-2026-030",
+    "applicationNo": "TN/CO/2026/000152",
+    "formCode": "EUR.UK",
+    "ftaCode": "UKVFTA",
+    "certificateType": "CO",
+    "receivingAgency": "Sở Công Thương tỉnh Tây Ninh",
+    "exporter": {
+      "name": "Công ty CP Thức ăn chăn nuôi Tây Ninh",
+      "address": "KCN Hiệp Đức, Hòa Thành, Tây Ninh",
+      "taxCode": "3702891011",
+      "country": "VN"
+    },
+    "consignee": {
+      "name": "London Food Import Ltd",
+      "address": "London, United Kingdom",
+      "country": "GB"
+    },
+    "transport": {
+      "departureDate": "2026-08-25",
+      "vessel": "Maersk Felixstowe",
+      "portLoading": "Cảng Cát Lái, HCM",
+      "portDischarge": "Felixstowe, UK"
+    },
+    "items": [
+      {
+        "itemNumber": 1,
+        "hsCode": "22021000",
+        "description": "Nước giải khát có gas",
+        "quantity": 15000,
+        "unit": "Thùng",
+        "fobValue": 68000,
+        "originCriterion": "WO",
+        "countryOfOrigin": "VN",
+        "invoiceNumber": "INV-2026/0820",
+        "invoiceDate": "2026-08-20"
+      }
+    ],
+    "declaration": {
+      "exportingCountry": "VIET NAM",
+      "importingCountry": "UNITED KINGDOM",
+      "signDate": "2026-08-24",
+      "signerName": "Pham Thi G"
+    },
+    "status": "DRAFT",
+    "coNumber": null,
+    "coIssuedDate": null,
+    "approvedBy": null,
+    "reviewerNote": null,
+    "statusHistory": [
+      {
+        "from": null,
+        "to": "DRAFT",
+        "action": "CREATE",
+        "by": "Công ty CP Thức ăn chăn nuôi Tây Ninh",
+        "at": "2026-08-20T10:00:00Z"
+      }
+    ],
+    "dataSource": "MANUAL",
+    "metadata": {},
+    "createdAt": "2026-08-20T10:00:00Z",
+    "updatedAt": "2026-08-25T11:00:00Z"
+  }
+]

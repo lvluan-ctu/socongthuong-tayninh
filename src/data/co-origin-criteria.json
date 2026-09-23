@@ -1,0 +1,101 @@
+[
+  {
+    "code": "WO",
+    "name": "Wholly Obtained",
+    "nameVi": "Xuất xứ thuần túy",
+    "description": "Hàng hóa được sản xuất hoặc thu hoạch hoàn toàn tại nước xuất khẩu",
+    "examples": ["Nông sản trồng và thu hoạch tại VN", "Khoáng sản khai thác tại VN", "Cá đánh bắt tại vùng biển VN"],
+    "appliesTo": ["ATIGA", "ACFTA", "AKFTA", "CPTPP", "EVFTA", "RCEP", "AIFTA", "AANZFTA", "AJCEP", "VJEPA", "EAEU", "VCFTA", "UKVFTA", "VNCU", "VIFTA", "VNCAMFTA", "VNLAF"]
+  },
+  {
+    "code": "PE",
+    "name": "Produced Entirely",
+    "nameVi": "Sản xuất hoàn toàn",
+    "description": "Hàng hóa được sản xuất hoàn toàn từ nguyên liệu có xuất xứ trong khu vực FTA",
+    "examples": ["Sử dụng 100% nguyên liệu có xuất xứ ASEAN để sản xuất thành phẩm"],
+    "appliesTo": ["CPTPP", "EVFTA", "RCEP", "AANZFTA"]
+  },
+  {
+    "code": "FE",
+    "name": "Factory Export",
+    "nameVi": "Xuất khẩu từ nhà máy",
+    "description": "Hàng hóa xuất khẩu trực tiếp từ nhà máy sản xuất",
+    "examples": [],
+    "appliesTo": ["ATIGA", "ACFTA"]
+  },
+  {
+    "code": "CTH",
+    "name": "Change in Tariff Heading",
+    "nameVi": "Chuyển đổi Nhóm HS",
+    "description": "Nguyên liệu không có xuất xứ phải trải qua quá trình sản xuất làm chuyển đổi mã nhóm HS (4 số)",
+    "examples": ["Nguyên liệu mã 2933 → Thành phẩm mã 3004"],
+    "appliesTo": ["ACFTA", "AKFTA", "VKFTA", "AJCEP", "VJEPA", "AHKFTA"]
+  },
+  {
+    "code": "CTC",
+    "name": "Change in Tariff Classification",
+    "nameVi": "Chuyển đổi Mã HS",
+    "description": "Nguyên liệu không có xuất xứ phải trải qua quá trình sản xuất làm chuyển đổi mã HS (Chương hoặc Nhóm hoặc Phân nhóm)",
+    "examples": ["Nguyên liệu Chapter 29 → Thành phẩm Chapter 30"],
+    "appliesTo": ["ACFTA", "AKFTA", "VKFTA", "AJCEP", "VJEPA", "AIFTA", "AANZFTA", "EVFTA", "RCEP", "VCFTA", "EAEU", "VNCU", "UKVFTA", "VIFTA", "VNCAMFTA", "VNLAF", "AHKFTA"]
+  },
+  {
+    "code": "CTSH",
+    "name": "Change in Tariff Sub-Heading",
+    "nameVi": "Chuyển đổi Phân nhóm HS",
+    "description": "Nguyên liệu không có xuất xứ phải trải qua quá trình sản xuất làm chuyển đổi phân nhóm HS (6 số)",
+    "examples": ["Nguyên liệu 2933.31 → Thành phẩm 3004.90"],
+    "appliesTo": ["AIFTA"]
+  },
+  {
+    "code": "RVC",
+    "name": "Regional Value Content",
+    "nameVi": "Hàm lượng giá trị khu vực",
+    "description": "Tỷ lệ giá trị nguyên liệu có xuất xứ khu vực FTA trên tổng trị giá hàng hóa",
+    "formula": "RVC = (Trị giá hàng hóa - VNM) / Trị giá hàng hóa x 100",
+    "thresholds": {
+      "ATIGA": 40,
+      "ACFTA": 40,
+      "AKFTA": 40,
+      "CPTPP": 40,
+      "EVFTA": 40,
+      "RCEP": 40,
+      "AIFTA": 35,
+      "AANZFTA": 40,
+      "EAEU": 40,
+      "VCFTA": 40,
+      "UKVFTA": 40
+    },
+    "appliesTo": ["ATIGA", "ACFTA", "AKFTA", "VKFTA", "CPTPP", "EVFTA", "RCEP", "AIFTA", "AANZFTA", "AJCEP", "VJEPA", "EAEU", "VCFTA", "UKVFTA", "VIFTA"]
+  },
+  {
+    "code": "PSR",
+    "name": "Product Specific Rules",
+    "nameVi": "Quy tắc cụ thể mặt hàng",
+    "description": "Quy tắc xuất xứ riêng cho từng mã hàng hóa cụ thể, kết hợp CTC và/hoặc RVC",
+    "examples": ["Hàng dệt may: CTC Chapter + RVC 55%", "Giày dép: RVC 45% hoặc CTC Heading"],
+    "appliesTo": ["CPTPP"]
+  },
+  {
+    "code": "PP",
+    "name": "Production Process",
+    "nameVi": "Quy trình sản xuất",
+    "description": "Hàng hóa phải trải qua quy trình sản xuất/gia công cụ thể được quy định",
+    "examples": ["Dệt may phải qua cắt, may", "Hóa chất phải qua phản ứng tổng hợp"],
+    "appliesTo": ["EVFTA"]
+  },
+  {
+    "code": "DM",
+    "name": "De Minimis",
+    "nameVi": "Tỷ lệ tối thiểu",
+    "description": "Tỷ lệ giá trị nguyên liệu không có xuất xứ được phép sử dụng (thường 10%)",
+    "examples": ["Có thể dùng đến 10% nguyên liệu không XX mà vẫn được hưởng ưu đãi"],
+    "thresholds": {
+      "default": 10,
+      "CPTPP": 10,
+      "ATIGA": 10,
+      "EVFTA": 10
+    },
+    "appliesTo": ["CPTPP", "ATIGA", "EVFTA", "RCEP"]
+  }
+]

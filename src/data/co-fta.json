@@ -1,0 +1,192 @@
+[
+  {
+    "code": "ATIGA",
+    "name": "Hiệp định Thương mại hàng hóa ASEAN",
+    "shortName": "ATIGA",
+    "region": "ASEAN",
+    "members": ["BN", "KH", "ID", "LA", "MY", "MM", "PH", "SG", "TH", "VN"],
+    "effectiveDate": "2010-05-17",
+    "legalBasis": "29/VBHN-BCT ngày 10/12/2024",
+    "status": "active"
+  },
+  {
+    "code": "ACFTA",
+    "name": "Hiệp định khung hợp tác kinh tế toàn diện ASEAN-Trung Quốc",
+    "shortName": "ACFTA",
+    "region": "Asia",
+    "members": ["BN", "KH", "ID", "LA", "MY", "MM", "PH", "SG", "TH", "VN", "CN"],
+    "effectiveDate": "2010-01-01",
+    "legalBasis": "TT 12/2019/TT-BCT",
+    "status": "active"
+  },
+  {
+    "code": "AKFTA",
+    "name": "Hiệp định thương mại tự do ASEAN-Hàn Quốc",
+    "shortName": "AKFTA",
+    "region": "Asia",
+    "members": ["BN", "KH", "ID", "LA", "MY", "MM", "PH", "SG", "TH", "VN", "KR"],
+    "effectiveDate": "2014-01-01",
+    "legalBasis": "18/VBHN-BCT ngày 13/03/2026",
+    "status": "active"
+  },
+  {
+    "code": "VKFTA",
+    "name": "Hiệp định thương mại tự do Việt Nam-Hàn Quốc",
+    "shortName": "VKFTA",
+    "region": "Asia",
+    "members": ["VN", "KR"],
+    "effectiveDate": "2015-12-20",
+    "legalBasis": "TT 09/2022/TT-BCT",
+    "status": "active"
+  },
+  {
+    "code": "CPTPP",
+    "name": "Hiệp định Đối tác Toàn diện và Tiến bộ xuyên Thái Bình Dương",
+    "shortName": "CPTPP",
+    "region": "Trans-Pacific",
+    "members": ["AU", "BN", "CA", "CL", "JP", "MY", "MX", "NZ", "PE", "SG", "VN"],
+    "effectiveDate": "2019-01-14",
+    "legalBasis": "44/VBHN-BCT ngày 30/03/2020",
+    "status": "active"
+  },
+  {
+    "code": "EVFTA",
+    "name": "Hiệp định thương mại tự do Liên minh châu Âu-Việt Nam",
+    "shortName": "EVFTA",
+    "region": "EU",
+    "members": ["AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE", "VN"],
+    "effectiveDate": "2020-08-01",
+    "legalBasis": "TT 14/2026/TT-BCT",
+    "status": "active"
+  },
+  {
+    "code": "RCEP",
+    "name": "Hiệp định Đối tác Kinh tế Toàn diện Khu vực",
+    "shortName": "RCEP",
+    "region": "Asia-Pacific",
+    "members": ["AU", "BN", "KH", "CN", "ID", "JP", "KR", "LA", "MY", "MM", "NZ", "PH", "SG", "TH", "VN"],
+    "effectiveDate": "2022-01-01",
+    "legalBasis": "TT 32/2022/TT-BCT",
+    "status": "active"
+  },
+  {
+    "code": "AHKFTA",
+    "name": "Hiệp định thương mại tự do ASEAN-Hồng Kông",
+    "shortName": "AHKFTA",
+    "region": "Asia",
+    "members": ["BN", "KH", "ID", "LA", "MY", "MM", "PH", "SG", "TH", "VN", "HK"],
+    "effectiveDate": "2022-06-12",
+    "legalBasis": "TT 21/2019/TT-BCT",
+    "status": "active"
+  },
+  {
+    "code": "AANZFTA",
+    "name": "Hiệp định thành lập khu vực thương mại tự do ASEAN-Úc-NZ",
+    "shortName": "AANZFTA",
+    "region": "Oceania",
+    "members": ["BN", "KH", "ID", "LA", "MY", "MM", "PH", "SG", "TH", "VN", "AU", "NZ"],
+    "effectiveDate": "2010-01-01",
+    "legalBasis": "TT 44/2025/TT-BCT",
+    "status": "active"
+  },
+  {
+    "code": "AIFTA",
+    "name": "Hiệp định Thương mại hàng hóa ASEAN-Ấn Độ",
+    "shortName": "AIFTA",
+    "region": "South Asia",
+    "members": ["BN", "KH", "ID", "LA", "MY", "MM", "PH", "SG", "TH", "VN", "IN"],
+    "effectiveDate": "2010-01-01",
+    "legalBasis": "TT 15/2010/TT-BCT",
+    "status": "active"
+  },
+  {
+    "code": "AJCEP",
+    "name": "Hiệp định Đối tác Kinh tế Toàn diện ASEAN-Nhật Bản",
+    "shortName": "AJCEP",
+    "region": "Asia",
+    "members": ["BN", "KH", "ID", "LA", "MY", "MM", "PH", "SG", "TH", "VN", "JP"],
+    "effectiveDate": "2008-12-01",
+    "legalBasis": "TT 37/2022/TT-BCT",
+    "status": "active"
+  },
+  {
+    "code": "VJEPA",
+    "name": "Hiệp định đối tác kinh tế Việt Nam-Nhật Bản",
+    "shortName": "VJEPA",
+    "region": "Asia",
+    "members": ["VN", "JP"],
+    "effectiveDate": "2009-10-01",
+    "legalBasis": "TT 10/2009/TT-BCT",
+    "status": "active"
+  },
+  {
+    "code": "EAEU",
+    "name": "Hiệp định thương mại tự do Việt Nam-Liên minh Kinh tế Á Âu",
+    "shortName": "EAEU",
+    "region": "Eurasia",
+    "members": ["VN", "RU", "BY", "AM", "KZ", "KG"],
+    "effectiveDate": "2016-10-05",
+    "legalBasis": "TT 01/2024/TT-BCT",
+    "status": "active"
+  },
+  {
+    "code": "VCFTA",
+    "name": "Hiệp định khu vực thương mại tự do Việt Nam-Chile",
+    "shortName": "VCFTA",
+    "region": "Americas",
+    "members": ["VN", "CL"],
+    "effectiveDate": "2014-01-01",
+    "legalBasis": "TT 31/2013/TT-BCT",
+    "status": "active"
+  },
+  {
+    "code": "UKVFTA",
+    "name": "Hiệp định thương mại tự do Việt Nam-Vương quốc Anh",
+    "shortName": "UKVFTA",
+    "region": "Europe",
+    "members": ["VN", "GB"],
+    "effectiveDate": "2021-05-01",
+    "legalBasis": "TT 02/2021/TT-BCT",
+    "status": "active"
+  },
+  {
+    "code": "VNCU",
+    "name": "Hiệp định thương mại Việt Nam-Cuba",
+    "shortName": "VNCU",
+    "region": "Americas",
+    "members": ["VN", "CU"],
+    "effectiveDate": "2020-04-01",
+    "legalBasis": "TT 08/2020/TT-BCT",
+    "status": "active"
+  },
+  {
+    "code": "VIFTA",
+    "name": "Hiệp định thương mại tự do Việt Nam-Israel",
+    "shortName": "VIFTA",
+    "region": "Middle East",
+    "members": ["VN", "IL"],
+    "effectiveDate": "2023-07-25",
+    "legalBasis": "TT 11/2024/TT-BCT",
+    "status": "active"
+  },
+  {
+    "code": "VNCAMFTA",
+    "name": "Thỏa thuận thương mại Việt Nam-Campuchia",
+    "shortName": "VN-KH",
+    "region": "ASEAN",
+    "members": ["VN", "KH"],
+    "effectiveDate": "2011-01-01",
+    "legalBasis": "TT 17/2011/TT-BCT",
+    "status": "active"
+  },
+  {
+    "code": "VNLAF",
+    "name": "Thỏa thuận thương mại Việt Nam-Lào",
+    "shortName": "VN-LA",
+    "region": "ASEAN",
+    "members": ["VN", "LA"],
+    "effectiveDate": "2010-06-01",
+    "legalBasis": "TT 04/2010/TT-BCT",
+    "status": "active"
+  }
+]

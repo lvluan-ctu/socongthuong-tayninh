@@ -1,0 +1,23 @@
+[
+  { "hsCode": "40012100", "description": "Cao su天然 RSS1", "mfnRate": 20, "atiga": 0, "acfta": 5, "akfta": 0, "cptpp": 0, "evfta": 0, "rcep": 20, "aanz": 0, "ai": 5 },
+  { "hsCode": "40111000", "description": "Lốp xe ô tô mới", "mfnRate": 20, "atiga": 0, "acfta": 5, "akfta": 5, "cptpp": 0, "evfta": 0, "rcep": 20, "aanz": 0, "ai": 5 },
+  { "hsCode": "61091000", "description": "Áo thun cotton", "mfnRate": 30, "atiga": 0, "acfta": 10, "akfta": 10, "cptpp": 0, "evfta": 0, "rcep": 20, "aanz": 0, "ai": 10 },
+  { "hsCode": "61099000", "description": "Áo thun sợi khác", "mfnRate": 30, "atiga": 0, "acfta": 10, "akfta": 10, "cptpp": 0, "evfta": 0, "rcep": 20, "aanz": 0, "ai": 10 },
+  { "hsCode": "61051000", "description": "Áo sơ mi nam cotton", "mfnRate": 30, "atiga": 0, "acfta": 10, "akfta": 10, "cptpp": 0, "evfta": 0, "rcep": 20, "aanz": 0, "ai": 10 },
+  { "hsCode": "62034300", "description": "Quần nam tổng hợp", "mfnRate": 30, "atiga": 0, "acfta": 10, "akfta": 10, "cptpp": 0, "evfta": 0, "rcep": 20, "aanz": 0, "ai": 10 },
+  { "hsCode": "64039100", "description": "Giày dép da cổ ankle", "mfnRate": 30, "atiga": 0, "acfta": 10, "akfta": 10, "cptpp": 0, "evfta": 0, "rcep": 30, "aanz": 0, "ai": 10 },
+  { "hsCode": "64039900", "description": "Giày dép da loại khác", "mfnRate": 30, "atiga": 0, "acfta": 10, "akfta": 10, "cptpp": 0, "evfta": 0, "rcep": 30, "aanz": 0, "ai": 10 },
+  { "hsCode": "85414010", "description": "Tấm pin mặt trời", "mfnRate": 5, "atiga": 0, "acfta": 0, "akfta": 0, "cptpp": 0, "evfta": 0, "rcep": 0, "aanz": 0, "ai": 0 },
+  { "hsCode": "85044090", "description": "Bộ chuyển đổi tĩnh", "mfnRate": 15, "atiga": 0, "acfta": 5, "akfta": 5, "cptpp": 0, "evfta": 0, "rcep": 10, "aanz": 0, "ai": 5 },
+  { "hsCode": "84713000", "description": "Máy tính xách tay", "mfnRate": 0, "atiga": 0, "acfta": 0, "akfta": 0, "cptpp": 0, "evfta": 0, "rcep": 0, "aanz": 0, "ai": 0 },
+  { "hsCode": "73269090", "description": "Sản phẩm sắt thép khác", "mfnRate": 15, "atiga": 0, "acfta": 5, "akfta": 5, "cptpp": 0, "evfta": 0, "rcep": 10, "aanz": 0, "ai": 5 },
+  { "hsCode": "76042100", "description": "Hợp kim nhôm thanh", "mfnRate": 10, "atiga": 0, "acfta": 5, "akfta": 5, "cptpp": 0, "evfta": 0, "rcep": 5, "aanz": 0, "ai": 5 },
+  { "hsCode": "96071900", "description": "Khóa kéo", "mfnRate": 20, "atiga": 0, "acfta": 5, "akfta": 0, "cptpp": 0, "evfta": 0, "rcep": 20, "aanz": 0, "ai": 5 },
+  { "hsCode": "08039090", "description": "Chuối tươi", "mfnRate": 25, "atiga": 0, "acfta": 0, "akfta": 0, "cptpp": 0, "evfta": 0, "rcep": 0, "aanz": 0, "ai": 0 },
+  { "hsCode": "19059090", "description": "Bánh kẹo", "mfnRate": 25, "atiga": 0, "acfta": 5, "akfta": 5, "cptpp": 0, "evfta": 0, "rcep": 20, "aanz": 5, "ai": 5 },
+  { "hsCode": "18063200", "description": "Sô cô la không nhân", "mfnRate": 20, "atiga": 0, "acfta": 5, "akfta": 5, "cptpp": 0, "evfta": 0, "rcep": 15, "aanz": 5, "ai": 5 },
+  { "hsCode": "22021000", "description": "Nước giải khát có gas", "mfnRate": 30, "atiga": 0, "acfta": 10, "akfta": 10, "cptpp": 0, "evfta": 0, "rcep": 20, "aanz": 0, "ai": 10 },
+  { "hsCode": "30049090", "description": "Thuốc dạng viên", "mfnRate": 20, "atiga": 0, "acfta": 5, "akfta": 5, "cptpp": 0, "evfta": 0, "rcep": 10, "aanz": 0, "ai": 5 },
+  { "hsCode": "94036000", "description": "Đồ nội thất gỗ", "mfnRate": 25, "atiga": 0, "acfta": 10, "akfta": 10, "cptpp": 0, "evfta": 0, "rcep": 20, "aanz": 0, "ai": 10 },
+  { "hsCode": "94054200", "description": "Đèn LED", "mfnRate": 15, "atiga": 0, "acfta": 5, "akfta": 5, "cptpp": 0, "evfta": 0, "rcep": 10, "aanz": 0, "ai": 5 }
+]

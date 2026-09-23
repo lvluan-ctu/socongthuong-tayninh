@@ -1,0 +1,297 @@
+{
+  "type": "FeatureCollection",
+  "name": "duong_ong_xang_dau",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Mã đường ống": "HDLA-MAIN",
+        "Tên đường ống": "Đường ống chính tối ưu từ Kho Xăng Hải Dương Long An",
+        "Mã kho nguồn": "KXD-TN-002",
+        "Mã trạm đích": "MẠNG-LƯỚI-LA-01",
+        "Loại đường ống": "Đường ống chính",
+        "Số điểm hình học": 22,
+        "Chiều dài tuyến (km)": 46.211,
+        "Tên kho nguồn": "Kho Xăng Hải Dương Long An",
+        "Loại cơ sở kho": "Kho xăng dầu",
+        "Loại kho nguồn": "Kho phân phối xăng dầu",
+        "Địa chỉ kho nguồn": "Long An",
+        "Điện thoại kho nguồn": "0902 331 516",
+        "Trạng thái kho nguồn": "Đang hoạt động",
+        "Giờ hoạt động kho nguồn": "06:00 - 18:00",
+        "Sức chứa kho nguồn (m³)": 8000,
+        "Số bể chứa kho nguồn": 6,
+        "Số bơm xuất kho nguồn": 4,
+        "Công suất xuất kho (lít/ngày)": 300000,
+        "Nhiên liệu tại kho nguồn": "RON 95, E5 RON 92, DO",
+        "Phương thức xuất kho": "Xe bồn và đường ống",
+        "Số cầu xuất xe bồn": 4,
+        "Mức độ quan trọng kho nguồn": "Cao",
+        "Diện tích kho nguồn (m²)": 22000,
+        "Năm vận hành kho nguồn": 2018,
+        "Người đại diện kho nguồn": "Lê Minh Tuấn",
+        "Tên trạm đích": "Cụm trạm phân phối Long An",
+        "Loại cơ sở trạm": "Cụm phân phối xăng dầu",
+        "Địa chỉ trạm đích": "Long An",
+        "Điện thoại trạm đích": "0272 382 1688",
+        "Trạng thái trạm đích": "Đang hoạt động",
+        "Giờ hoạt động trạm đích": "06:00 - 22:00",
+        "Sức chứa bồn trạm đích (m³)": 12000,
+        "Số trụ bơm trạm đích": 18,
+        "Số bể chứa trạm đích": 8,
+        "Sản lượng ước tính trạm đích (lít/ngày)": 420000,
+        "Nhiên liệu trạm đích": "RON 95, E5 RON 92, DO, Dầu hỏa",
+        "Dịch vụ phụ trạm đích": "Cửa hàng tiện ích, thay nhớt, rửa xe",
+        "Mức độ quan trọng trạm đích": "Cao",
+        "Diện tích trạm đích (m²)": 18500,
+        "Năm vận hành trạm đích": 2020,
+        "Người đại diện trạm đích": "Nguyễn Hoàng Nam",
+        "Quan hệ mạng lưới": "Kho nguồn → Trục chính",
+        "Đã đối soát dữ liệu CSV": "Có",
+        "Chiều dài tính từ hình học (km)": 46.211,
+        "Chênh lệch chiều dài (m)": 0.1
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.6989,
+            10.505699
+          ],
+          [
+            106.60677256,
+            10.50807986
+          ],
+          [
+            106.51463936,
+            10.51021189
+          ],
+          [
+            106.4225004,
+            10.5120951
+          ],
+          [
+            106.42217095,
+            10.51645952
+          ],
+          [
+            106.42159478,
+            10.52079112
+          ],
+          [
+            106.4207719,
+            10.5250899
+          ],
+          [
+            106.41611684,
+            10.52972144
+          ],
+          [
+            106.41132804,
+            10.53421031
+          ],
+          [
+            106.4064055,
+            10.5385565
+          ],
+          [
+            106.407369,
+            10.53915145
+          ],
+          [
+            106.40820257,
+            10.53989255
+          ],
+          [
+            106.4089062,
+            10.5407798
+          ],
+          [
+            106.41279423,
+            10.54796986
+          ],
+          [
+            106.41650806,
+            10.55524879
+          ],
+          [
+            106.4200477,
+            10.5626166
+          ],
+          [
+            106.40399468,
+            10.5708417
+          ],
+          [
+            106.38785438,
+            10.5788918
+          ],
+          [
+            106.3716268,
+            10.5867669
+          ],
+          [
+            106.36159282,
+            10.58831474
+          ],
+          [
+            106.35153275,
+            10.58966877
+          ],
+          [
+            106.3414466,
+            10.590829
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Mã đường ống": "HDLA-BR-006",
+        "Tên đường ống": "Nhánh phân phối đến PX-LA-TN-006",
+        "Mã kho nguồn": "KXD-TN-002",
+        "Mã trạm đích": "PX-LA-TN-006",
+        "Loại đường ống": "Nhánh phân phối",
+        "Số điểm hình học": 4,
+        "Chiều dài tuyến (km)": 1.602,
+        "Tên kho nguồn": "Kho Xăng Hải Dương Long An",
+        "Loại cơ sở kho": "Kho xăng dầu",
+        "Loại kho nguồn": "Kho phân phối xăng dầu",
+        "Địa chỉ kho nguồn": "Long An",
+        "Điện thoại kho nguồn": "0902 331 516",
+        "Trạng thái kho nguồn": "Đang hoạt động",
+        "Giờ hoạt động kho nguồn": "06:00 - 18:00",
+        "Sức chứa kho nguồn (m³)": 8000,
+        "Số bể chứa kho nguồn": 6,
+        "Số bơm xuất kho nguồn": 4,
+        "Công suất xuất kho (lít/ngày)": 300000,
+        "Nhiên liệu tại kho nguồn": "RON 95, E5 RON 92, DO",
+        "Phương thức xuất kho": "Xe bồn và đường ống",
+        "Số cầu xuất xe bồn": 4,
+        "Mức độ quan trọng kho nguồn": "Cao",
+        "Diện tích kho nguồn (m²)": 22000,
+        "Năm vận hành kho nguồn": 2018,
+        "Người đại diện kho nguồn": "Lê Minh Tuấn",
+        "Tên trạm đích": "Petrolimex Gas Station Store No.06",
+        "Loại cơ sở trạm": "Trạm xăng Petrolimex",
+        "Địa chỉ trạm đích": "668 Châu Thị Kim",
+        "Điện thoại trạm đích": "0272 389 2606",
+        "Trạng thái trạm đích": "Đang hoạt động",
+        "Giờ hoạt động trạm đích": "05:30 - 22:30",
+        "Sức chứa bồn trạm đích (m³)": 40,
+        "Số trụ bơm trạm đích": 3,
+        "Số bể chứa trạm đích": 2,
+        "Sản lượng ước tính trạm đích (lít/ngày)": 5800,
+        "Nhiên liệu trạm đích": "RON 95, E5 RON 92, DO",
+        "Dịch vụ phụ trạm đích": "Bán dầu nhờn, nước uống",
+        "Mức độ quan trọng trạm đích": "Trung bình",
+        "Diện tích trạm đích (m²)": 1400,
+        "Năm vận hành trạm đích": 2014,
+        "Người đại diện trạm đích": "Võ Minh Tân",
+        "Quan hệ mạng lưới": "Kho nguồn → Trạm đích",
+        "Đã đối soát dữ liệu CSV": "Có",
+        "Chiều dài tính từ hình học (km)": 1.602,
+        "Chênh lệch chiều dài (m)": -0.3
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.4225004,
+            10.5120951
+          ],
+          [
+            106.41761883,
+            10.5122551
+          ],
+          [
+            106.41273727,
+            10.5122551
+          ],
+          [
+            106.4078557,
+            10.5120951
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Mã đường ống": "HDLA-BR-004",
+        "Tên đường ống": "Nhánh phân phối đến PX-LA-TN-004",
+        "Mã kho nguồn": "KXD-TN-002",
+        "Mã trạm đích": "PX-LA-TN-004",
+        "Loại đường ống": "Nhánh phân phối",
+        "Số điểm hình học": 4,
+        "Chiều dài tuyến (km)": 1.865,
+        "Tên kho nguồn": "Kho Xăng Hải Dương Long An",
+        "Loại cơ sở kho": "Kho xăng dầu",
+        "Loại kho nguồn": "Kho phân phối xăng dầu",
+        "Địa chỉ kho nguồn": "Long An",
+        "Điện thoại kho nguồn": "0902 331 516",
+        "Trạng thái kho nguồn": "Đang hoạt động",
+        "Giờ hoạt động kho nguồn": "06:00 - 18:00",
+        "Sức chứa kho nguồn (m³)": 8000,
+        "Số bể chứa kho nguồn": 6,
+        "Số bơm xuất kho nguồn": 4,
+        "Công suất xuất kho (lít/ngày)": 300000,
+        "Nhiên liệu tại kho nguồn": "RON 95, E5 RON 92, DO",
+        "Phương thức xuất kho": "Xe bồn và đường ống",
+        "Số cầu xuất xe bồn": 4,
+        "Mức độ quan trọng kho nguồn": "Cao",
+        "Diện tích kho nguồn (m²)": 22000,
+        "Năm vận hành kho nguồn": 2018,
+        "Người đại diện kho nguồn": "Lê Minh Tuấn",
+        "Tên trạm đích": "Petrolimex Gas Station Store No.56",
+        "Loại cơ sở trạm": "Trạm xăng Petrolimex",
+        "Địa chỉ trạm đích": "598 QL1A",
+        "Điện thoại trạm đích": "0272 389 2404",
+        "Trạng thái trạm đích": "Đang hoạt động",
+        "Giờ hoạt động trạm đích": "05:00 - 22:30",
+        "Sức chứa bồn trạm đích (m³)": 40,
+        "Số trụ bơm trạm đích": 3,
+        "Số bể chứa trạm đích": 3,
+        "Sản lượng ước tính trạm đích (lít/ngày)": 6500,
+        "Nhiên liệu trạm đích": "RON 95, E5 RON 92, DO",
+        "Dịch vụ phụ trạm đích": "Bán dầu nhờn, nước uống",
+        "Mức độ quan trọng trạm đích": "Trung bình",
+        "Diện tích trạm đích (m²)": 1500,
+        "Năm vận hành trạm đích": 2015,
+        "Người đại diện trạm đích": "Phạm Văn Thành",
+        "Quan hệ mạng lưới": "Kho nguồn → Trạm đích",
+        "Đã đối soát dữ liệu CSV": "Có",
+        "Chiều dài tính từ hình học (km)": 1.865,
+        "Chênh lệch chiều dài (m)": 0.3
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.4064055,
+            10.5385565
+          ],
+          [
+            106.40203328,
+            10.5349833
+          ],
+          [
+            106.39776578,
+            10.53128914
+          ],
+          [
+            106.393603,
+            10.527474
+          ]
+        ]
+      }
+    }
+  ]
+}

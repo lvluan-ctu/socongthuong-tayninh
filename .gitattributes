@@ -1,0 +1,5 @@
+# Force LF endings for shell scripts regardless of platform/git config —
+# CRLF breaks the shebang when these run inside Linux containers (Docker) or bash.
+*.sh text eol=lf
+Dockerfile text eol=lf
+docker-entrypoint.sh text eol=lf
