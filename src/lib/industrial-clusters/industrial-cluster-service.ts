@@ -60,7 +60,7 @@ function createStandardMilestones(clusterId: string): InvestmentMilestone[] {
   }));
 }
 
-function createDefaultLandFundDetail(): LandFundDetail {
+function createEmptyLandFund(): LandFundDetail {
   return {
     totalArea: 0,
     industrialLand: 0,
@@ -210,7 +210,7 @@ export function createDossier(data: Partial<ClusterDossier>): ClusterDossier {
     overallProgress: 0,
     landCompensationProgress: 0,
     infraConstructionProgress: 0,
-    landFund: createDefaultLandFundDetail(),
+    landFund: createEmptyLandFund(),
     reports: [],
     documents: [],
     managedByWardId: data.wardId,

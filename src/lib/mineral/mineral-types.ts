@@ -106,7 +106,7 @@ export interface Vehicle {
   mineId?: string; // GP id所属
   gpsDeviceId?: string;
   capacity: number; // Tải trọng tối đa (m³)
-  status: 'DANG_KY' | 'ĐANG_CHạy' | 'NGỈ_ĐỜNG' | 'HẾT_HẠN';
+  status: 'DANG_KY' | 'DANG_HOAT_DONG' | 'NGUNG_HOAT_DONG' | 'HET_HAN';
   currentTripId?: string;
   lastReport?: {
     timestamp: string;
@@ -128,7 +128,7 @@ export interface DeclarationRecord {
   declaredVolume: number; // m³ theo licencia
   variance: number; // chênh lệch (exported - declared)
   variancePercent: number;
-  status: 'CHO_XL' | 'DA_XL' | 'Bao_buoi' | 'Tu_dong';
+  status: 'CHO_XU_LY' | 'DA_XU_LY' | 'BO_SUNG' | 'TU_DONG';
   notes?: string;
   createdAt: string;
   updatedAt: string;
@@ -148,7 +148,7 @@ export interface Trip {
   durationMinutes: number;
   distanceKm: number;
   materialType: string;
-  status: 'DANG_MO' | 'DANG_CH' | 'HOAN_THANH' | 'HỦY';
+  status: 'DANG_MO' | 'DANG_CHO' | 'HOAN_THANH' | 'HUY';
 }
 
 // ---- Alert (Cảnh báo) ----

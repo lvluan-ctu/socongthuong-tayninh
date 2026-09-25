@@ -25,6 +25,12 @@ import { StatusBadge } from "@/components/common/StatusBadge";
 import { DetailDrawer } from "@/components/common/DetailDrawer";
 import { MiniBarChart, MiniDonutChart } from "@/components/dashboard/MiniCharts";
 import { TradePromotionAiPanel } from "@/components/trade-promotion/TradePromotionAiPanel";
+import {
+  STATUS_META,
+  XTTM_UNIT_NAME,
+  deadlineLabel,
+  useNhiemVuData,
+} from "@/components/analytics/TongHopNganh";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -65,9 +71,6 @@ export const Route = createFileRoute("/trade-promotion")({
 
 const GOV = "oklch(0.513 0.16 255.7)";
 const TEAL = "oklch(0.566 0.101 182.5)";
-const SUCCESS = "oklch(0.523 0.135 144.2)";
-const WARNING = "oklch(0.743 0.15 72.1)";
-const DESTRUCTIVE = "oklch(0.539 0.194 26.7)";
 const ANALYTICS = "oklch(0.549 0.162 297.7)";
 const MUTED = "oklch(0.554 0.041 257.4)";
 
@@ -113,6 +116,73 @@ function KpiGrid({ k }: { k: TradePromotionKpis }) {
         tone={k.growthBudget >= 0 ? "success" : "danger"}
       />
     </section>
+  );
+}
+
+function XttmTasks() {
+  const { loadError, rows } = useNhiemVuData();
+  const tasks = useMemo(() => rows.filter((r) => r.unit === XTTM_UNIT_NAME), [rows]);
+
+  if (!rows.length && !loadError) {
+    return <p className="py-8 text-center text-sm text-muted-foreground">Đang tải nhiệm vụ…</p>;
+  }
+  if (!tasks.length) {
+    return (
+      <p className="py-8 text-center text-sm text-muted-foreground">
+        Chưa có dữ liệu nhiệm vụ. Hãy chắc chắn đã chạy{" "}
+        <code>node scripts/parse-chi-tieu-nganh.mjs</code>.
+      </p>
+    );
+  }
+  return (
+    <ChartCard
+      title="Nhiệm vụ trọng tâm 2026 — Trung tâm Khuyến công và XTTM"
+      subtitle="Số liệu thật từ file Chỉ tiêu ngành · hiệu chỉnh trạng thái trong Báo cáo & BI → Tổng hợp ngành"
+    >
+      <div className="overflow-x-auto rounded-md border border-border">
+        <table className="w-full text-left text-xs">
+          <thead className="bg-surface-strong text-muted-foreground">
+            <tr>
+              <th className="w-10 px-3 py-2 font-medium">STT</th>
+              <th className="px-3 py-2 font-medium">Nội dung</th>
+              <th className="whitespace-nowrap px-3 py-2 font-medium">Hạn</th>
+              <th className="px-3 py-2 font-medium">Trạng thái</th>
+              <th className="px-3 py-2 font-medium">Tiến độ</th>
+            </tr>
+          </thead>
+          <tbody className="divide-y divide-border bg-surface/50">
+            {tasks.map((t) => (
+              <tr key={t.id} className="align-top">
+                <td className="px-3 py-2 tabular-nums text-muted-foreground">{t.stt}</td>
+                <td className="min-w-72 px-3 py-2 font-medium text-navy">{t.noidung}</td>
+                <td
+                  className="whitespace-nowrap px-3 py-2 tabular-nums"
+                  title={t.deadline?.raw ?? ""}
+                >
+                  {deadlineLabel(t)}
+                </td>
+                <td className="px-3 py-2">
+                  <Badge
+                    variant="outline"
+                    className={cn("rounded-md font-medium", STATUS_META[t.status].badge)}
+                  >
+                    {STATUS_META[t.status].label}
+                  </Badge>
+                </td>
+                <td className="min-w-64 px-3 py-2" title={t.tiendo}>
+                  {t.tiendo || "—"}
+                  {t.vanban ? (
+                    <span className="mt-0.5 block text-[11px] text-muted-foreground">
+                      VB: {t.vanban}
+                    </span>
+                  ) : null}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </ChartCard>
   );
 }
 
@@ -194,7 +264,7 @@ function Page() {
     },
   ];
 
-  const yearOptions: number[] = [2026, 2025];
+  const yearOptions: readonly number[] = YEARS;
 
   return (
     <>
@@ -226,6 +296,7 @@ function Page() {
         <Tabs value={tab} onValueChange={setTab}>
           <div className="flex flex-wrap items-center justify-between gap-2">
             <TabsList className="w-full justify-start overflow-x-auto">
+              <TabsTrigger value="tasks">Nhiệm vụ trọng tâm 2026</TabsTrigger>
               <TabsTrigger value="programs">Kế hoạch & chương trình</TabsTrigger>
               <TabsTrigger value="stats">Kết quả & thống kê</TabsTrigger>
               <TabsTrigger value="bi">Liên kết dữ liệu & BI</TabsTrigger>
@@ -233,6 +304,11 @@ function Page() {
               <TabsTrigger value="ai">AI phân tích & dự báo</TabsTrigger>
             </TabsList>
           </div>
+
+          {/* ---------------- NHIỆM VỤ TRỌNG TÂM 2026 (SỐ THẬT) ---------------- */}
+          <TabsContent value="tasks" className="mt-4 space-y-4">
+            <XttmTasks />
+          </TabsContent>
 
           {/* ---------------- KẾ HOẠCH & CHƯƠNG TRÌNH ---------------- */}
           <TabsContent value="programs" className="mt-4 space-y-4">

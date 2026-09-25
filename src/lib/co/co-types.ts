@@ -194,7 +194,7 @@ export interface CoChartData {
   monthlyTrend: { month: string; count: number; value: number }[];
   byCountry: { country: string; count: number; value: number }[];
   byFta: { fta: string; count: number; value: number }[];
-  byStatus: { status: string; count: number }[];
+  byStatus: { status: CoApplicationStatus; count: number }[];
 }
 
 export interface CoTaxComparison {

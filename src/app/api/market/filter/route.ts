@@ -1,5 +1,6 @@
 import { readFile, writeFile } from "node:fs/promises";
 import { NextResponse } from "next/server";
+import { z } from "zod";
 import path from "node:path";
 
 export const dynamic = "force-dynamic";
@@ -20,17 +21,23 @@ const ALL_FIELDS = [
 
 type FilterData = { selectedFields: string[] };
 
+const filterSchema = z.object({
+  selectedFields: z.array(z.enum(ALL_FIELDS)).min(1, "Chọn ít nhất 1 lĩnh vực"),
+});
+
 async function readFilter(): Promise<FilterData> {
   try {
     const raw = await readFile(FILTER_FILE, "utf-8");
     const parsed = JSON.parse(raw) as FilterData;
     if (Array.isArray(parsed.selectedFields)) {
-      parsed.selectedFields = parsed.selectedFields.filter((f: string) =>
+      const cleaned = parsed.selectedFields.filter((f: string) =>
         (ALL_FIELDS as readonly string[]).includes(f),
       );
-      return parsed;
+      if (cleaned.length > 0) return { selectedFields: cleaned };
     }
-  } catch {}
+  } catch (error) {
+    console.error("[market/filter] Không đọc được filter:", error);
+  }
   return { selectedFields: [...ALL_FIELDS] };
 }
 
@@ -48,11 +55,17 @@ export async function GET() {
 
 export async function PUT(request: Request) {
   try {
-    const body = (await request.json()) as FilterData;
-    const fields = Array.isArray(body.selectedFields)
-      ? body.selectedFields.filter((f: string) => (ALL_FIELDS as readonly string[]).includes(f))
-      : [...ALL_FIELDS];
-    const data: FilterData = { selectedFields: fields };
+    const parsed = filterSchema.safeParse(await request.json());
+    if (!parsed.success) {
+      return NextResponse.json(
+        {
+          message: "Dữ liệu filter không hợp lệ.",
+          issues: parsed.error.issues.map((i) => ({ path: i.path.join("."), message: i.message })),
+        },
+        { status: 400 },
+      );
+    }
+    const data: FilterData = { selectedFields: [...parsed.data.selectedFields] };
     await writeFile(FILTER_FILE, JSON.stringify(data, null, 2) + "\n", "utf-8");
     return NextResponse.json(data);
   } catch (error) {

@@ -89,6 +89,6 @@ export async function POST(request: Request) {
   } catch (error) {
     if (error instanceof z.ZodError) return NextResponse.json({ message: 'Thông tin nguồn dữ liệu không hợp lệ.', issues: error.issues }, { status: 400 });
     console.error('Data source create failed', error);
-    return NextResponse.json({ message: error instanceof Error ? error.message : 'Không thể tạo nguồn dữ liệu.' }, { status: 400 });
+    return NextResponse.json({ message: error instanceof Error ? error.message : 'Không thể tạo nguồn dữ liệu.' }, { status: 500 });
   }
 }

@@ -1,5 +1,6 @@
 import type {
   CoApplication,
+  CoApplicationStatus,
   CoKpis,
   CoChartData,
   CoTaxComparison,
@@ -72,7 +73,7 @@ export function buildCoChartData(data: CoApplication[] = applications): CoChartD
   const monthlyMap = new Map<string, { count: number; value: number }>();
   const countryMap = new Map<string, { count: number; value: number }>();
   const ftaMap = new Map<string, { count: number; value: number }>();
-  const statusMap = new Map<string, number>();
+  const statusMap = new Map<CoApplicationStatus, number>();
 
   for (const app of data) {
     const month = app.createdAt.slice(0, 7);

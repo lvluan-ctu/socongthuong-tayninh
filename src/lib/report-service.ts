@@ -3,8 +3,9 @@
 // Pipeline: FILE (Word/Excel/PDF) → TRÍCH XUẤT → CHUẨN HÓA BẢNG
 // → KIỂM TRA/PHÊ DUYỆT → CSDL NGÀNH (JSON/localStorage)
 // → THỐNG KÊ/BIỂU ĐỒ/DASHBOARD/XUẤT BÁO CÁO.
-// Demo: CSV đọc thật; XLSX/DOCX/PDF mô phỏng trích xuất (giống OCR demo).
+// CSV/XLSX/XLS đọc thật (SheetJS); DOCX/PDF mô phỏng trích xuất.
 // ============================================================
+import * as XLSX from "xlsx";
 import { REPORT_COLUMNS, SAMPLE_XNK_ROWS } from "@/data/report-mock";
 import type { DataStatus, ReportAnswer, ReportColumn, ReportDataset, ReportRow } from "@/lib/types";
 
@@ -180,7 +181,49 @@ export async function extractFromFile(
     return { ...table, name: baseName(file.name), fileType: "CSV" };
   }
 
-  // XLSX / DOCX / PDF — mô phỏng trích xuất (demo, giống OCR). Trả bảng mẫu XNK.
+  // XLS / XLSX — đọc thật bằng SheetJS (hỗ trợ cả .xls OLE cũ của SCT).
+  // Heuristic cho file thống kê SCT: bỏ các dòng tiêu đề merge, lấy dòng
+  // đầu tiên có >= 3 ô dữ liệu làm header, các dòng sau có số liệu làm rows.
+  if (ext === "xlsx" || ext === "xls") {
+    onProgress?.({ step: "Đọc file", pct: 20 });
+    const buf = await file.arrayBuffer();
+    const wb = XLSX.read(buf, { type: "array", cellDates: false });
+    onProgress?.({ step: "Trích xuất bảng dữ liệu", pct: 60 });
+    await delay(250);
+    const text = (v: unknown) =>
+      String(v ?? "")
+        .replace(/\s+/g, " ")
+        .trim();
+    // File SCT có thể gồm nhiều sheet (ví dụ file T1) — chọn sheet có bảng lớn nhất.
+    let best: { sheet: string; headers: string[]; rawRows: string[][] } | null = null;
+    for (const sheet of wb.SheetNames) {
+      const aoa = XLSX.utils.sheet_to_json<unknown[]>(wb.Sheets[sheet]!, {
+        header: 1,
+        raw: true,
+        defval: "",
+      });
+      const headerIdx = aoa.findIndex((r) => r.filter((c) => text(c) !== "").length >= 3);
+      if (headerIdx < 0) continue;
+      const headers = (aoa[headerIdx] as unknown[]).map((c) => text(c) || "—");
+      const width = headers.length;
+      const rawRows = aoa
+        .slice(headerIdx + 1)
+        .map((r) => Array.from({ length: width }, (_, i) => text((r as unknown[])[i])))
+        .filter((r) => r.some((c) => c !== "") && r.some((c) => /[-+]?\d/.test(c)));
+      if (!best || rawRows.length > best.rawRows.length) {
+        best = { sheet, headers, rawRows };
+      }
+    }
+    if (!best || !best.rawRows.length) {
+      throw new Error("Không tìm thấy bảng dữ liệu trong file Excel. Vui lòng kiểm tra lại file.");
+    }
+    const table = buildReportTable(best.headers, best.rawRows);
+    onProgress?.({ step: "Chuẩn hóa dữ liệu", pct: 100 });
+    const sheetSuffix = wb.SheetNames.length > 1 ? ` – ${best.sheet}` : "";
+    return { ...table, name: baseName(file.name) + sheetSuffix, fileType: "XLSX" };
+  }
+
+  // DOCX / PDF — mô phỏng trích xuất (demo, giống OCR). Trả bảng mẫu XNK.
   onProgress?.({ step: "Đọc file", pct: 20 });
   await delay(600);
   onProgress?.({ step: "Trích xuất bảng dữ liệu", pct: 60 });

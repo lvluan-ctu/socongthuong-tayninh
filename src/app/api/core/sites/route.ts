@@ -84,6 +84,7 @@ export async function POST(request: Request) {
     return NextResponse.json(created, { status: 201 });
   } catch (error) {
     if (error instanceof z.ZodError) return NextResponse.json({ message: 'Thông tin Site không hợp lệ.', issues: error.issues }, { status: 400 });
-    return NextResponse.json({ message: error instanceof Error ? error.message : 'Không thể tạo Site.' }, { status: 400 });
+    console.error('Site create failed', error);
+    return NextResponse.json({ message: error instanceof Error ? error.message : 'Không thể tạo Site.' }, { status: 500 });
   }
 }

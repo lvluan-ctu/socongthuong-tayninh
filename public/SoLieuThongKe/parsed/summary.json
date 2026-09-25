@@ -1,0 +1,48 @@
+{
+  "generatedAt": "2026-09-25T01:01:31.744Z",
+  "months": {
+    "iip": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "tmdvTong": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "tmdvBanle": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ]
+  },
+  "counts": {
+    "iipMonths": 8,
+    "iipRowsT8": 34,
+    "spcnRowsT8": 40,
+    "tongMucT8": 6,
+    "banleT8": 13
+  },
+  "notes": [
+    "T1 TMDV lấy từ sheet '12. TM tháng' trong file .xls 464KB; file này đồng thời chứa baseline 2025 (GRDP, IIP T9/2025, vốn, ngân sách).",
+    "T1 không có sheet DT bán lẻ chi tiết.",
+    "Giá trị 2025 (v2025_thang/luyke) được back-calculate từ % cùng kỳ để đối sánh demo cân đối.",
+    "T6 SPCN có mã sản phẩm thay ĐVT — parser tự nhận diện."
+  ],
+  "warnings": []
+}

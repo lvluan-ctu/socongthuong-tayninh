@@ -13,7 +13,6 @@ import {
   Scale,
   Ship,
   TrendingUp,
-  Users,
 } from "lucide-react";
 import { toast } from "sonner";
 import { PageHeader } from "@/components/common/PageHeader";
@@ -22,11 +21,11 @@ import { StatCard } from "@/components/common/StatCard";
 import { DataTable, type Column } from "@/components/common/DataTable";
 import { StatusBadge } from "@/components/common/StatusBadge";
 import { DetailDrawer } from "@/components/common/DetailDrawer";
-import { MiniBarChart, MiniDonutChart, MiniTrendChart } from "@/components/dashboard/MiniCharts";
+import { MiniBarChart } from "@/components/dashboard/MiniCharts";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { TRADES, TRADE_PORTS, TRADE_TREND } from "@/data/mock";
+import { TRADES, TRADE_PORTS } from "@/data/mock";
 import { formatNumber } from "@/lib/report-service";
 import {
   LEGAL_BASIS,
@@ -64,9 +63,7 @@ export const Route = createFileRoute("/import-export")({
 
 const GOV = "oklch(0.513 0.16 255.7)";
 const TEAL = "oklch(0.566 0.101 182.5)";
-const SUCCESS = "oklch(0.523 0.135 144.2)";
 const INDIGO = "oklch(0.549 0.162 297.7)";
-const WARNING = "oklch(0.743 0.15 72.1)";
 const MUTED = "oklch(0.554 0.041 257.4)";
 
 const DIRECTION_META: Record<string, { label: string; cls: string }> = {

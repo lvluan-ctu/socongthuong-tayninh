@@ -3,7 +3,6 @@
 import NextLink from "next/link";
 import {
   notFound,
-  useParams as useNextParams,
   usePathname,
   useRouter,
   useSearchParams,
@@ -27,7 +26,6 @@ export function createFileRoute<TPath extends string>(path: TPath) {
       path,
       options,
       useParams() {
-        useNextParams();
         const pathname = usePathname();
         return matchParams(path, pathname) as Record<string, string>;
       },

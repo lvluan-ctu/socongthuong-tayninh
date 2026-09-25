@@ -1,0 +1,55 @@
+{
+  "generatedAt": "2026-09-25T01:33:19.547Z",
+  "source": "public/Chi_Tieu_Nganh_Cong_Thuong.xlsx",
+  "units": [
+    {
+      "unit": "Văn phòng Sở",
+      "tasks": 11
+    },
+    {
+      "unit": "Phòng Kế hoạch - Tổng hợp",
+      "tasks": 13
+    },
+    {
+      "unit": "Phòng Quản lý Thương mại",
+      "tasks": 12
+    },
+    {
+      "unit": "Phòng Quản lý Công nghiệp",
+      "tasks": 8
+    },
+    {
+      "unit": "Phòng Pháp chế",
+      "tasks": 7
+    },
+    {
+      "unit": "Phòng Quản lý Năng lượng",
+      "tasks": 7
+    },
+    {
+      "unit": "Phòng Kỹ thuật an toàn - Môi trường",
+      "tasks": 8
+    },
+    {
+      "unit": "Chi cục Quản lý thị trường",
+      "tasks": 7
+    },
+    {
+      "unit": "Trung tâm Khuyến công và Xúc tiến Thương mại",
+      "tasks": 8
+    }
+  ],
+  "totalTasks": 81,
+  "withDeadline": 31,
+  "emptySheets": [
+    "IIP",
+    "TLHDSD điện"
+  ],
+  "notes": [
+    "TMBLHH/XNK: đơn vị TMBLHH là tỷ đồng; XNK là triệu USD.",
+    "Cột So KH là tỷ lệ hoàn thành kế hoạch (0.xx).",
+    "Nhiệm vụ: deadline/statusAuto do rule đoán từ text, công chức hiệu chỉnh tay trên UI.",
+    "Sheet IIP và TLHDSD điện đang trống: IIP lấy từ 16 file SoLieuThongKe; hộ dùng điện nhập tay demo 99,9%."
+  ],
+  "warnings": []
+}

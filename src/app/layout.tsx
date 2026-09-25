@@ -2,6 +2,7 @@ import "@mantine/core/styles.css";
 import "@mantine/notifications/styles.css";
 import "mantine-datatable/styles.css";
 import "leaflet/dist/leaflet.css";
+import "../styles/vendor-frappe-gantt.css";
 import "../styles.css";
 
 import { mantineHtmlProps } from "@mantine/core";

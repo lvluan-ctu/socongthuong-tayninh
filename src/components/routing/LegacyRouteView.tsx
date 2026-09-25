@@ -140,15 +140,6 @@ export function LegacyRouteView() {
   const route =
     exactRoutes[pathname] ?? dynamicRoutes.find((candidate) => candidate.pattern.test(pathname))?.route;
 
-  if (!route && pathname === "/energy/nhiem-vu-8/quan-ly") {
-    return <EnergyTask8ManagementRoute />;
-  }
-  if (!route && pathname === "/energy/nhiem-vu-8/ai") {
-    return <EnergyTask8AiRoute />;
-  }
-  if (!route && pathname === "/energy/nhiem-vu-8/bao-cao") {
-    return <EnergyTask8ReportRoute />;
-  }
   if (!route) notFound();
   return createElement(route.options.component);
 }

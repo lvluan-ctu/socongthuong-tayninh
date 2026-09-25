@@ -1,0 +1,968 @@
+[
+  {
+    "month": 2,
+    "file": "2. SCT_TMDV thang 2-2026.xls",
+    "sheet": "DT bán lẻ",
+    "unit": "Triệu đồng",
+    "rows": [
+      {
+        "chitieu": "Tổng số",
+        "th_truoc": 12037706.23,
+        "uoc_thang": 12376582.89,
+        "luyke": 24414289.120000005,
+        "pct_thang": 118.72886371295522,
+        "pct_luyke": 113.7527719868497,
+        "v2025_thang": 10424241,
+        "v2025_luyke": 21462588.29
+      },
+      {
+        "chitieu": "1. Lương thực, thực phẩm",
+        "th_truoc": 4249772.13,
+        "uoc_thang": 4464813.15,
+        "luyke": 8714585.280000001,
+        "pct_thang": 118.34449396004463,
+        "pct_luyke": 112.71820328758551,
+        "v2025_thang": 3772725.71,
+        "v2025_luyke": 7731302.51
+      },
+      {
+        "chitieu": "2. Hàng may mặc",
+        "th_truoc": 487208.75,
+        "uoc_thang": 503903.56,
+        "luyke": 991112.31,
+        "pct_thang": 114.24392694888186,
+        "pct_luyke": 107.1708856339088,
+        "v2025_thang": 441076.89,
+        "v2025_luyke": 924796.23
+      },
+      {
+        "chitieu": "3. Đồ dùng, dụng cụ, trang thiết bị gia đình",
+        "th_truoc": 1375969.5,
+        "uoc_thang": 1432308.9,
+        "luyke": 2808278.4,
+        "pct_thang": 122.59191471332716,
+        "pct_luyke": 113.46262019507225,
+        "v2025_thang": 1168355.11,
+        "v2025_luyke": 2475069.23
+      },
+      {
+        "chitieu": "4. Vật phẩm văn hóa, giáo dục",
+        "th_truoc": 110623.39,
+        "uoc_thang": 100566.63,
+        "luyke": 211190.02,
+        "pct_thang": 134.39102269422872,
+        "pct_luyke": 129.0487332919975,
+        "v2025_thang": 74831.36,
+        "v2025_luyke": 163651.37
+      },
+      {
+        "chitieu": "5. Gỗ và vật liệu xây dựng",
+        "th_truoc": 1549180.67,
+        "uoc_thang": 1543711.36,
+        "luyke": 3092892.03,
+        "pct_thang": 131.3723702561016,
+        "pct_luyke": 127.75186757197949,
+        "v2025_thang": 1175065.47,
+        "v2025_luyke": 2421015.12
+      },
+      {
+        "chitieu": "6. Ô tô con (dưới 9 chỗ ngồi)",
+        "th_truoc": 239047.13,
+        "uoc_thang": 223520.12,
+        "luyke": 462567.25,
+        "pct_thang": 109.36492440946299,
+        "pct_luyke": 102.86160063582133,
+        "v2025_thang": 204380.08,
+        "v2025_luyke": 449698.67
+      },
+      {
+        "chitieu": "7. Phương tiện đi lại (trừ ô tô, kể cả phụ tùng)",
+        "th_truoc": 568566.41,
+        "uoc_thang": 551136.55,
+        "luyke": 1119702.96,
+        "pct_thang": 110.67116556318439,
+        "pct_luyke": 108.13267284728354,
+        "v2025_thang": 497994.71,
+        "v2025_luyke": 1035489.95
+      },
+      {
+        "chitieu": "8. Xăng, dầu các loại",
+        "th_truoc": 1744494.31,
+        "uoc_thang": 1785812.06,
+        "luyke": 3530306.37,
+        "pct_thang": 117.80297704543554,
+        "pct_luyke": 114.64007971996296,
+        "v2025_thang": 1515931.18,
+        "v2025_luyke": 3079469.57
+      },
+      {
+        "chitieu": "9. Nhiên liệu khác (trừ xăng, dầu)",
+        "th_truoc": 204740.91,
+        "uoc_thang": 205103.35,
+        "luyke": 409844.26,
+        "pct_thang": 112.04749272017315,
+        "pct_luyke": 110.72672057306697,
+        "v2025_thang": 183050.37,
+        "v2025_luyke": 370140.34
+      },
+      {
+        "chitieu": "10. Đá quý, kim loại quý và sản phẩm",
+        "th_truoc": 953585.63,
+        "uoc_thang": 984637.38,
+        "luyke": 1938223.01,
+        "pct_thang": 108.18535277573508,
+        "pct_luyke": 106.29301235498741,
+        "v2025_thang": 910139.27,
+        "v2025_luyke": 1823471.71
+      },
+      {
+        "chitieu": "11. Hàng hóa khác",
+        "th_truoc": 248084.41,
+        "uoc_thang": 265527.83,
+        "luyke": 513612.24,
+        "pct_thang": 119.84982111975756,
+        "pct_luyke": 113.06146690235252,
+        "v2025_thang": 221550.46,
+        "v2025_luyke": 454277
+      },
+      {
+        "chitieu": "12. Sửa chữa xe có động cơ, mô tô, xe máy và xe có động cơ",
+        "th_truoc": 306432.99,
+        "uoc_thang": 315542,
+        "luyke": 621974.99,
+        "pct_thang": 121.76488582115664,
+        "pct_luyke": 116.42967377096564,
+        "v2025_thang": 259140.39,
+        "v2025_luyke": 534206.59
+      }
+    ]
+  },
+  {
+    "month": 3,
+    "file": "3. SCT_TMDV_Thang 3-26.xls",
+    "sheet": "12.DTBL",
+    "unit": "Triệu đồng",
+    "rows": [
+      {
+        "chitieu": "Tổng số",
+        "th_truoc": 12262746.000000002,
+        "uoc_thang": 12316386.149999999,
+        "luyke": 36616838.38000001,
+        "pct_thang": 117.2268636181207,
+        "pct_luyke": 114.53842874445174,
+        "v2025_thang": 10506453.7,
+        "v2025_luyke": 31969041.99
+      },
+      {
+        "chitieu": "1. Lương thực, thực phẩm",
+        "th_truoc": 4471706.15,
+        "uoc_thang": 4170414.87,
+        "luyke": 12891893.15,
+        "pct_thang": 112.01033098776325,
+        "pct_luyke": 112.54828998523415,
+        "v2025_thang": 3723241.27,
+        "v2025_luyke": 11454543.78
+      },
+      {
+        "chitieu": "2. Hàng may mặc",
+        "th_truoc": 518519.66,
+        "uoc_thang": 490057.09,
+        "luyke": 1495785.5,
+        "pct_thang": 110.64821416975684,
+        "pct_luyke": 109.36560861348428,
+        "v2025_thang": 442896.52,
+        "v2025_luyke": 1367692.75
+      },
+      {
+        "chitieu": "3. Đồ dùng, dụng cụ, trang thiết bị gia đình",
+        "th_truoc": 1423718.05,
+        "uoc_thang": 1421334.3,
+        "luyke": 4221021.85,
+        "pct_thang": 120.31342766520402,
+        "pct_luyke": 115.44110324541273,
+        "v2025_thang": 1181359.66,
+        "v2025_luyke": 3656428.89
+      },
+      {
+        "chitieu": "4. Vật phẩm văn hóa, giáo dục",
+        "th_truoc": 96104.25,
+        "uoc_thang": 96236.57,
+        "luyke": 302964.21,
+        "pct_thang": 125.29002341330103,
+        "pct_luyke": 125.99233701433836,
+        "v2025_thang": 76811.04,
+        "v2025_luyke": 240462.41
+      },
+      {
+        "chitieu": "5. Gỗ và vật liệu xây dựng",
+        "th_truoc": 1498903.03,
+        "uoc_thang": 1602291.67,
+        "luyke": 4650375.37,
+        "pct_thang": 135.39486372777924,
+        "pct_luyke": 129.01809923167377,
+        "v2025_thang": 1183421.31,
+        "v2025_luyke": 3604436.43
+      },
+      {
+        "chitieu": "6. Ô tô con (dưới 9 chỗ ngồi)",
+        "th_truoc": 210449.73,
+        "uoc_thang": 240720.1,
+        "luyke": 690216.96,
+        "pct_thang": 111.0557954566425,
+        "pct_luyke": 103.56547730395528,
+        "v2025_thang": 216756,
+        "v2025_luyke": 666454.67
+      },
+      {
+        "chitieu": "7. Phương tiện đi lại (trừ ô tô, kể cả phụ tùng)",
+        "th_truoc": 519556.89,
+        "uoc_thang": 533088.61,
+        "luyke": 1621211.91,
+        "pct_thang": 106.34394164910321,
+        "pct_luyke": 105.49427207466555,
+        "v2025_thang": 501287.24,
+        "v2025_luyke": 1536777.19
+      },
+      {
+        "chitieu": "8. Xăng, dầu các loại",
+        "th_truoc": 1799348.82,
+        "uoc_thang": 2023853.65,
+        "luyke": 5567696.78,
+        "pct_thang": 127.1645750173348,
+        "pct_luyke": 119.19729089194557,
+        "v2025_thang": 1591523.15,
+        "v2025_luyke": 4670992.72
+      },
+      {
+        "chitieu": "9. Nhiên liệu khác (trừ xăng, dầu)",
+        "th_truoc": 186456.39,
+        "uoc_thang": 192063.34,
+        "luyke": 583260.64,
+        "pct_thang": 104.74258727033762,
+        "pct_luyke": 105.37541200447316,
+        "v2025_thang": 183367,
+        "v2025_luyke": 553507.34
+      },
+      {
+        "chitieu": "10. Đá quý, kim loại quý và sản phẩm",
+        "th_truoc": 959535.87,
+        "uoc_thang": 959003.67,
+        "luyke": 2872125.17,
+        "pct_thang": 104.35303482436782,
+        "pct_luyke": 104.72763974731079,
+        "v2025_thang": 918999.31,
+        "v2025_luyke": 2742471.02
+      },
+      {
+        "chitieu": "11. Hàng hóa khác",
+        "th_truoc": 269735.36,
+        "uoc_thang": 276582.83,
+        "luyke": 794402.6,
+        "pct_thang": 122.27802541179992,
+        "pct_luyke": 116.74343261925156,
+        "v2025_thang": 226191.77,
+        "v2025_luyke": 680468.77
+      },
+      {
+        "chitieu": "12. Sửa chữa xe có động cơ, mô tô, xe máy và xe có động cơ",
+        "th_truoc": 308711.8,
+        "uoc_thang": 310739.45,
+        "luyke": 925884.24,
+        "pct_thang": 119.24026464677993,
+        "pct_luyke": 116.49185042659843,
+        "v2025_thang": 260599.43,
+        "v2025_luyke": 794806.02
+      }
+    ]
+  },
+  {
+    "month": 4,
+    "file": "4. SCT_TMDV_Thang 4_26.xls",
+    "sheet": "DT bán lẻ",
+    "unit": "Triệu đồng",
+    "rows": [
+      {
+        "chitieu": "Tổng số",
+        "th_truoc": 12382331.280000001,
+        "uoc_thang": 12679701.509999998,
+        "luyke": 49362485.02,
+        "pct_thang": 119.27926166867343,
+        "pct_luyke": 115.87626325538263,
+        "v2025_thang": 10630264.92,
+        "v2025_luyke": 42599306.91
+      },
+      {
+        "chitieu": "1. Lương thực, thực phẩm",
+        "th_truoc": 4183953.03,
+        "uoc_thang": 4328624.92,
+        "luyke": 17234056.23,
+        "pct_thang": 115.33140212741435,
+        "pct_luyke": 113.32417129839622,
+        "v2025_thang": 3753205.84,
+        "v2025_luyke": 15207749.62
+      },
+      {
+        "chitieu": "2. Hàng may mặc",
+        "th_truoc": 465917.01,
+        "uoc_thang": 480752.62,
+        "luyke": 1952398.04,
+        "pct_thang": 108.20148859679558,
+        "pct_luyke": 107.74793056050602,
+        "v2025_thang": 444312.39,
+        "v2025_luyke": 1812005.14
+      },
+      {
+        "chitieu": "3. Đồ dùng, dụng cụ, trang thiết bị gia đình",
+        "th_truoc": 1424271.31,
+        "uoc_thang": 1455929.68,
+        "luyke": 5679888.54,
+        "pct_thang": 121.62414299706988,
+        "pct_luyke": 117.02660805230026,
+        "v2025_thang": 1197072.92,
+        "v2025_luyke": 4853501.81
+      },
+      {
+        "chitieu": "4. Vật phẩm văn hóa, giáo dục",
+        "th_truoc": 97360.36,
+        "uoc_thang": 98794.05,
+        "luyke": 402882.05,
+        "pct_thang": 124.8067463372446,
+        "pct_luyke": 126.05031355512983,
+        "v2025_thang": 79157.62,
+        "v2025_luyke": 319620.03
+      },
+      {
+        "chitieu": "5. Gỗ và vật liệu xây dựng",
+        "th_truoc": 1631732.66,
+        "uoc_thang": 1664031.19,
+        "luyke": 6343847.55,
+        "pct_thang": 140.46183627634616,
+        "pct_luyke": 132.4636847948703,
+        "v2025_thang": 1184685.63,
+        "v2025_luyke": 4789122.06
+      },
+      {
+        "chitieu": "6. Ô tô con (dưới 9 chỗ ngồi)",
+        "th_truoc": 247490.22,
+        "uoc_thang": 253273.79,
+        "luyke": 950260.87,
+        "pct_thang": 115.70757938404762,
+        "pct_luyke": 107.33215425373724,
+        "v2025_thang": 218891.27,
+        "v2025_luyke": 885345.94
+      },
+      {
+        "chitieu": "7. Phương tiện đi lại (trừ ô tô, kể cả phụ tùng)",
+        "th_truoc": 538723.98,
+        "uoc_thang": 545254.3,
+        "luyke": 2172101.58,
+        "pct_thang": 101.82883899585924,
+        "pct_luyke": 104.81907885942643,
+        "v2025_thang": 535461.57,
+        "v2025_luyke": 2072238.76
+      },
+      {
+        "chitieu": "8. Xăng, dầu các loại",
+        "th_truoc": 2033341.37,
+        "uoc_thang": 2035847.03,
+        "luyke": 7613031.53,
+        "pct_thang": 127.03110957320092,
+        "pct_luyke": 121.34971905337156,
+        "v2025_thang": 1602636.58,
+        "v2025_luyke": 6273629.3
+      },
+      {
+        "chitieu": "9. Nhiên liệu khác (trừ xăng, dầu)",
+        "th_truoc": 205288.62,
+        "uoc_thang": 208635.15,
+        "luyke": 805121.07,
+        "pct_thang": 109.36861119183943,
+        "pct_luyke": 108.17585006915898,
+        "v2025_thang": 190763.28,
+        "v2025_luyke": 744270.62
+      },
+      {
+        "chitieu": "10. Đá quý, kim loại quý và sản phẩm",
+        "th_truoc": 966052.97,
+        "uoc_thang": 999018.81,
+        "luyke": 3878193.28,
+        "pct_thang": 107.50463224326263,
+        "pct_luyke": 105.62245346280035,
+        "v2025_thang": 929279.78,
+        "v2025_luyke": 3671750.8
+      },
+      {
+        "chitieu": "11. Hàng hóa khác",
+        "th_truoc": 283694.67,
+        "uoc_thang": 294743.03,
+        "luyke": 1096257.47,
+        "pct_thang": 127.91635240163153,
+        "pct_luyke": 120.3505002056566,
+        "v2025_thang": 230418.57,
+        "v2025_luyke": 910887.34
+      },
+      {
+        "chitieu": "12. Sửa chữa xe có động cơ, mô tô, xe máy và xe có động cơ",
+        "th_truoc": 304505.08,
+        "uoc_thang": 314796.94,
+        "luyke": 1234446.81,
+        "pct_thang": 119.07011539133504,
+        "pct_luyke": 116.54680144834688,
+        "v2025_thang": 264379.47,
+        "v2025_luyke": 1059185.49
+      }
+    ]
+  },
+  {
+    "month": 5,
+    "file": "5. SCT-TMDV_Thang 5-26_SoCT.xlsx",
+    "sheet": "DT bán lẻ",
+    "unit": "Triệu đồng",
+    "rows": [
+      {
+        "chitieu": "Tổng số",
+        "th_truoc": 12739299.9,
+        "uoc_thang": 12990725.38,
+        "luyke": 62412608.79,
+        "pct_thang": 121.225918240118,
+        "pct_luyke": 117.062925794444,
+        "v2025_thang": 10716128.67,
+        "v2025_luyke": 53315435.58
+      },
+      {
+        "chitieu": "1. Lương thực, thực phẩm",
+        "th_truoc": 4383921.22,
+        "uoc_thang": 4514320.1,
+        "luyke": 21803672.63,
+        "pct_thang": 117.758371706998,
+        "pct_luyke": 114.50730180816,
+        "v2025_thang": 3833544.94,
+        "v2025_luyke": 19041294.56
+      },
+      {
+        "chitieu": "2. Hàng may mặc",
+        "th_truoc": 463038,
+        "uoc_thang": 473198.38,
+        "luyke": 2407881.8,
+        "pct_thang": 105.805570642118,
+        "pct_luyke": 106.579328586673,
+        "v2025_thang": 447233.9,
+        "v2025_luyke": 2259239.04
+      },
+      {
+        "chitieu": "3. Đồ dùng, dụng cụ, trang thiết bị gia đình",
+        "th_truoc": 1439472.89,
+        "uoc_thang": 1451901.66,
+        "luyke": 7115333.41,
+        "pct_thang": 121.238105262428,
+        "pct_luyke": 117.5881375083,
+        "v2025_thang": 1197562.15,
+        "v2025_luyke": 6051063.96
+      },
+      {
+        "chitieu": "4. Vật phẩm văn hóa, giáo dục",
+        "th_truoc": 96773.3,
+        "uoc_thang": 97153.73,
+        "luyke": 498015.03,
+        "pct_thang": 119.132919766477,
+        "pct_luyke": 124.140420214605,
+        "v2025_thang": 81550.7,
+        "v2025_luyke": 401170.73
+      },
+      {
+        "chitieu": "5. Gỗ và vật liệu xây dựng",
+        "th_truoc": 1673033.17,
+        "uoc_thang": 1695423.81,
+        "luyke": 8048273.34,
+        "pct_thang": 141.859883127305,
+        "pct_luyke": 134.490662940216,
+        "v2025_thang": 1195139.72,
+        "v2025_luyke": 5984261.78
+      },
+      {
+        "chitieu": "6. Ô tô con (dưới 9 chỗ ngồi)",
+        "th_truoc": 258263.74,
+        "uoc_thang": 260051.25,
+        "luyke": 1215302.07,
+        "pct_thang": 118.603162021265,
+        "pct_luyke": 110.021158735656,
+        "v2025_thang": 219261.65,
+        "v2025_luyke": 1104607.59
+      },
+      {
+        "chitieu": "7. Phương tiện đi lại (trừ ô tô, kể cả phụ tùng)",
+        "th_truoc": 593348.21,
+        "uoc_thang": 597484.74,
+        "luyke": 2817680.23,
+        "pct_thang": 111.38802456617,
+        "pct_luyke": 108.013454299642,
+        "v2025_thang": 536399.44,
+        "v2025_luyke": 2608638.2
+      },
+      {
+        "chitieu": "8. Xăng, dầu các loại",
+        "th_truoc": 2047712.03,
+        "uoc_thang": 2074779.92,
+        "luyke": 9699476.45,
+        "pct_thang": 130.869316362427,
+        "pct_luyke": 123.41851692122,
+        "v2025_thang": 1585383.02,
+        "v2025_luyke": 7859012.32
+      },
+      {
+        "chitieu": "9. Nhiên liệu khác (trừ xăng, dầu)",
+        "th_truoc": 211299.81,
+        "uoc_thang": 218519.99,
+        "luyke": 1026305.72,
+        "pct_thang": 113.868759006078,
+        "pct_luyke": 109.627462578474,
+        "v2025_thang": 191905.13,
+        "v2025_luyke": 936175.75
+      },
+      {
+        "chitieu": "10. Đá quý, kim loại quý và sản phẩm",
+        "th_truoc": 967487.51,
+        "uoc_thang": 989424.44,
+        "luyke": 4836086.42,
+        "pct_thang": 107.299033273038,
+        "pct_luyke": 105.272612348419,
+        "v2025_thang": 922118.69,
+        "v2025_luyke": 4593869.49
+      },
+      {
+        "chitieu": "11. Hàng hóa khác",
+        "th_truoc": 290779.12,
+        "uoc_thang": 295257.04,
+        "luyke": 1387550.6,
+        "pct_thang": 127.014214584334,
+        "pct_luyke": 121.358641038499,
+        "v2025_thang": 232459.84,
+        "v2025_luyke": 1143347.18
+      },
+      {
+        "chitieu": "12. Sửa chữa xe có động cơ, mô tô, xe máy và xe có động cơ",
+        "th_truoc": 314170.9,
+        "uoc_thang": 323210.32,
+        "luyke": 1557031.09,
+        "pct_thang": 118.145601689721,
+        "pct_luyke": 116.828007650739,
+        "v2025_thang": 273569.49,
+        "v2025_luyke": 1332754.98
+      }
+    ]
+  },
+  {
+    "month": 6,
+    "file": "6. SCT - TMDV_T6.xlsx",
+    "sheet": "BL T",
+    "unit": "Triệu đồng",
+    "rows": [
+      {
+        "chitieu": "Tổng số",
+        "th_truoc": 12910298.24,
+        "uoc_thang": 13164915.67,
+        "luyke": 75497297.32,
+        "pct_thang": 126.257855248956,
+        "pct_luyke": 118.4411735972,
+        "v2025_thang": 10427007.21,
+        "v2025_luyke": 63742442.79
+      },
+      {
+        "chitieu": "1. Lương thực, thực phẩm",
+        "th_truoc": 4466475.74,
+        "uoc_thang": 4596937.33,
+        "luyke": 26352765.6,
+        "pct_thang": 125.227386490798,
+        "pct_luyke": 116.029288913151,
+        "v2025_thang": 3670872.21,
+        "v2025_luyke": 22712166.77
+      },
+      {
+        "chitieu": "2. Hàng may mặc",
+        "th_truoc": 442095.87,
+        "uoc_thang": 449165.41,
+        "luyke": 2825944.7,
+        "pct_thang": 103.422569799781,
+        "pct_luyke": 104.915631498337,
+        "v2025_thang": 434301.15,
+        "v2025_luyke": 2693540.19
+      },
+      {
+        "chitieu": "3. Đồ dùng, dụng cụ, trang thiết bị gia đình",
+        "th_truoc": 1449985.18,
+        "uoc_thang": 1465797.61,
+        "luyke": 8579214.54,
+        "pct_thang": 122.219832797526,
+        "pct_luyke": 118.327851052411,
+        "v2025_thang": 1199312.4,
+        "v2025_luyke": 7250376.36
+      },
+      {
+        "chitieu": "4. Vật phẩm văn hóa, giáo dục",
+        "th_truoc": 99475.5,
+        "uoc_thang": 98818.59,
+        "luyke": 599155.39,
+        "pct_thang": 119.877449579968,
+        "pct_luyke": 123.893870216967,
+        "v2025_thang": 82433.01,
+        "v2025_luyke": 483603.74
+      },
+      {
+        "chitieu": "5. Gỗ và vật liệu xây dựng",
+        "th_truoc": 1682730.7,
+        "uoc_thang": 1705056.45,
+        "luyke": 9740636.68,
+        "pct_thang": 135.816675352274,
+        "pct_luyke": 134.545275712642,
+        "v2025_thang": 1255410.24,
+        "v2025_luyke": 7239672.02
+      },
+      {
+        "chitieu": "6. Ô tô con (dưới 9 chỗ ngồi)",
+        "th_truoc": 259432.09,
+        "uoc_thang": 259631.7,
+        "luyke": 1474314.61,
+        "pct_thang": 116.768788653295,
+        "pct_luyke": 111.105143310047,
+        "v2025_thang": 222346.83,
+        "v2025_luyke": 1326954.42
+      },
+      {
+        "chitieu": "7. Phương tiện đi lại (trừ ô tô, kể cả phụ tùng)",
+        "th_truoc": 603028.94,
+        "uoc_thang": 610265.03,
+        "luyke": 3433489.46,
+        "pct_thang": 118.685631161837,
+        "pct_luyke": 109.948210951387,
+        "v2025_thang": 514186.11,
+        "v2025_luyke": 3122824.31
+      },
+      {
+        "chitieu": "8. Xăng, dầu các loại",
+        "th_truoc": 2075095.74,
+        "uoc_thang": 2123565.88,
+        "luyke": 11823558.15,
+        "pct_thang": 141.425949043071,
+        "pct_luyke": 126.312624730967,
+        "v2025_thang": 1501539.07,
+        "v2025_luyke": 9360551.39
+      },
+      {
+        "chitieu": "9. Nhiên liệu khác (trừ xăng, dầu)",
+        "th_truoc": 221503.94,
+        "uoc_thang": 224459.58,
+        "luyke": 1253749.25,
+        "pct_thang": 122.908868373862,
+        "pct_luyke": 112.062111952025,
+        "v2025_thang": 182622.77,
+        "v2025_luyke": 1118798.52
+      },
+      {
+        "chitieu": "10. Đá quý, kim loại quý và sản phẩm",
+        "th_truoc": 998079.09,
+        "uoc_thang": 1005010.42,
+        "luyke": 5849751.49,
+        "pct_thang": 114.157784573181,
+        "pct_luyke": 106.859627511921,
+        "v2025_thang": 880369.59,
+        "v2025_luyke": 5474239.08
+      },
+      {
+        "chitieu": "11. Hàng hóa khác",
+        "th_truoc": 294020.53,
+        "uoc_thang": 297406.8,
+        "luyke": 1683720.89,
+        "pct_thang": 131.4498918635,
+        "pct_luyke": 122.935384716391,
+        "v2025_thang": 226251.08,
+        "v2025_luyke": 1369598.26
+      },
+      {
+        "chitieu": "12. Sửa chữa xe có động cơ, mô tô, xe máy và xe có động cơ",
+        "th_truoc": 318374.92,
+        "uoc_thang": 328800.87,
+        "luyke": 1880996.56,
+        "pct_thang": 127.757754375876,
+        "pct_luyke": 118.292911556932,
+        "v2025_thang": 257362.75,
+        "v2025_luyke": 1590117.73
+      }
+    ]
+  },
+  {
+    "month": 7,
+    "file": "7. SCT -TMDV - Thang 7.xlsx",
+    "sheet": "DT bán lẻ",
+    "unit": "Triệu đồng",
+    "rows": [
+      {
+        "chitieu": "Tổng số",
+        "th_truoc": 13154803.45,
+        "uoc_thang": 13401333.6,
+        "luyke": 88888518.7,
+        "pct_thang": 129.3845151767,
+        "pct_luyke": 119.957191780703,
+        "v2025_thang": 10357756.94,
+        "v2025_luyke": 74100199.73
+      },
+      {
+        "chitieu": "1. Lương thực, thực phẩm",
+        "th_truoc": 4581287.01,
+        "uoc_thang": 4677286.85,
+        "luyke": 31014402.13,
+        "pct_thang": 128.573600118178,
+        "pct_luyke": 117.701737750987,
+        "v2025_thang": 3637828.33,
+        "v2025_luyke": 26349995.1
+      },
+      {
+        "chitieu": "2. Hàng may mặc",
+        "th_truoc": 445844.5,
+        "uoc_thang": 456048.16,
+        "luyke": 3278671.95,
+        "pct_thang": 107.847269016136,
+        "pct_luyke": 105.206863019387,
+        "v2025_thang": 422864.82,
+        "v2025_luyke": 3116405.01
+      },
+      {
+        "chitieu": "3. Đồ dùng, dụng cụ, trang thiết bị gia đình",
+        "th_truoc": 1464086.59,
+        "uoc_thang": 1477891.24,
+        "luyke": 10055394.76,
+        "pct_thang": 125.734954046278,
+        "pct_luyke": 119.340840202157,
+        "v2025_thang": 1175402.06,
+        "v2025_luyke": 8425778.42
+      },
+      {
+        "chitieu": "4. Vật phẩm văn hóa, giáo dục",
+        "th_truoc": 99033.46,
+        "uoc_thang": 100992.81,
+        "luyke": 700363.07,
+        "pct_thang": 116.248575565803,
+        "pct_luyke": 122.767257851515,
+        "v2025_thang": 86876.6,
+        "v2025_luyke": 570480.34
+      },
+      {
+        "chitieu": "5. Gỗ và vật liệu xây dựng",
+        "th_truoc": 1713807.37,
+        "uoc_thang": 1773910.22,
+        "luyke": 11523297.82,
+        "pct_thang": 139.027096663136,
+        "pct_luyke": 135.319576799836,
+        "v2025_thang": 1275945.67,
+        "v2025_luyke": 8515617.69
+      },
+      {
+        "chitieu": "6. Ô tô con (dưới 9 chỗ ngồi)",
+        "th_truoc": 263756.02,
+        "uoc_thang": 265356.1,
+        "luyke": 1743795.03,
+        "pct_thang": 127.074192478473,
+        "pct_luyke": 113.545011016723,
+        "v2025_thang": 208819.82,
+        "v2025_luyke": 1535774.24
+      },
+      {
+        "chitieu": "7. Phương tiện đi lại (trừ ô tô, kể cả phụ tùng)",
+        "th_truoc": 613498.19,
+        "uoc_thang": 620683.61,
+        "luyke": 4057406.23,
+        "pct_thang": 123.692749141651,
+        "pct_luyke": 111.940213953027,
+        "v2025_thang": 501794.66,
+        "v2025_luyke": 3624618.97
+      },
+      {
+        "chitieu": "8. Xăng, dầu các loại",
+        "th_truoc": 2124582.61,
+        "uoc_thang": 2155554.47,
+        "luyke": 13980129.35,
+        "pct_thang": 142.697593322745,
+        "pct_luyke": 128.598717174354,
+        "v2025_thang": 1510575.21,
+        "v2025_luyke": 10871126.6
+      },
+      {
+        "chitieu": "9. Nhiên liệu khác (trừ xăng, dầu)",
+        "th_truoc": 225227.15,
+        "uoc_thang": 229855.66,
+        "luyke": 1484372.48,
+        "pct_thang": 128.544367770221,
+        "pct_luyke": 114.392560159588,
+        "v2025_thang": 178814.26,
+        "v2025_luyke": 1297612.78
+      },
+      {
+        "chitieu": "10. Đá quý, kim loại quý và sản phẩm",
+        "th_truoc": 1007299.43,
+        "uoc_thang": 1014229.47,
+        "luyke": 6866269.97,
+        "pct_thang": 115.126642835395,
+        "pct_luyke": 108.041631571629,
+        "v2025_thang": 880968.51,
+        "v2025_luyke": 6355207.59
+      },
+      {
+        "chitieu": "11. Hàng hóa khác",
+        "th_truoc": 296013.09,
+        "uoc_thang": 304569.25,
+        "luyke": 1986896.43,
+        "pct_thang": 137.025271522788,
+        "pct_luyke": 124.815198858691,
+        "v2025_thang": 222272.32,
+        "v2025_luyke": 1591870.58
+      },
+      {
+        "chitieu": "12. Sửa chữa xe có động cơ, mô tô, xe máy và xe có động cơ",
+        "th_truoc": 320368.03,
+        "uoc_thang": 324955.76,
+        "luyke": 2197519.48,
+        "pct_thang": 127.137137596135,
+        "pct_luyke": 119.060773937149,
+        "v2025_thang": 255594.68,
+        "v2025_luyke": 1845712.41
+      }
+    ]
+  },
+  {
+    "month": 8,
+    "file": "8. SCT- TMDV thang 8.xlsx",
+    "sheet": "DT bán lẻ",
+    "unit": "Triệu đồng",
+    "rows": [
+      {
+        "chitieu": "Tổng số",
+        "th_truoc": 13399670.32,
+        "uoc_thang": 13558532.78,
+        "luyke": 102445388.2,
+        "pct_thang": 124.136410505135,
+        "pct_luyke": 120.492112523403,
+        "v2025_thang": 10922285.19,
+        "v2025_luyke": 85022484.92
+      },
+      {
+        "chitieu": "1. Lương thực, thực phẩm",
+        "th_truoc": 4655736.98,
+        "uoc_thang": 4680812.04,
+        "luyke": 35673664.3,
+        "pct_thang": 123.163261089431,
+        "pct_luyke": 118.318692865904,
+        "v2025_thang": 3800493.75,
+        "v2025_luyke": 30150488.85
+      },
+      {
+        "chitieu": "2. Hàng may mặc",
+        "th_truoc": 444962.11,
+        "uoc_thang": 457237.24,
+        "luyke": 3724823.14,
+        "pct_thang": 100.536573554632,
+        "pct_luyke": 104.301666862058,
+        "v2025_thang": 454796.92,
+        "v2025_luyke": 3571201.93
+      },
+      {
+        "chitieu": "3. Đồ dùng, dụng cụ, trang thiết bị gia đình",
+        "th_truoc": 1470052.8,
+        "uoc_thang": 1490405.73,
+        "luyke": 11537962.05,
+        "pct_thang": 118.747634607444,
+        "pct_luyke": 119.182964252927,
+        "v2025_thang": 1255103.51,
+        "v2025_luyke": 9680881.93
+      },
+      {
+        "chitieu": "4. Vật phẩm văn hóa, giáo dục",
+        "th_truoc": 101244.63,
+        "uoc_thang": 106260.74,
+        "luyke": 806875.63,
+        "pct_thang": 116.346517063271,
+        "pct_luyke": 121.91923350996,
+        "v2025_thang": 91331.26,
+        "v2025_luyke": 661811.6
+      },
+      {
+        "chitieu": "5. Gỗ và vật liệu xây dựng",
+        "th_truoc": 1830876.4,
+        "uoc_thang": 1844137.58,
+        "luyke": 13424401.58,
+        "pct_thang": 136.086482676956,
+        "pct_luyke": 136.001984524061,
+        "v2025_thang": 1355121.79,
+        "v2025_luyke": 9870739.48
+      },
+      {
+        "chitieu": "6. Ô tô con (dưới 9 chỗ ngồi)",
+        "th_truoc": 266250.98,
+        "uoc_thang": 267446.8,
+        "luyke": 2012136.71,
+        "pct_thang": 125.273478390312,
+        "pct_luyke": 115.027578446394,
+        "v2025_thang": 213490.36,
+        "v2025_luyke": 1749264.6
+      },
+      {
+        "chitieu": "7. Phương tiện đi lại (trừ ô tô, kể cả phụ tùng)",
+        "th_truoc": 618899.04,
+        "uoc_thang": 635270.93,
+        "luyke": 4690892.59,
+        "pct_thang": 123.852999628619,
+        "pct_luyke": 113.373888407135,
+        "v2025_thang": 512923.33,
+        "v2025_luyke": 4137542.3
+      },
+      {
+        "chitieu": "8. Xăng, dầu các loại",
+        "th_truoc": 2177504.13,
+        "uoc_thang": 2252329.98,
+        "luyke": 16254408.99,
+        "pct_thang": 136.896563098377,
+        "pct_luyke": 129.864834298602,
+        "v2025_thang": 1645278.69,
+        "v2025_luyke": 12516405.29
+      },
+      {
+        "chitieu": "9. Nhiên liệu khác (trừ xăng, dầu)",
+        "th_truoc": 236293.16,
+        "uoc_thang": 241687.56,
+        "luyke": 1732497.54,
+        "pct_thang": 127.406877753003,
+        "pct_luyke": 116.485285988088,
+        "v2025_thang": 189697.42,
+        "v2025_luyke": 1487310.2
+      },
+      {
+        "chitieu": "10. Đá quý, kim loại quý và sản phẩm",
+        "th_truoc": 957456.5,
+        "uoc_thang": 938357.05,
+        "luyke": 7747854.05,
+        "pct_thang": 104.059459484396,
+        "pct_luyke": 106.764481631459,
+        "v2025_thang": 901750.84,
+        "v2025_luyke": 7256958.43
+      },
+      {
+        "chitieu": "11. Hàng hóa khác",
+        "th_truoc": 319686.21,
+        "uoc_thang": 316689.98,
+        "luyke": 2318703.37,
+        "pct_thang": 137.405051060152,
+        "pct_luyke": 127.2370140897,
+        "v2025_thang": 230479.14,
+        "v2025_luyke": 1822349.72
+      },
+      {
+        "chitieu": "12. Sửa chữa xe có động cơ, mô tô, xe máy và xe có động cơ",
+        "th_truoc": 320707.38,
+        "uoc_thang": 327897.15,
+        "luyke": 2521168.25,
+        "pct_thang": 120.631059335325,
+        "pct_luyke": 119.061715656254,
+        "v2025_thang": 271818.18,
+        "v2025_luyke": 2117530.59
+      }
+    ]
+  }
+]

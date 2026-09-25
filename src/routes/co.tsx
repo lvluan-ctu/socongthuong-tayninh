@@ -43,11 +43,10 @@ import { CoSelfAssessmentPanel } from "@/features/co/CoSelfAssessmentPanel";
 import {
   computeCoKpis,
   buildCoChartData,
-  filterApplications,
   formatCurrency,
   formatNumber,
 } from "@/lib/co/co-service";
-import { CO_STATUS_LABELS, type CoApplicationStatus } from "@/lib/co/co-types";
+import { CO_STATUS_LABELS } from "@/lib/co/co-types";
 import type { CoApplication } from "@/lib/co/co-types";
 
 const CHART_COLORS = [
@@ -127,7 +126,7 @@ function Page() {
 
   const kpis = useMemo(() => computeCoKpis(apps), [apps]);
   const chartData = useMemo(() => buildCoChartData(apps), [apps]);
-  const applications = useMemo(() => filterApplications({}, apps), [apps]);
+  const applications = apps;
 
   const handleTabChange = (value: string) => {
     const next = resolveTab(value);
@@ -279,7 +278,7 @@ function Page() {
                       <ResponsiveContainer width="100%" height="100%">
                         <PieChart>
                           <Pie
-                            data={chartData.byStatus.map((d) => ({ ...d, label: CO_STATUS_LABELS[d.status as CoApplicationStatus] ?? d.status }))}
+                            data={chartData.byStatus.map((d) => ({ ...d, label: CO_STATUS_LABELS[d.status] ?? d.status }))}
                             dataKey="count" nameKey="label" innerRadius={42} outerRadius={72} paddingAngle={2} strokeWidth={0}
                           >
                             {chartData.byStatus.map((d, i) => <Cell key={i} fill={STATUS_COLORS[d.status] ?? STATUS_COLORS.DEFAULT} />)}
@@ -292,7 +291,7 @@ function Page() {
                       {chartData.byStatus.map((d) => {
                         const total = chartData.byStatus.reduce((s, x) => s + x.count, 0);
                         const pct = total > 0 ? ((d.count / total) * 100).toFixed(1) : "0";
-                        const label = CO_STATUS_LABELS[d.status as CoApplicationStatus] ?? d.status;
+                        const label = CO_STATUS_LABELS[d.status] ?? d.status;
                         return (
                           <li key={d.status} className="flex items-center gap-2 text-xs">
                             <span className="size-2 shrink-0 rounded-full" style={{ background: STATUS_COLORS[d.status] ?? STATUS_COLORS.DEFAULT }} />

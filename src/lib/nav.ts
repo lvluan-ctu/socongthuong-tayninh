@@ -216,6 +216,12 @@ export const NAV_ITEMS: NavItem[] = [
             code: "09-xnk",
             roles: ["leader", "dept", "specialist", "enterprise", "admin"],
           },
+          {
+            label: "Xúc tiến thương mại",
+            to: "/trade-promotion",
+            code: "07-xttm",
+            roles: ["leader", "dept", "specialist", "enterprise", "admin"],
+          },
         ],
       },
     ],
@@ -227,7 +233,8 @@ export const NAV_ITEMS: NavItem[] = [
     to: "/analytics",
     icon: FileBarChart,
     group: "BÁO CÁO",
-    roles: ["leader", "dept", "specialist", "investor", "admin"],
+    // Nội bộ Sở: BGĐ (leader), lãnh đạo phòng/đơn vị (dept), công chức (specialist).
+    roles: ["leader", "dept", "specialist", "admin"],
   },
   {
     code: "11",
@@ -247,7 +254,7 @@ export const NAV_ITEMS: NavItem[] = [
   },
   {
     code: "15",
-    label: "Trag thông tin",
+    label: "Trang thông tin",
     to: "/trang-thong-tin",
     icon: Globe2,
     group: "ĐIỀU HÀNH",

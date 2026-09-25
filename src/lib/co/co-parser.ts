@@ -1,4 +1,3 @@
-import ExcelJS from "exceljs";
 import { parseCsvText } from "@/lib/report-service";
 import {
   CO_HS_CODES_MAP,
@@ -189,6 +188,8 @@ function parseCsvFile(file: File): Promise<CoParseResult> {
 // ---------------------------------------------------------------------------
 
 async function parseExcelFile(file: File): Promise<CoParseResult> {
+  // Dynamic import để tránh phình bundle client (~1MB exceljs chỉ load khi cần)
+  const { default: ExcelJS } = await import("exceljs");
   const buffer = await file.arrayBuffer();
   const workbook = new ExcelJS.Workbook();
   await workbook.xlsx.load(buffer);

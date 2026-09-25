@@ -1,5 +1,6 @@
 // Store C/O demo — đọc/ghi file JSON như backend thật.
 // Chỉ import từ API route (server) — không import từ client.
+import "server-only";
 import { readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import type { CoApplication, CoSelfAssessment, CoStatusEvent, CoWorkflowAction } from "./co-types";

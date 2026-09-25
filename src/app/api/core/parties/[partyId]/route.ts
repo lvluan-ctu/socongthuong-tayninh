@@ -83,7 +83,8 @@ export async function PATCH(request: Request, context: Context) {
     return NextResponse.json(updated);
   } catch (error) {
     if (error instanceof z.ZodError) return NextResponse.json({ message: 'Thông tin Party không hợp lệ.', issues: error.issues }, { status: 400 });
-    return NextResponse.json({ message: error instanceof Error ? error.message : 'Không thể cập nhật Party.' }, { status: 400 });
+    console.error('Party update failed', error);
+    return NextResponse.json({ message: error instanceof Error ? error.message : 'Không thể cập nhật Party.' }, { status: 500 });
   }
 }
 
@@ -95,6 +96,7 @@ export async function DELETE(_request: Request, context: Context) {
     if (!updated) return NextResponse.json({ message: 'Không tìm thấy Party.' }, { status: 404 });
     return NextResponse.json({ ...updated, message: 'Party đã chuyển sang ARCHIVED để bảo toàn liên kết và lịch sử.' });
   } catch (error) {
-    return NextResponse.json({ message: error instanceof Error ? error.message : 'Không thể lưu trữ Party.' }, { status: 400 });
+    console.error('Party archive failed', error);
+    return NextResponse.json({ message: error instanceof Error ? error.message : 'Không thể lưu trữ Party.' }, { status: 500 });
   }
 }

@@ -1,0 +1,850 @@
+[
+  {
+    "unit": "Văn phòng Sở",
+    "tasks": [
+      {
+        "stt": 1,
+        "noidung": "Kế hoạch cải cách hành chính năm 2026 (hoàn thành trong tháng 12/2025)",
+        "tiendo": "Sở đã ban hành Kế hoạch số 3397/KH-SCT ngày 24/12/2025",
+        "vanban": "",
+        "deadline": {
+          "month": 12,
+          "year": 2025,
+          "isQuarter": false,
+          "raw": "hoàn thành trong tháng 12/2025"
+        },
+        "statusAuto": "completed"
+      },
+      {
+        "stt": 2,
+        "noidung": "Kế hoạch hoạt động kiểm soát thủ tục hành chính năm 2026 (hoàn thành trong tháng 02/2026)",
+        "tiendo": "Sở đã ban hành kế hoạch 1086/KH-SCT ngày 25/02/2026",
+        "vanban": "",
+        "deadline": {
+          "month": 2,
+          "year": 2026,
+          "isQuarter": false,
+          "raw": "hoàn thành trong tháng 02/2026"
+        },
+        "statusAuto": "completed"
+      },
+      {
+        "stt": 3,
+        "noidung": "Kế hoạch tuyên truyền cải cách hành chính năm 2026 (hoàn thành trong tháng 02/2026)",
+        "tiendo": "Sở đã ban hành kế hoạch số 1002/KH-SCT ngày 26/02/2026",
+        "vanban": "",
+        "deadline": {
+          "month": 2,
+          "year": 2026,
+          "isQuarter": false,
+          "raw": "hoàn thành trong tháng 02/2026"
+        },
+        "statusAuto": "completed"
+      },
+      {
+        "stt": 4,
+        "noidung": "Kế hoạch chuyển đổi vị trí việc làm năm 2026 (hoàn thành trong tháng 02/2026)",
+        "tiendo": "Đang thực hiện",
+        "vanban": "",
+        "deadline": {
+          "month": 2,
+          "year": 2026,
+          "isQuarter": false,
+          "raw": "hoàn thành trong tháng 02/2026"
+        },
+        "statusAuto": "in_progress"
+      },
+      {
+        "stt": 5,
+        "noidung": "Kế hoạch đánh giá mức độ hoàn thành nhiệm vụ của công chức, viên chức hàng quý (hoàn thành trong tháng 01/2026)",
+        "tiendo": "Đã gửi lấy ý kiến các phòng và đơn vị thuộc Sở tại văn bản số 596/SCT-VP ngày 29/01/2026; Tuy nhiên, Sở Nội vụ có văn bản số 1684/SNV-CCVC ngày 13/02/2026 về việc lấy ý kiến góp ý đối với dự thảo Quyết định của UBND tỉnh ban hành Quy định tiêu chí đánh giá, xếp loại chất lượng đối với cơ quan, tổ chức, địa phương và cán bộ, công chức trên địa bàn tỉnh Tây Ninh; Sau khi có Quyết định của UBND tỉnh, Văn phòng sẽ tham mưu Giám đốc Sở ban hành.",
+        "vanban": "",
+        "deadline": {
+          "month": 1,
+          "year": 2026,
+          "isQuarter": false,
+          "raw": "hoàn thành trong tháng 01/2026"
+        },
+        "statusAuto": "completed"
+      },
+      {
+        "stt": 6,
+        "noidung": "Xây dựng, hướng dẫn triển khai, kiểm tra đánh giá, báo cáo kết quả thực hiện chương trình, kế hoạch cải cách hành chính của Sở; Chủ trì, phối hợp với các phòng chuyên môn thực hiện rà soát, sửa đổi, bổ sung, xây dựng mới thủ tục hành chính thuộc thẩm quyền giải quyết của Sở, trình UBND tỉnh công bố theo quy định; Phối hợp với Trung tâm Phục vụ hành chính công công bố công khai các thủ tục hành chính. Tiếp nhận, giải quyết các kiến nghị của người dân về thủ tục hành chính",
+        "tiendo": "Tính đến thời điểm hiện tại, không có phát sinh kiến nghị thủ tục hành chính trên công 1022 và Tây Ninh Smart",
+        "vanban": "",
+        "deadline": null,
+        "statusAuto": "pending"
+      },
+      {
+        "stt": 7,
+        "noidung": "Tiếp tục tham mưu rà soát, điều chỉnh, bổ sung Quy hoạch chức danh lãnh đạo quản lý",
+        "tiendo": "Nhiệm vụ thường xuyên",
+        "vanban": "",
+        "deadline": null,
+        "statusAuto": "recurring"
+      },
+      {
+        "stt": 8,
+        "noidung": "Theo dõi, đôn đốc các nhiệm vụ, các văn bản, các kết luận của lãnh đạo Sở giao cho các đơn vị thuộc Sở",
+        "tiendo": "Tính đến thời điểm hiện tại đã theo dõi 94 nhiệm vụ do Lãnh đạo Sở giao; 478 nhiệm vụ đến cơ quan",
+        "vanban": "",
+        "deadline": null,
+        "statusAuto": "pending"
+      },
+      {
+        "stt": 9,
+        "noidung": "Triển khai thực hiện công tác ứng dụng, phát triển công nghệ thông tin phục vụ hoạt động của Sở",
+        "tiendo": "Nhiệm vụ thường xuyên",
+        "vanban": "",
+        "deadline": null,
+        "statusAuto": "recurring"
+      },
+      {
+        "stt": 10,
+        "noidung": "Thực hiện việc quyết toán ngân sách năm 2026 theo đúng thời gian quy định",
+        "tiendo": "Nhiệm vụ thường xuyên",
+        "vanban": "",
+        "deadline": null,
+        "statusAuto": "recurring"
+      },
+      {
+        "stt": 11,
+        "noidung": "Tham mưu công tác xây dựng Đảng",
+        "tiendo": "Nhiệm vụ thường xuyên",
+        "vanban": "",
+        "deadline": null,
+        "statusAuto": "recurring"
+      }
+    ]
+  },
+  {
+    "unit": "Phòng Kế hoạch - Tổng hợp",
+    "tasks": [
+      {
+        "stt": 1,
+        "noidung": "Quyết định chỉ tiêu và nhiệm vụ trọng tâm năm 2026 cho các phòng chuyên môn và đơn vị thuộc Sở (hoàn thành trong tháng 01/2026)",
+        "tiendo": "Sở đã ban hành QĐ số 14/QĐ-SCT ngày 22/01/2026",
+        "vanban": "",
+        "deadline": {
+          "month": 1,
+          "year": 2026,
+          "isQuarter": false,
+          "raw": "hoàn thành trong tháng 01/2026"
+        },
+        "statusAuto": "completed"
+      },
+      {
+        "stt": 2,
+        "noidung": "Quyết định ban hành Chương trình hành động thực hiện nhiệm vụ phát triển ngành công thương năm 2026 (hoàn thành trong tháng 01/2026)",
+        "tiendo": "Sở đã ban hành QĐ số 18/QĐ-SCT ngày 30/01/2026",
+        "vanban": "",
+        "deadline": {
+          "month": 1,
+          "year": 2026,
+          "isQuarter": false,
+          "raw": "hoàn thành trong tháng 01/2026"
+        },
+        "statusAuto": "completed"
+      },
+      {
+        "stt": 3,
+        "noidung": "Xây dựng Kế hoạch tổ chức kỷ niệm 75 năm ngày thành lập ngành công thương (hoàn thành trong tháng 01/2026)",
+        "tiendo": "Sở đã ban hành KH số 973/KH-SCT ngày 12/02/2026",
+        "vanban": "",
+        "deadline": {
+          "month": 1,
+          "year": 2026,
+          "isQuarter": false,
+          "raw": "hoàn thành trong tháng 01/2026"
+        },
+        "statusAuto": "completed"
+      },
+      {
+        "stt": 4,
+        "noidung": "Kế hoạch cải thiện và nâng cao Chỉ số năng lực cạnh tranh cấp tỉnh PCI năm 2026 (hoàn thành trong tháng 02/2026).",
+        "tiendo": "Hiện tỉnh chưa ban hành KH nên chưa có cơ sở để tham mưu",
+        "vanban": "",
+        "deadline": {
+          "month": 2,
+          "year": 2026,
+          "isQuarter": false,
+          "raw": "hoàn thành trong tháng 02/2026"
+        },
+        "statusAuto": "blocked"
+      },
+      {
+        "stt": 5,
+        "noidung": "Kế hoạch triển khai đánh giá chỉ số năng lực cạnh tranh cấp sở, ban, ngành và địa phương DDCI của tỉnh Tây Ninh năm 2026 (hoàn thành trong tháng 02/2026)",
+        "tiendo": "Hiện tỉnh chưa ban hành KH nên chưa có cơ sở để tham mưu",
+        "vanban": "",
+        "deadline": {
+          "month": 2,
+          "year": 2026,
+          "isQuarter": false,
+          "raw": "hoàn thành trong tháng 02/2026"
+        },
+        "statusAuto": "blocked"
+      },
+      {
+        "stt": 6,
+        "noidung": "Theo dõi chỉ tiêu và các nhiệm vụ được giao trong Chương trình hành động thực hiện nhiệm vụ phát triển ngành công thương năm 2026, để kịp thời báo cáo Giám đốc Sở để xem xét chỉ đạo",
+        "tiendo": "Thường xuyên báo cáo định kỳ tháng",
+        "vanban": "",
+        "deadline": null,
+        "statusAuto": "recurring"
+      },
+      {
+        "stt": 7,
+        "noidung": "Tập trung nghiên cứu, tham mưu các nội dung liên quan đến ngành công thương và đề xuất giải pháp thực hiện góp phần nâng cao chỉ số GRDP của tỉnh",
+        "tiendo": "Thường xuyên báo cáo định kỳ tháng",
+        "vanban": "",
+        "deadline": null,
+        "statusAuto": "recurring"
+      },
+      {
+        "stt": 8,
+        "noidung": "Tham mưu nội dung trả lời kiến nghị của cử tri liên quan đến ngành công thương phải đảm bảo chất lượng và đảm bảo có thời gian kết thúc",
+        "tiendo": "Lũy đến đến nay đã tham mưu trả lời 02 lần theo yêu cầu của UBND tỉnh",
+        "vanban": "",
+        "deadline": null,
+        "statusAuto": "pending"
+      },
+      {
+        "stt": 9,
+        "noidung": "Phối hợp các phòng chuyên môn và đơn vị trực thuộc triển khai thực hiện đảm bảo hiệu quả các nhiệm vụ, giải pháp đã được UBND tỉnh chỉ đạo nhằm thực hiện hoàn thành các mục tiêu, nhiệm vụ trọng tâm của ngành góp phần phấn đấu đạt chỉ số PCI của tỉnh năm 2026",
+        "tiendo": "Đang thực hiện",
+        "vanban": "",
+        "deadline": null,
+        "statusAuto": "in_progress"
+      },
+      {
+        "stt": 10,
+        "noidung": "Phối hợp các phòng và đơn vị triển khai thực hiện nhiệm vụ, giải pháp cụ thể để cải thiện các chỉ số thành phần góp phần cải thiện điểm số và vị trí xếp hạng chỉ số DDCI năm 2026",
+        "tiendo": "Đang thực hiện",
+        "vanban": "",
+        "deadline": null,
+        "statusAuto": "in_progress"
+      },
+      {
+        "stt": 11,
+        "noidung": "Phối hợp các phòng và đơn vị triển khai thực hiện cung cấp chỉ số IOC",
+        "tiendo": "Đã báo cáo IOC tháng 2",
+        "vanban": "",
+        "deadline": null,
+        "statusAuto": "completed"
+      },
+      {
+        "stt": 12,
+        "noidung": "Nghiên cứu các văn bản quy phạm pháp luật để tham mưu góp ý chủ trương đầu tư liên quan đến lĩnh vực ngành công thương",
+        "tiendo": "Đang thực hiện",
+        "vanban": "",
+        "deadline": null,
+        "statusAuto": "in_progress"
+      },
+      {
+        "stt": 13,
+        "noidung": "Chủ trì tổ chức kỷ niệm 75 năm ngày thành lập ngành công thương",
+        "tiendo": "Đang thực hiện",
+        "vanban": "",
+        "deadline": null,
+        "statusAuto": "in_progress"
+      }
+    ]
+  },
+  {
+    "unit": "Phòng Quản lý Thương mại",
+    "tasks": [
+      {
+        "stt": 1,
+        "noidung": "Tham mưu UBND tỉnh chỉ thị Tết năm 2026 (hoàn thành trong tháng 01/2026)",
+        "tiendo": "Tham mưu trình UBND tỉnh ban hành chỉ thị số 187/CT-UBND ngày 13/01/2026 của UBND tỉnh về việc tăng cường các biện pháp đảm bảo đón Tết Nguyên đán Bính Ngọ năm 2026 vui tươi, lành mạnh, an toàn, tiết kiệm",
+        "vanban": "",
+        "deadline": {
+          "month": 1,
+          "year": 2026,
+          "isQuarter": false,
+          "raw": "hoàn thành trong tháng 01/2026"
+        },
+        "statusAuto": "pending"
+      },
+      {
+        "stt": 2,
+        "noidung": "Theo dõi tình hình báo cáo tình hình trước, trong và sau Tết (hoàn thành trong tháng 02/2026)",
+        "tiendo": "Đã báo cáo theo đúng quy định (CV 1023/SCT-QLTM ngày 20/02/2026, CV 1024/SCT-QLTM ngày 20/02/2026, BC 1022/BC-SCT ngày 19/02/2026, CV 1020/SCT-QLTM ngày 18/02/2026, CV 1021/SCT-QLTM ngày 18/02/2026)",
+        "vanban": "",
+        "deadline": {
+          "month": 2,
+          "year": 2026,
+          "isQuarter": false,
+          "raw": "hoàn thành trong tháng 02/2026"
+        },
+        "statusAuto": "completed"
+      },
+      {
+        "stt": 3,
+        "noidung": "Xây dựng và triển khai thực hiện Kế hoạch phát triển thương mại điện tử tỉnh Tây Ninh năm 2026 (hoàn thành trình trong tháng 02/2026)",
+        "tiendo": "Đã trình UBND tỉnh dự thảo Kế hoạch tại Tờ trình số 1157/TTr-SCT ngày 27/3/2026 của Sở Công Thương về việc ban hành Kế hoạch phát triển thương mại điện tử trên địa bàn tỉnh Tây Ninh năm 2026",
+        "vanban": "",
+        "deadline": {
+          "month": 2,
+          "year": 2026,
+          "isQuarter": false,
+          "raw": "hoàn thành trình trong tháng 02/2026"
+        },
+        "statusAuto": "completed"
+      },
+      {
+        "stt": 4,
+        "noidung": "Xây dựng, triển khai Đề án phát triển kinh tế biên giới gắn với đảm bảo quốc phòng an ninh trên địa bàn tỉnh Tây Ninh đến năm 2035, định hướng đến năm 2050 (hoàn thành trình trong tháng 11/2026)",
+        "tiendo": "Đang trình UBND tỉnh phê duyệt Đề cương và dự toán kinh phí xây dựng “Đề án phát triển thương mại biên giới, gắn với đảm bảo quốc phòng an ninh trên địa bàn tỉnh Tây Ninh giai đoạn 2026 - 2030, định hướng đến năm 2050”",
+        "vanban": "UBND tỉnh giao",
+        "deadline": {
+          "month": 11,
+          "year": 2026,
+          "isQuarter": false,
+          "raw": "hoàn thành trình trong tháng 11/2026"
+        },
+        "statusAuto": "pending"
+      },
+      {
+        "stt": 5,
+        "noidung": "Xây dựng Đề án nghiên cứu thực trạng, cơ chế quản lý, giải pháp phát triển dịch vụ Logistics trên địa bàn tỉnh (hoàn thành trình trong tháng 11/2026)",
+        "tiendo": "Đang triển khai các bước thực hiện lựa chọn nhà thầu theo Quy định, đã phê duyệt hồ sơ lựa chọn nhà thầu QĐ 22/QĐ-SCT ngày 04/02/2026",
+        "vanban": "UBND tỉnh giao",
+        "deadline": {
+          "month": 11,
+          "year": 2026,
+          "isQuarter": false,
+          "raw": "hoàn thành trình trong tháng 11/2026"
+        },
+        "statusAuto": "completed"
+      },
+      {
+        "stt": 6,
+        "noidung": "Xây dựng Đề án phát triển thương hiệu sản phẩm (hoàn thành trình trong tháng 12/2026)",
+        "tiendo": "Đã tham mưu GĐ Sở ban hành Quyết định số 45/QĐ-SCT ngày 13/03/2026 về việc phê duyệt kế hoạch lựa chọn nhà thầu dự toán mua sắm: Lập Đề án \"Phát triển thương hiệu sản phẩm tỉnh Tây Ninh\"",
+        "vanban": "UBND tỉnh giao",
+        "deadline": {
+          "month": 12,
+          "year": 2026,
+          "isQuarter": false,
+          "raw": "hoàn thành trình trong tháng 12/2026"
+        },
+        "statusAuto": "pending"
+      },
+      {
+        "stt": 7,
+        "noidung": "Đánh giá thực trạng và đề xuất giải pháp đẩy mạnh hoạt động thương mại, xuất nhập khẩu trên địa bàn tỉnh Tây Ninh giai đoạn 2026-2035, định hướng đến 2045 (hoàn thành trình trong tháng 12/2026)",
+        "tiendo": "Đang phối hợp trường Đại học Ngoại thương thực hiện, đã nộp hồ sơ chờ Sở Khoa học Công nghệ xét duyệt lựa chọn",
+        "vanban": "UBND tỉnh giao",
+        "deadline": {
+          "month": 12,
+          "year": 2026,
+          "isQuarter": false,
+          "raw": "hoàn thành trình trong tháng 12/2026"
+        },
+        "statusAuto": "pending"
+      },
+      {
+        "stt": 8,
+        "noidung": "Tham mưu thực hiện tháo gỡ khó khăn vướng mắc các quy định về phát triển thương mại biên giới, hỗ trợ phát triển thương mại biên giới với Campuchia",
+        "tiendo": "CV 502/SCT-QLTM ngày 26/01/2026 đề nghị bổ sung cặp cửa khẩu quốc tế Tân Nam - Meun Chey vào cặp cửa khẩu được phép vận chuyển hàng hóa quá cảnh",
+        "vanban": "",
+        "deadline": null,
+        "statusAuto": "pending"
+      },
+      {
+        "stt": 9,
+        "noidung": "Tiếp tục triển khai các nhiệm vụ, giải pháp thực hiện Cuộc vận động “Người Việt Nam ưu tiên dùng hàng Việt Nam”",
+        "tiendo": "Đang thực hiện",
+        "vanban": "",
+        "deadline": null,
+        "statusAuto": "in_progress"
+      },
+      {
+        "stt": 10,
+        "noidung": "Theo dõi tình hình bình ổn thị trường các dịp Lễ, Tết, kịp thời, thường xuyên thông tin tình hình thị trường giúp doanh nghiệp phát triển sản xuất, phát triển thị trường",
+        "tiendo": "Tham mưu ban hành Kế hoạch số 766/KH-SCT ngày 04/02/2026 khảo sát tình hình cung ứng hàng hóa phục vụ Tết nguyên đán Bính Ngọ 2026",
+        "vanban": "",
+        "deadline": null,
+        "statusAuto": "recurring"
+      },
+      {
+        "stt": 11,
+        "noidung": "Triển khai các chương trình xúc tiến thương mại, thương mại điện tử, kết nối tiêu thụ hàng Việt, nhất là hàng nông sản, sản phẩm tiêu biểu, sản phẩm OCOP của tỉnh",
+        "tiendo": "Đang thực hiện",
+        "vanban": "",
+        "deadline": null,
+        "statusAuto": "in_progress"
+      },
+      {
+        "stt": 12,
+        "noidung": "Phối hợp hỗ trợ doanh nghiệp tham gia các chương trình xúc tiến thương mại, sàn giao dịch TMĐT uy tín",
+        "tiendo": "Đang thực hiện",
+        "vanban": "",
+        "deadline": null,
+        "statusAuto": "in_progress"
+      }
+    ]
+  },
+  {
+    "unit": "Phòng Quản lý Công nghiệp",
+    "tasks": [
+      {
+        "stt": 1,
+        "noidung": "Phối hợp các sở, ngành liên quan tham mưu giải pháp để chỉ số sản xuất công nghiệp IIP đạt 13,89%",
+        "tiendo": "",
+        "vanban": "",
+        "deadline": null,
+        "statusAuto": "pending"
+      },
+      {
+        "stt": 2,
+        "noidung": "Có 02 CCN hoàn thành hạ tầng kỹ thuật, tiếp nhận đầu tư",
+        "tiendo": "Đang thực hiện",
+        "vanban": "",
+        "deadline": null,
+        "statusAuto": "in_progress"
+      },
+      {
+        "stt": 3,
+        "noidung": "Tham mưu Quyết định thành lập 05 dự án đầu tư hạ tầng kỹ thuật CCN",
+        "tiendo": "Đang thực hiện",
+        "vanban": "",
+        "deadline": null,
+        "statusAuto": "in_progress"
+      },
+      {
+        "stt": 4,
+        "noidung": "Tham mưu xây dựng Đề án phát triển các cụm công nghiệp trên địa bàn tỉnh giai đoạn 2026 - 2030 (hoàn thành trong tháng 5/2026)",
+        "tiendo": "Đang thực hiện",
+        "vanban": "UBND tỉnh giao",
+        "deadline": {
+          "month": 5,
+          "year": 2026,
+          "isQuarter": false,
+          "raw": "hoàn thành trong tháng 5/2026"
+        },
+        "statusAuto": "in_progress"
+      },
+      {
+        "stt": 5,
+        "noidung": "Tham mưu xây dựng Chương trình phát triển công nghiệp hỗ trợ trên địa bàn tỉnh Tây Ninh giai đoạn 2026 - 2030 (hoàn thành trong tháng 5/2026)",
+        "tiendo": "Đang dự thảo Chương trình theo các Nghị định và Thông tư hiện hành",
+        "vanban": "UBND tỉnh giao",
+        "deadline": {
+          "month": 5,
+          "year": 2026,
+          "isQuarter": false,
+          "raw": "hoàn thành trong tháng 5/2026"
+        },
+        "statusAuto": "pending"
+      },
+      {
+        "stt": 6,
+        "noidung": "Tham mưu ban hành Kế hoạch phát triển cụm công nghiệp trên địa bàn tỉnh năm 2026 (hoàn thành trong tháng 3/2026)",
+        "tiendo": "Đã dự thảo Kế hoạch và trình UBND tỉnh phê duyệt",
+        "vanban": "",
+        "deadline": {
+          "month": 3,
+          "year": 2026,
+          "isQuarter": false,
+          "raw": "hoàn thành trong tháng 3/2026"
+        },
+        "statusAuto": "pending"
+      },
+      {
+        "stt": 7,
+        "noidung": "Xây dựng Cơ sở dữ liệu quản lý cụm công nghiệp trên nền GIS (hoàn thành trong tháng 11/2026)",
+        "tiendo": "Đang phối hợp cùng đơn vị tư vấn để xác định nội dung Cơ sở dữ liệu quản lý cụm công nghiệp trên nền GIS.",
+        "vanban": "",
+        "deadline": {
+          "month": 11,
+          "year": 2026,
+          "isQuarter": false,
+          "raw": "hoàn thành trong tháng 11/2026"
+        },
+        "statusAuto": "pending"
+      },
+      {
+        "stt": 8,
+        "noidung": "Nâng cấp, cập nhật cơ sở dữ liệu ngành Công Thương (hoàn thành trong tháng 9/2026)",
+        "tiendo": "Phối hợp cùng Sở Tài Chính và đơn vị tư vấn để hoàn chỉnh báo cáo kinh tế kỹ thuật.",
+        "vanban": "",
+        "deadline": {
+          "month": 9,
+          "year": 2026,
+          "isQuarter": false,
+          "raw": "hoàn thành trong tháng 9/2026"
+        },
+        "statusAuto": "pending"
+      }
+    ]
+  },
+  {
+    "unit": "Phòng Pháp chế",
+    "tasks": [
+      {
+        "stt": 1,
+        "noidung": "Kế hoạch công tác kiểm tra năm 2026",
+        "tiendo": "Quyết định số 21/QĐ-SCT ngày 03/02/2026 của Sở Công Thương về việc ban hành Kế hoạch công tác kiểm tra năm 2026",
+        "vanban": "",
+        "deadline": null,
+        "statusAuto": "pending"
+      },
+      {
+        "stt": 2,
+        "noidung": "Kế hoạch thực hiện công tác phòng, chống tham nhũng, tiêu cực năm 2026",
+        "tiendo": "Kế hoạch số 665/KH-SCT ngày 30/01/2026 của Sở Công Thương về thực hiện công tác phòng, chống tham nhũng, lãng phí, tiêu cực năm 2026",
+        "vanban": "",
+        "deadline": null,
+        "statusAuto": "pending"
+      },
+      {
+        "stt": 3,
+        "noidung": "Kế hoạch công tác phổ biến, giáo dục pháp luật năm 2026; Kế hoạch công tác theo dõi tình hình thi hành pháp luật năm 2026; Kế hoạch công tác kiểm tra, rà soát, hệ thống hóa văn bản quy phạm pháp luật năm 2026, hỗ trợ pháp lý cho doanh nghiệp nhỏ và vừa năm 2026, thực hiện quản lý công tác thi hành pháp luật về xử lý vi phạm hành chính 2026, theo dõi thi hành Luật Trách nhiệm bồi thường của Nhà nước năm 2026 trên địa bàn tỉnh Tây Ninh",
+        "tiendo": "Đang thực hiện.",
+        "vanban": "",
+        "deadline": null,
+        "statusAuto": "in_progress"
+      },
+      {
+        "stt": 4,
+        "noidung": "Kế hoạch kiểm tra công vụ, công tác cải cách hành chính, thực hiện nhiệm vụ trọng tâm và thi hành pháp luật,...",
+        "tiendo": "Kế hoạch số 545/KH-SCT ngày 27/01/2026 về kiểm tra công vụ năm 2026",
+        "vanban": "",
+        "deadline": null,
+        "statusAuto": "pending"
+      },
+      {
+        "stt": 5,
+        "noidung": "Xây dựng Kế hoạch của Sở Công Thương về triển khai Nghị quyết chuyên đề của Đảng ủy về văn hóa ứng xử, đạo đức công vụ cũng như tác phong trong quá trình kiểm tra, tiếp xúc người dân và doanh nghiệp",
+        "tiendo": "Đang thực hiện.",
+        "vanban": "",
+        "deadline": null,
+        "statusAuto": "in_progress"
+      },
+      {
+        "stt": 6,
+        "noidung": "Tổ chức thẩm tra đối với các hồ sơ xử lý vi phạm hành chính của các phòng chuyên môn, đơn vị thuộc Sở thuộc thẩm quyền của Giám đốc Sở và Chủ tịch UBND tỉnh (thực hiện thường xuyên trong năm)",
+        "tiendo": "Đang thực hiện",
+        "vanban": "",
+        "deadline": null,
+        "statusAuto": "in_progress"
+      },
+      {
+        "stt": 7,
+        "noidung": "Xử lý đơn thư, giải quyết các vụ việc khiếu nại, tố cáo mới phát sinh đảm bảo kịp thời, chính xác, dứt điểm, đúng thời hạn theo quy định của pháp luật (thực hiện thường xuyên trong năm)",
+        "tiendo": "Tiếp nhận: 01 đơn phản ánh; Kết quả giải quyết: lưu đơn (đơn gửi nhiều cơ quan và có cơ quan đã thụ lý giải quyết)",
+        "vanban": "",
+        "deadline": null,
+        "statusAuto": "recurring"
+      }
+    ]
+  },
+  {
+    "unit": "Phòng Quản lý Năng lượng",
+    "tasks": [
+      {
+        "stt": 1,
+        "noidung": "Kế hoạch điều hành cung ứng điện trên địa bàn tỉnh năm 2026 (hoàn thành trong tháng 1/2026)",
+        "tiendo": "UBND tỉnh phê duyệt tại công văn số 11410/UBND-KTTC ngày 29/12/2025",
+        "vanban": "",
+        "deadline": {
+          "month": 1,
+          "year": 2026,
+          "isQuarter": false,
+          "raw": "hoàn thành trong tháng 1/2026"
+        },
+        "statusAuto": "pending"
+      },
+      {
+        "stt": 2,
+        "noidung": "Xây dựng Kế hoạch của Sở Công Thương về triển khai thực hiện Kế hoạch số 11-KH/TU, ngày 20/11/2025 của Ban thường vụ Tỉnh ủy về Thực hiện Nghị quyết số 70-NQ/TW ngày 20/8/2025 của Bộ Chính trị (hoàn thành trong tháng 1/2026)",
+        "tiendo": "SCT tham mưu thực hiện Kế hoạch số 11-KH/TU, ngày 20/11/2025 của Ban thường vụ Tỉnh ủy về Thực hiện Nghị quyết số 70-NQ/TW tại văn bản số 3705/SCT-QLNL ngày 11/12/2025 (NVu giao là ban hành KH của Sở, đề nghị phòng QLNL báo cáo lại)",
+        "vanban": "",
+        "deadline": {
+          "month": 1,
+          "year": 2026,
+          "isQuarter": false,
+          "raw": "hoàn thành trong tháng 1/2026"
+        },
+        "statusAuto": "pending"
+      },
+      {
+        "stt": 3,
+        "noidung": "Kế hoạch triển khai đầu tư các dự án nguồn điện: Nhà máy Nhiệt điện Long An I&II và các dự án trong Quy hoạch điện VIII điều chỉnh (hoàn thành trong Quý I/2026)",
+        "tiendo": "SCT có văn bản số 557/SCT-QLNL ngày 27/01/2026 tham mưu UBND tỉnh chỉ đạo triển khai các dự án điện theo Quy hoạch điện VIII đã được phê duyệt và lựa chọn nhà đầu tư để thực hiện đầu tư các dự án năng lượng tái tạo. UBND tỉnh ban hành văn bản 2688/UBND-KTTC ngày 13/02/2026 V/v triển khai dự án điện theo Quy hoạch điện VIII đã được phê duyệt và lựa chọn nhà đầu tư để thực hiện đầu tư các dự án năng lượng tái tạo",
+        "vanban": "",
+        "deadline": null,
+        "statusAuto": "pending"
+      },
+      {
+        "stt": 4,
+        "noidung": "Kế hoạch cấp điện đối với các hộ dân chưa có điện trên địa bàn tỉnh (hoàn thành trong tháng 4/2026)",
+        "tiendo": "Đang thực hiện",
+        "vanban": "",
+        "deadline": {
+          "month": 4,
+          "year": 2026,
+          "isQuarter": false,
+          "raw": "hoàn thành trong tháng 4/2026"
+        },
+        "statusAuto": "in_progress"
+      },
+      {
+        "stt": 5,
+        "noidung": "Kế hoạch xóa điện kế tổ năm 2026 trên địa bàn tỉnh (hoàn thành trong Quý I/2026)",
+        "tiendo": "Đang thực hiện",
+        "vanban": "",
+        "deadline": null,
+        "statusAuto": "in_progress"
+      },
+      {
+        "stt": 6,
+        "noidung": "Kế hoạch khắc phục, tồn tại, hạn chế và nâng cao Chỉ số PAPI (hoàn thành trong Quý I/2026)",
+        "tiendo": "SCT có văn bản số 1554/KH-SCT ngày 13/3/2026 (Kế hoạch khăc phục tồn tại, hạn chế và nâng cao chỉ số PaPi năm 2026",
+        "vanban": "",
+        "deadline": null,
+        "statusAuto": "pending"
+      },
+      {
+        "stt": 7,
+        "noidung": "Kế hoạch triển khai đầu tư Đường dây và Trạm biến áp (500kV -220kV 110kV) theo Quy hoạch điện VIII (hoàn thành trong Quý II/2026)",
+        "tiendo": "SCT có văn bản số 556/SCT-QLNL ngày 27/01/2026 tham mưu UBND tỉnh chỉ đạo giải quyết các vướng mắc, đẩy nhanh tiến độ các dự án TBA và đường dây 500KV, 220KV, 110KV. UBND tỉnh ban hành văn bản số 2207/UBND-KTTC ngày 06/02/2026 V/v giải quyết các vướng mắc , đẩy nhanh tiến độ các dự án trạm biến áp và đường dây 500kV, 220kV, 110kV theo quy hoạch",
+        "vanban": "",
+        "deadline": null,
+        "statusAuto": "pending"
+      }
+    ]
+  },
+  {
+    "unit": "Phòng Kỹ thuật an toàn - Môi trường",
+    "tasks": [
+      {
+        "stt": 1,
+        "noidung": "Tham mưu UBND tỉnh về Quyết định ban hành lộ trình thực hiện quy định về khoảng cách an toàn đối với công trình hóa chất hoạt động trên địa bàn trước ngày quy chuẩn kỹ thuật quy định tại khoản 2 Điều 35 của Luật hóa chất 2025 có hiệu lực mà không đáp ứng khoảng cách an toàn (hoàn thành trong tháng 9/2026)",
+        "tiendo": "Đang thực hiện",
+        "vanban": "UBND tỉnh giao",
+        "deadline": {
+          "month": 9,
+          "year": 2026,
+          "isQuarter": false,
+          "raw": "hoàn thành trong tháng 9/2026"
+        },
+        "statusAuto": "in_progress"
+      },
+      {
+        "stt": 2,
+        "noidung": "Kế hoạch phòng ngừa, ứng phó sự cố hóa chất tỉnh Tây Ninh (hoàn thành trong tháng 11/2026)",
+        "tiendo": "Đang thực hiện",
+        "vanban": "UBND tỉnh giao",
+        "deadline": {
+          "month": 11,
+          "year": 2026,
+          "isQuarter": false,
+          "raw": "hoàn thành trong tháng 11/2026"
+        },
+        "statusAuto": "in_progress"
+      },
+      {
+        "stt": 3,
+        "noidung": "Tăng cường công tác quản lý nhà nước các lĩnh vực kinh doanh có điều kiện, nhất là trong lĩnh vực kinh doanh xăng dầu, đảm bảo nguồn cung xăng dầu trên địa bàn tỉnh",
+        "tiendo": "Nhiệm vụ thường xuyên, đang thực hiện: '- tham mưu BGĐ trình UBND tỉnh văn bản triển khai thực hiện Chỉ thị 07/CT-TTg của Thủ tướng CHính phủ về việc đẩy mạnh việc sản xuất, phối trộn, phân phối và sử dụng nhiên liệu sinh học tại Việt Nam (Công văn số 1593/SCT-KTATMT ngày 16/3/2026); văn bản chỉ đạo về việc tăng cường các giải pháp bảo đảm an ninh năng lượng trước diễn biến phức tạp của cuộc xung đột quân sự tại Trung Đông (Công văn số 1441/SCT-KTATMT ngày 11/3/2026); văn bản chỉ đạo tăng cường kiểm tra, giám sát chặt chẽ hoạt động kinh doanh, cung ứng xăng dầu trên địa bàn tỉnh (Công văn số 1323/SCT-KTATMT). '-Tham mưu ban hành văn bản: chỉ đạo Chi Cục Quản lý thị trường và Phòng KTATMT-Sở Công Thương về việc triển khai chỉ đạo của UBND tỉnh về việc tăng cường kiểm tra, kiểm soát hoạt động kinh doanh xăng dầu trong bối cảnh tình hình quốc tế diễn biến phức tạp (Công văn số 1600/SCT-KTATMT ngày 16/3/2026); văn bản phúc đáp đề nghị của Công ty TNHH XNK TM Công nghệ Hùng Duy về việc áp dụng định mức bán lẻ xăng dầu đối với các phương tiện (Công văn số 1569/SCT-KTATMT ngày 13/3/2026); văn bản gửi Cục Quản lý và Phát triển thị trường trong nước về việc cử đại diện tham gia Đoàn đôn đốc và giám sát xăng dầu (Công văn số 1560/SCT-KTATMT ngày 13/3/2026); Văn bản lấy ý kiến đối với nội dung đề xuất đầu tư dự án Kho LNG và bến cảng tổng hợp, chuyên dùng KCN Tân Tập của Công ty TNHH SAIGONTEL (Công văn số 1532/SCT-KTATMT); Văn bản gửi UBND các xã, phường về việc phối hợp tăng cường kiểm tra, giám sát chặt chẽ hoạt động kinh doanh, cung ứng xăng dầu trên địa bàn tỉnh (Công văn số 1358/SCT-KTATMT ngày 09/3/2026); văn bản gửi các thương nhân kinh doanh xăng dầu về việc đảm bảo cung ứng xăng dầu trên địa bàn tỉnh (Công văn số 1357/SCT-KTATMT ngày 09/3/2026); văn bản về việc đề nghị cử thành viên tham gia Đoàn kiểm tra, hỗ trợ doanh nghiệp kinh doanh xăng dầu (Công văn số 1352/SCT-KTATMT ngày 09/3/2026); văn bản chỉ đạo Chi cục Quản lý thị trường tăng cường kiểm tra, kiểm soát hoạt động kinh doanh xăng dầu trong bối cảnh tình hình quốc tế diễn biến phức tạp (Công văn số 1257/SCT-KTATMT ngày 05/3/2026); văn bản gửi Công ty Cổ phần Kho cảng Vina Benny về việc bổ sung dự án kho LNG vào dự án Kho cảng dầu khí quốc tế Pacific Petro tại KCN Nam Tân Tập (Công văn số 1224/SCT-KTATMT ngày 03/3/2026); văn bản gửi Bộ Công Thương về việc có ý kiến đối với nội dung Quy chuẩn kỹ thuật quốc gia về yêu cầu thiết kế cửa hàng xăng dầu QCVN 01:2020/BCT",
+        "vanban": "",
+        "deadline": null,
+        "statusAuto": "in_progress"
+      },
+      {
+        "stt": 4,
+        "noidung": "Tăng cường công tác quản lý ATTP theo lĩnh vực ngành công thương quản lý.",
+        "tiendo": "Nhiệm vụ thường xuyên, đang thực hiện",
+        "vanban": "",
+        "deadline": null,
+        "statusAuto": "in_progress"
+      },
+      {
+        "stt": 5,
+        "noidung": "Tăng cường công tác quản lý hóa chất, vật liệu nổ công nghiệp theo lĩnh vực ngành công thương quản lý.",
+        "tiendo": "Nhiệm vụ thường xuyên, đang thực hiện: ban hành văn bản tạm dừng hoạt động nổ mìn sử dụng vật liệu nổ công nghiệp trong thời gian bầu cửa đại biểu quốc hộ khóa XVI và bầu cử đại biểu HĐND các cấp nhiệm kỳ 2026-2031 (1552/SCT-KTATMT ngày 13/3/2026)",
+        "vanban": "",
+        "deadline": null,
+        "statusAuto": "in_progress"
+      },
+      {
+        "stt": 6,
+        "noidung": "Thực hiện Kế hoạch tuyên truyền bảo vệ môi trường ngành công thương năm 2026 (hoàn thành trong tháng 12/2026).",
+        "tiendo": "Đang thực hiện",
+        "vanban": "",
+        "deadline": {
+          "month": 12,
+          "year": 2026,
+          "isQuarter": false,
+          "raw": "hoàn thành trong tháng 12/2026"
+        },
+        "statusAuto": "in_progress"
+      },
+      {
+        "stt": 7,
+        "noidung": "Thực hiện tốt các chương trình, kế hoạch liên quan, đề ra giải pháp nhằm nâng cao kết quả chuyển đổi số của cơ quan.",
+        "tiendo": "Đang thực hiện: Đã tham mưu ban hành Kế hoạch thực hiện chuyển đổi số của Sở Công Thương giai đoạn 2026 – 2030 (Kế hoạch số 1314/KH-SCT ngày 06/3/2026); Kế hoạch Triển khai thực hiện Phong trào “Bình dân học vụ số” của Sở Công Thương năm 2026 (Kế hoạch số 1522/KH-SCT ngày 12/3/2026)",
+        "vanban": "",
+        "deadline": null,
+        "statusAuto": "in_progress"
+      },
+      {
+        "stt": 8,
+        "noidung": "Phấn đấu duy trì vị trí xếp hạng chuyển đổi số của Sở năm 2026 nằm trong TOP đầu",
+        "tiendo": "Đang thực hiện: Đã tham mưu ban hành Kế hoạch thực hiện chuyển đổi số của Sở Công Thương giai đoạn 2026 – 2030 (Kế hoạch số 1314/KH-SCT ngày 06/3/2026); Kế hoạch Triển khai thực hiện Phong trào “Bình dân học vụ số” của Sở Công Thương năm 2026 (Kế hoạch số 1522/KH-SCT ngày 12/3/2026); góp ý Dự thảo Quyết định ban hành Bộ chỉ số đánh giá mức độ chuyển đổi số trên địa bàn tỉnh Tây Ninh đến năm 2030 (công văn 1470/SCT-KTATMT ngày 11/3/2026)",
+        "vanban": "",
+        "deadline": null,
+        "statusAuto": "in_progress"
+      }
+    ]
+  },
+  {
+    "unit": "Chi cục Quản lý thị trường",
+    "tasks": [
+      {
+        "stt": 1,
+        "noidung": "Xây dựng Kế hoạch công tác năm 2026 gắn với việc đẩy mạnh số hóa, ứng dụng mạnh mẽ công nghệ thông tin vào công tác quản lý điều hành và công tác kiểm tra, xử lý vi phạm hành chính trên môi trường thương mại điện tử. Thời gian ban hành kế hoạch trước ngày 15/01/2026 (hoàn thành trước ngày 15/12/2026)",
+        "tiendo": "Kế hoạch số 205/CCQLTT-HCTH ngày 05/02/2026",
+        "vanban": "",
+        "deadline": null,
+        "statusAuto": "pending"
+      },
+      {
+        "stt": 2,
+        "noidung": "Xây dựng và thực hiện Kế hoạch cao điểm kiểm tra, kiểm soát thị trường, đấu tranh phòng, chống buôn lậu, gian lận thương mại và hàng giả, dịp trước, trong và sau Tết Nguyên đán Bính Ngọ 2026. Thời gian ban hành kế hoạch trước ngày 05/01/2026 (hoàn thành trước ngày 15/03/2026)",
+        "tiendo": "Kế hoạch số 916/KH-CCQLTT ngày 31/12/2025. Đã hoàn thành và có Báo cáo số 393/BC-CCQLTT ngày 18/3/2026",
+        "vanban": "",
+        "deadline": null,
+        "statusAuto": "pending"
+      },
+      {
+        "stt": 3,
+        "noidung": "Xây dựng và thực hiện Kế hoạch phối hợp chặt chẽ với chính quyền địa phương, các lực lượng chức năng có liên quan trong đấu tranh chống buôn bán, vận chuyển hàng cấm, hàng nhập lậu, hàng kém chất lượng, hàng vi phạm an toàn thực phẩm, hàng hóa không rõ nguồn gốc, xuất xứ. Thời gian ban hành kế hoạch trước ngày 30/01/2026 (hoàn thành trước ngày 31/12/2026)",
+        "tiendo": "Đang thực hiện",
+        "vanban": "",
+        "deadline": null,
+        "statusAuto": "in_progress"
+      },
+      {
+        "stt": 4,
+        "noidung": "Triển khai thực hiện Kế hoạch kiểm tra định kỳ năm 2026 khi Chủ tịch UBND tỉnh có quyết định phê duyệt; xây dựng và thực hiện Kế hoạch kiểm tra chuyên đề trên một số lĩnh vực, mặt hàng trọng điểm trong năm 2026 (hoàn thành trước ngày 15/11/2026)",
+        "tiendo": "- Quyết định số 1348/QĐ-UBND ngày 27/01/2026 của Chủ tịch UBND tỉnh về việc phê duyệt Kế hoạch kiểm tra định kỳ năm 2026 của Chi cục QLTT tỉnh Tây Ninh. - Chi cục QLTT đã ban hành công văn số 156/CCQLTT-NV ngày 29/01/2026 về việc thực hiện Kế hoạch kiểm tra định kỳ năm 2026. Đã kiểm tra 08 vụ. Lấy 02 mẫu phân bón thử nghiệm chờ kết quả",
+        "vanban": "",
+        "deadline": null,
+        "statusAuto": "completed"
+      },
+      {
+        "stt": 5,
+        "noidung": "Xây dựng Kế hoạch kiểm tra hoạt động công vụ năm 2026, trong đó, chú trọng tăng cường công tác kiểm tra, hướng dẫn chuyên môn nghiệp vụ tại các đơn vị trực thuộc để chấn chỉnh kịp thời những sai sót nghiệp vụ trong quá trình kiểm tra, kiểm soát thị trường. Thời gian ban hành kế hoạch trước ngày 30/01/2026 (hoàn thành trước ngày 15/12/2026).",
+        "tiendo": "Kế hoạch số 155/KH-CCQLTT ngày 29/01/2026",
+        "vanban": "",
+        "deadline": null,
+        "statusAuto": "pending"
+      },
+      {
+        "stt": 6,
+        "noidung": "Tham mưu xây dựng Kế hoạch tuyển dụng công chức",
+        "tiendo": "Đang thực hiện",
+        "vanban": "",
+        "deadline": null,
+        "statusAuto": "in_progress"
+      },
+      {
+        "stt": 7,
+        "noidung": "Xây dựng Bộ tiêu chí đánh giá, xếp loại và xét thi đua, khen thưởng đối với tập thể, cá nhân công chức trong Chi cục Quản lý thị trường (hoàn thành trước 15/02/2026)",
+        "tiendo": "Đang thực hiện",
+        "vanban": "",
+        "deadline": null,
+        "statusAuto": "in_progress"
+      }
+    ]
+  },
+  {
+    "unit": "Trung tâm Khuyến công và Xúc tiến Thương mại",
+    "tasks": [
+      {
+        "stt": 1,
+        "noidung": "Trình UBND tỉnh phê duyệt nội dung xúc tiến thương mại năm 2026 (hoàn thành trong tháng 02/2026)",
+        "tiendo": "Đã trình UBND tỉnh (Tờ trình số 1691/TTr-SCT ngày 18/3/2026)",
+        "vanban": "",
+        "deadline": {
+          "month": 2,
+          "year": 2026,
+          "isQuarter": false,
+          "raw": "hoàn thành trong tháng 02/2026"
+        },
+        "statusAuto": "completed"
+      },
+      {
+        "stt": 2,
+        "noidung": "Kế hoạch, đề án để giải ngân kinh phí KCĐP và kinh phí xúc tiến thương mại và công nghiệp hỗ trợ và đảm bảo quyết toán theo đúng quy định (hoàn thành trong tháng 02/2026)",
+        "tiendo": "Kế hoạch số 66/KH-KC&XTTM ngày 05/3/2026 của Trung tâm Khuyến công và Xúc tiến thương mại về việc giải ngân kinh phí xúc tiến thương mại năm 2026 (hiện kinh phí XTTM đã thực hiện 380/3.677 triệu đồng, đạt 10,3% kinh phí được giao)",
+        "vanban": "",
+        "deadline": {
+          "month": 2,
+          "year": 2026,
+          "isQuarter": false,
+          "raw": "hoàn thành trong tháng 02/2026"
+        },
+        "statusAuto": "pending"
+      },
+      {
+        "stt": 3,
+        "noidung": "Kế hoạch triển khai công tác tư vấn đảm bảo nguồn thu sự nghiệp đạt 500 triệu đồng (hoàn thành trong tháng 02/2026)",
+        "tiendo": "Đang thực hiện",
+        "vanban": "",
+        "deadline": {
+          "month": 2,
+          "year": 2026,
+          "isQuarter": false,
+          "raw": "hoàn thành trong tháng 02/2026"
+        },
+        "statusAuto": "in_progress"
+      },
+      {
+        "stt": 4,
+        "noidung": "Triển khai, thực hiện Chương trình Khuyến công giai đoạn 2026 – 2030; Chương trình Xúc tiến thương mại giai đoạn 2026 – 2030",
+        "tiendo": "Chương trình XTTM giai đoạn 2026-2030 đã được duyệt theo Quyết định số 2687/QĐ-UBND ngày 13/02/2026; Chương trình Khuyến công giai đoạn 2026-2030 đã có Tờ trình gửi UBND tỉnh (Tờ trình số 1476/TTr-SCT ngày 11/3/2026)",
+        "vanban": "",
+        "deadline": null,
+        "statusAuto": "pending"
+      },
+      {
+        "stt": 5,
+        "noidung": "Xây dựng Kế hoạch tuyển dụng hoặc xét tuyển viên chức để đảm bảo nhân sự thực hiện nhiệm vụ được giao",
+        "tiendo": "Đang thực hiện",
+        "vanban": "",
+        "deadline": null,
+        "statusAuto": "in_progress"
+      },
+      {
+        "stt": 6,
+        "noidung": "Tăng cường khai thác mọi nguồn thu theo chức năng, nhiệm vụ được giao để đảm bảo theo dự toán đề ra với giá trị hợp đồng tư vấn đạt 1,2 tỷ đồng",
+        "tiendo": "",
+        "vanban": "",
+        "deadline": null,
+        "statusAuto": "pending"
+      },
+      {
+        "stt": 7,
+        "noidung": "Tìm kiếm, ký kết hợp đồng tư vấn, thiết kế, thẩm tra, giám sát thi công công trình để đảm bảo nguồn thu sự nghiệp đạt 500 triệu đồng",
+        "tiendo": "Giá trị hợp đồng tư vấn PTCN 113 triệu đồng",
+        "vanban": "",
+        "deadline": null,
+        "statusAuto": "pending"
+      },
+      {
+        "stt": 8,
+        "noidung": "Phối hợp tham gia thành công các hội chợ quốc gia do Chính phủ, Bộ Công Thương và UBND tỉnh chỉ đạo, gồm: Hội chợ Mùa Xuân lần thứ nhất - năm 2026; và Hội chợ Mùa Hạ lần thứ nhất - 2026; Hội chợ Mùa Thu lần thứ hai - năm 2026 (nếu có)",
+        "tiendo": "Đã tham gia xong Hội chợ Mùa Xuân lần thứ nhất năm 2026 (hỗ trợ 31 doanh nghiệp tham gia, kinh phí giải ngân khoảng 2,4 tỷ đồng); các Hội chợ khác nếu có chờ thông báo của Chính phủ, Bộ Công Thương",
+        "vanban": "",
+        "deadline": null,
+        "statusAuto": "pending"
+      }
+    ]
+  }
+]

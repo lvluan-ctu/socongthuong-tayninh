@@ -1,9 +1,9 @@
-import { MinaLicense, LicenseStatus, MineralCategory, AdminLocation, ExtractionStats, LicenseExtension, WeighbridgeStation, Vehicle, DeclarationRecord, Trip, Alert, ReconciliationResult, MineralKpis } from './mineral-types';
-import { readFile, writeFile } from 'fs/promises';
-import path from 'path';
+import type { MineralLicense, LicenseStatus, MineralCategory, WeighbridgeStation, Vehicle, DeclarationRecord, Trip, Alert, ReconciliationResult, MineralKpis } from './mineral-types';
+import { readFile, writeFile } from 'node:fs/promises';
+import path from 'node:path';
 
 // Paths
-const DATA_DIR = path.resolve('src/data');
+const DATA_DIR = path.resolve(process.cwd(), 'src/data');
 const LICENSES_PATH = path.join(DATA_DIR, 'mineral-licenses.json');
 const STATIONS_PATH = path.join(DATA_DIR, 'weighbridge-stations.json');
 const VEHICLES_PATH = path.join(DATA_DIR, 'vehicles.json');
@@ -13,12 +13,13 @@ const TRIPS_PATH = path.join(DATA_DIR, 'trips.json');
 const ALERTS_PATH = path.join(DATA_DIR, 'alerts.json');
 
 // Helper: đọc file hoặc trả về default
-async function readJSON<T>(path: string): Promise<T> {
+async function readJSON<T>(filePath: string, fallback: T): Promise<T> {
   try {
-    const raw = await readFile(path, 'utf-8');
+    const raw = await readFile(filePath, 'utf-8');
     return JSON.parse(raw) as T;
-  } catch {
-    return {} as T;
+  } catch (error) {
+    console.error(`[mineral-store] Không đọc được ${filePath}:`, error);
+    return fallback;
   }
 }
 
@@ -31,7 +32,17 @@ async function writeJSON(path: string, data: unknown) {
 // License Store (79 GP từ Excel)
 // ===========================
 
-let licenseCache: MinaLicense[] = [];
+let licenseCache: MineralLicense[] = [];
+let licensesLoaded = false;
+
+async function ensureLicensesLoaded(): Promise<void> {
+  if (licensesLoaded) return;
+  licensesLoaded = true;
+  const data = await readJSON<MineralLicense[]>(LICENSES_PATH, []);
+  if (Array.isArray(data) && data.length > 0) {
+    licenseCache = data;
+  }
+}
 
 export async function getLicenses(filters?: {
   status?: LicenseStatus;
@@ -41,9 +52,10 @@ export async function getLicenses(filters?: {
   page?: number;
   pageSize?: number;
 }): Promise<{
-  items: MinaLicense[];
+  items: MineralLicense[];
   pagination: { page: number; pageSize: number; total: number; totalPages: number };
 }> {
+  await ensureLicensesLoaded();
   let items = [...licenseCache];
 
   if (filters) {
@@ -77,12 +89,17 @@ export async function getLicenses(filters?: {
   };
 }
 
-export async function getLicense(id: string): Promise<MinaLicense | undefined> {
+export async function getLicense(id: string): Promise<MineralLicense | undefined> {
+  await ensureLicensesLoaded();
   return licenseCache.find((l) => l.id === id);
 }
 
-export async function createLicense(license: Omit<MinaLicense, 'id' | 'createdAt' | 'updatedAt'>): Promise<MinaLicense> {
-  const newLicense: MinaLicense = {
+export async function createLicense(license: Omit<MineralLicense, 'id' | 'createdAt' | 'updatedAt'>): Promise<MineralLicense> {
+  await ensureLicensesLoaded();
+  // Chống trùng số GP
+  const dup = licenseCache.some((l) => l.licenseNumber === license.licenseNumber);
+  if (dup) throw new Error(`Số giấy phép ${license.licenseNumber} đã tồn tại.`);
+  const newLicense: MineralLicense = {
     id: `LP-${Date.now()}-${Math.random().toString(36).substr(2, 9).toUpperCase()}`,
     ...license,
     createdAt: new Date().toISOString(),
@@ -95,8 +112,8 @@ export async function createLicense(license: Omit<MinaLicense, 'id' | 'createdAt
 
 export async function updateLicense(
   id: string,
-  updates: Partial<Omit<MinaLicense, 'id' | 'createdAt' | 'updatedAt'>>,
-): Promise<MinaLicense | undefined> {
+  updates: Partial<Omit<MineralLicense, 'id' | 'createdAt' | 'updatedAt'>>,
+): Promise<MineralLicense | undefined> {
   const idx = licenseCache.findIndex((l) => l.id === id);
   if (idx === -1) return undefined;
   licenseCache[idx] = { ...licenseCache[idx], ...updates, updatedAt: new Date().toISOString() };
@@ -269,10 +286,11 @@ export async function getTrips(filters?: {
   endDate?: string;
 }): Promise<Trip[]> {
   let items = [...tripCache];
-  if (filters?.vehicleId) items = items.filter((t) => t.vehicleId === filters.vehicleId);
-  if (filters?.licenseId) items = items.filter((t) => t.licenseId === filters.licenseId);
-  if (filters?.startDate) items = items.filter((t) => t.startTime >= filters.startDate);
-  if (filters?.endDate) items = items.filter((t) => t.endTime <= filters.endDate);
+  const { vehicleId, licenseId, startDate, endDate } = filters ?? {};
+  if (vehicleId) items = items.filter((t) => t.vehicleId === vehicleId);
+  if (licenseId) items = items.filter((t) => t.licenseId === licenseId);
+  if (startDate) items = items.filter((t) => t.startTime >= (startDate as string));
+  if (endDate) items = items.filter((t) => t.endTime <= (endDate as string));
   return items;
 }
 
@@ -360,7 +378,7 @@ export async function deleteAlert(id: string): Promise<boolean> {
 // Reconciliation Engine (pure functions)
 // ===========================
 
-export function computeReconciliation(license: MinaLicense, actualVolume: number, declaredVolume: number): ReconciliationResult {
+export function computeReconciliation(license: MineralLicense, actualVolume: number, declaredVolume: number): ReconciliationResult {
   const licensedCapacity = license.capacity;
   const variance = declaredVolume - actualVolume;
   const variancePercent = licensedCapacity > 0 ? (variance / licensedCapacity) * 100 : 0;
@@ -451,14 +469,14 @@ export function computeReconciliation(license: MinaLicense, actualVolume: number
 // KPI Computation
 // ===========================
 
-export function computeKpis(licenses: MinaLicense[]): MineralKpis {
+export function computeKpis(licenses: MineralLicense[]): MineralKpis {
   const totalLicenses = licenses.length;
   const activeLicenses = licenses.filter((l) => l.status === 'HIEU_LUC').length;
   const expiredLicenses = licenses.filter((l) => l.status === 'HET_HAN').length;
   const suspendedLicenses = licenses.filter((l) => l.status === 'NGUNG_HOAT_DONG').length;
   
-  const totalReserve = licenses.reduce((sum, l) => sum + l.totalReserve, 0);
-  const totalCapacity = licenses.reduce((sum, l) => sum + l.capacity, 0);
+  const totalReserve = licenses.reduce((sum, l) => sum + (Number(l.totalReserve) || 0), 0);
+  const totalCapacity = licenses.reduce((sum, l) => sum + (Number(l.capacity) || 0), 0);
   
   // Total extracted: sum of extraction2025.conLai (remaining) không, sum of declared or actual
   // Mock: use sum of declared volume from declarations if available, else 0
@@ -491,13 +509,13 @@ export function computeKpis(licenses: MinaLicense[]): MineralKpis {
 // ===========================
 
 export async function initializeMineralData(): Promise<{
-  licenses: MinaLicense[];
+  licenses: MineralLicense[];
   stations: WeighbridgeStation[];
   vehicles: Vehicle[];
   message: string;
 }> {
   // 1. Đọc file Excel và parse (sử dụng script bên dưới hoặc manual)
-  // 2. Chuyển đổi sang MinaLicense[] theo cấu trúc types
+  // 2. Chuyển đổi sang MineralLicense[] theo cấu trúc types
   // 3. Ghi file src/data/mineral-licenses.json
   
   // TODO: Chạy script parse-excel.js để sinh file mineral-licenses.json từ Excel

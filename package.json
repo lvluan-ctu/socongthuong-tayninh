@@ -16,6 +16,8 @@
     "test:management-visibility": "node scripts/test-management-visibility.mjs",
     "test:investment-assessment": "node scripts/test-investment-assessment.mjs",
     "test:mission-reports": "node scripts/test-mission-reports.mjs",
+    "test:statistical-sct": "node scripts/parse-solieuthongke.mjs && node scripts/test-statistical-sct.mjs",
+    "test:chi-tieu-nganh": "node scripts/parse-chi-tieu-nganh.mjs && node scripts/test-chi-tieu-nganh.mjs",
     "qa:mission-report-pdfs": "python scripts/qa-mission-report-pdfs.py"
   },
   "dependencies": {
@@ -64,6 +66,7 @@
     "embla-carousel-react": "^8.6.0",
     "exceljs": "^4.4.0",
     "fonteditor-core": "^2.6.3",
+    "frappe-gantt": "^1.2.2",
     "input-otp": "^1.4.2",
     "leaflet": "^1.9.4",
     "lucide-react": "^0.575.0",
@@ -85,6 +88,7 @@
     "three": "0.180.0",
     "tw-animate-css": "^1.3.4",
     "vaul": "^1.1.2",
+    "xlsx": "^0.18.5",
     "zod": "^4.4.3",
     "zustand": "^5.0.15"
   },

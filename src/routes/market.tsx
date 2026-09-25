@@ -4,7 +4,6 @@ import {
   Building2,
   Database,
   FileCheck2,
-  Map as MapIcon,
   Plus,
   ShieldAlert,
   Store,

@@ -77,7 +77,7 @@ export async function PATCH(request: Request, context: Context) {
   } catch (error) {
     if (error instanceof z.ZodError) return NextResponse.json({ message: 'Thông tin nguồn dữ liệu không hợp lệ.', issues: error.issues }, { status: 400 });
     console.error('Data source update failed', error);
-    return NextResponse.json({ message: error instanceof Error ? error.message : 'Không thể cập nhật nguồn dữ liệu.' }, { status: 400 });
+    return NextResponse.json({ message: error instanceof Error ? error.message : 'Không thể cập nhật nguồn dữ liệu.' }, { status: 500 });
   }
 }
 
@@ -90,6 +90,6 @@ export async function DELETE(_request: Request, context: Context) {
     return NextResponse.json({ ...updated, message: 'Nguồn dữ liệu đã chuyển sang DEPRECATED để bảo toàn provenance.' });
   } catch (error) {
     console.error('Data source archive failed', error);
-    return NextResponse.json({ message: error instanceof Error ? error.message : 'Không thể lưu trữ nguồn dữ liệu.' }, { status: 400 });
+    return NextResponse.json({ message: error instanceof Error ? error.message : 'Không thể lưu trữ nguồn dữ liệu.' }, { status: 500 });
   }
 }

@@ -57,12 +57,13 @@ export function getPostBySlug(slug: string): PortalPost | undefined {
 }
 
 export function getRelatedPosts(post: PortalPost, limit = 3): PortalPost[] {
+  const postTags = post.tags ?? [];
   return getPublishedPosts()
     .filter(
       (p) =>
         p.id !== post.id &&
         p.type === post.type &&
-        (p.category === post.category || p.tags.some((t) => post.tags.includes(t))),
+        (p.category === post.category || (p.tags ?? []).some((t) => postTags.includes(t))),
     )
     .slice(0, limit);
 }
@@ -82,7 +83,7 @@ export function searchPortal(query: string, limit = 8): PortalPost[] {
         p.title.toLowerCase().includes(q) ||
         p.summary.toLowerCase().includes(q) ||
         p.category.toLowerCase().includes(q) ||
-        p.tags.some((t) => t.toLowerCase().includes(q)) ||
+        (p.tags ?? []).some((t) => t.toLowerCase().includes(q)) ||
         (p.location ?? "").toLowerCase().includes(q),
     )
     .slice(0, limit);

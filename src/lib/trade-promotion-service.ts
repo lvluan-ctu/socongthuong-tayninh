@@ -315,9 +315,11 @@ export function computeTradePromotionForecast(
   }
 
   const sum = (arr: number[]) => arr.reduce((a, b) => a + b, 0);
-  const budgetH1 = sum(budget.slice(0, 4));
+  // budget/ent: index 0-3 = Q1-Q4/2025, 4-7 = Q1-Q4/2026
+  // H1/2026 = Q1+Q2/2026 -> slice(4,6); cả năm 2025 -> slice(0,4)
+  const budgetH1 = sum(budget.slice(4, 6));
   const budgetH2 = sum(budgetFc.slice(0, 2));
-  const enterprisesH1 = sum(ent.slice(0, 4));
+  const enterprisesH1 = sum(ent.slice(4, 6));
   const enterprisesH2 = sum(entFc.slice(0, 2));
   const budget2025 = sum(budget.slice(0, 4));
   const enterprises2025 = sum(ent.slice(0, 4));

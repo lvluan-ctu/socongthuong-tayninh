@@ -1,0 +1,546 @@
+[
+  {
+    "month": 1,
+    "file": "1. Số liệu Thống kê_T1_2026_TMDV.xls",
+    "sheet": "12. TM tháng",
+    "unit": "Triệu đồng",
+    "rows": [
+      {
+        "chitieu": "TỔNG SỐ",
+        "th_truoc": 17863934.7838484,
+        "uoc_thang": 18350223.456230618,
+        "luyke": 18350223.456230618,
+        "pct_thang": 111.74566907700054,
+        "pct_luyke": 111.74566907700054,
+        "v2025_thang": 16421418.04,
+        "v2025_luyke": 16421418.04
+      },
+      {
+        "chitieu": "Bán lẻ hàng hóa",
+        "th_truoc": 11768048.333700502,
+        "uoc_thang": 12005954.996230619,
+        "luyke": 12005954.996230619,
+        "pct_thang": 108.76587412737513,
+        "pct_luyke": 108.76587412737513,
+        "v2025_thang": 11038347.36,
+        "v2025_luyke": 11038347.36
+      },
+      {
+        "chitieu": "Dịch vụ lưu trú",
+        "th_truoc": 66830,
+        "uoc_thang": 67550,
+        "luyke": 67550,
+        "pct_thang": 123.93935980137411,
+        "pct_luyke": 123.93935980137411,
+        "v2025_thang": 54502.46,
+        "v2025_luyke": 54502.46
+      },
+      {
+        "chitieu": "Dịch vụ ăn uống",
+        "th_truoc": 2253345.04,
+        "uoc_thang": 2280345,
+        "luyke": 2280345,
+        "pct_thang": 105.58726565749001,
+        "pct_luyke": 105.58726565749001,
+        "v2025_thang": 2159678.05,
+        "v2025_luyke": 2159678.05
+      },
+      {
+        "chitieu": "Dịch vụ lữ hành và hoạt động hỗ trợ du lịch",
+        "th_truoc": 17391.82,
+        "uoc_thang": 17895,
+        "luyke": 17895,
+        "pct_thang": 161.7792371107738,
+        "pct_luyke": 161.7792371107738,
+        "v2025_thang": 11061.37,
+        "v2025_luyke": 11061.37
+      },
+      {
+        "chitieu": "Dịch vụ khác",
+        "th_truoc": 3758319.5901478985,
+        "uoc_thang": 3978478.46,
+        "luyke": 3978478.46,
+        "pct_thang": 125.98778205223712,
+        "pct_luyke": 125.98778205223712,
+        "v2025_thang": 3157828.8,
+        "v2025_luyke": 3157828.8
+      }
+    ]
+  },
+  {
+    "month": 2,
+    "file": "2. SCT_TMDV thang 2-2026.xls",
+    "sheet": "Tổng mức",
+    "unit": "Triệu đồng",
+    "rows": [
+      {
+        "chitieu": "Tổng số",
+        "th_truoc": 18424003.21,
+        "uoc_thang": 18676095.52,
+        "luyke": 37100098.730000004,
+        "pct_thang": 118.34481917502755,
+        "pct_luyke": 115.1926484155478,
+        "v2025_thang": 15781084.17,
+        "v2025_luyke": 32207002.13
+      },
+      {
+        "chitieu": "Bán lẻ hàng hóa",
+        "th_truoc": 12037706.23,
+        "uoc_thang": 12376582.89,
+        "luyke": 24414289.120000005,
+        "pct_thang": 118.72886371295522,
+        "pct_luyke": 113.7527719868497,
+        "v2025_thang": 10424241,
+        "v2025_luyke": 21462588.29
+      },
+      {
+        "chitieu": "Dịch vụ lưu trú",
+        "th_truoc": 67574.6,
+        "uoc_thang": 70297,
+        "luyke": 137871.6,
+        "pct_thang": 125.4585993047191,
+        "pct_luyke": 124.73174662496747,
+        "v2025_thang": 56032.03,
+        "v2025_luyke": 110534.49
+      },
+      {
+        "chitieu": "Dịch vụ ăn uống",
+        "th_truoc": 2282019.5,
+        "uoc_thang": 2371058.4,
+        "luyke": 4653077.9,
+        "pct_thang": 110.6483114085908,
+        "pct_luyke": 108.1468264497617,
+        "v2025_thang": 2142878.07,
+        "v2025_luyke": 4302556.12
+      },
+      {
+        "chitieu": "Dịch vụ lữ hành và hoạt động hỗ trợ du lịch",
+        "th_truoc": 17906.3,
+        "uoc_thang": 18730,
+        "luyke": 36636.3,
+        "pct_thang": 158.34101226656747,
+        "pct_luyke": 163.62598575184668,
+        "v2025_thang": 11828.9,
+        "v2025_luyke": 22390.27
+      },
+      {
+        "chitieu": "Dịch vụ khác",
+        "th_truoc": 4018796.5800000005,
+        "uoc_thang": 3839427.23,
+        "luyke": 7858223.8100000005,
+        "pct_thang": 122.0375113960892,
+        "pct_luyke": 124.55709798351127,
+        "v2025_thang": 3146104.17,
+        "v2025_luyke": 6308932.96
+      }
+    ]
+  },
+  {
+    "month": 3,
+    "file": "3. SCT_TMDV_Thang 3-26.xls",
+    "sheet": "11.TM",
+    "unit": "Triệu đồng",
+    "rows": [
+      {
+        "chitieu": "Tổng số",
+        "th_truoc": 18583130.53,
+        "uoc_thang": 18546476.93,
+        "luyke": 55553610.67000001,
+        "pct_thang": 116.43780095266325,
+        "pct_luyke": 115.41154366481467,
+        "v2025_thang": 15928226.73,
+        "v2025_luyke": 48135228.86
+      },
+      {
+        "chitieu": "Bán lẻ hàng hóa",
+        "th_truoc": 12262746.000000002,
+        "uoc_thang": 12316386.149999999,
+        "luyke": 36616838.38000001,
+        "pct_thang": 117.22686361812072,
+        "pct_luyke": 114.53842874445175,
+        "v2025_thang": 10506453.7,
+        "v2025_luyke": 31969041.99
+      },
+      {
+        "chitieu": "Dịch vụ lưu trú",
+        "th_truoc": 70565.54,
+        "uoc_thang": 69364,
+        "luyke": 207504.14,
+        "pct_thang": 124.71226228770156,
+        "pct_luyke": 124.88684574741993,
+        "v2025_thang": 55619.23,
+        "v2025_luyke": 166153.72
+      },
+      {
+        "chitieu": "Dịch vụ ăn uống",
+        "th_truoc": 2383910.81,
+        "uoc_thang": 2347789.66,
+        "luyke": 7013719.970000001,
+        "pct_thang": 112.08343952296987,
+        "pct_luyke": 109.63671772165068,
+        "v2025_thang": 2094680.24,
+        "v2025_luyke": 6397236.36
+      },
+      {
+        "chitieu": "Dịch vụ lữ hành và hoạt động hỗ trợ du lịch",
+        "th_truoc": 18842.8,
+        "uoc_thang": 18504.29,
+        "luyke": 55253.39,
+        "pct_thang": 157.02653897004288,
+        "pct_luyke": 161.68040743889077,
+        "v2025_thang": 11784.18,
+        "v2025_luyke": 34174.45
+      },
+      {
+        "chitieu": "Dịch vụ khác",
+        "th_truoc": 3847065.3800000004,
+        "uoc_thang": 3794432.83,
+        "luyke": 11660294.79,
+        "pct_thang": 116.40473655084391,
+        "pct_luyke": 121.85970330746937,
+        "v2025_thang": 3259689.38,
+        "v2025_luyke": 9568622.34
+      }
+    ]
+  },
+  {
+    "month": 4,
+    "file": "4. SCT_TMDV_Thang 4_26.xls",
+    "sheet": "Tổng mức",
+    "unit": "Triệu đồng",
+    "rows": [
+      {
+        "chitieu": "Tổng số",
+        "th_truoc": 18635236.68,
+        "uoc_thang": 19169337.089999996,
+        "luyke": 74811707.51,
+        "pct_thang": 119.0212227077517,
+        "pct_luyke": 116.45468979101223,
+        "v2025_thang": 16105814.29,
+        "v2025_luyke": 64241043.14
+      },
+      {
+        "chitieu": "Bán lẻ hàng hóa",
+        "th_truoc": 12382331.280000001,
+        "uoc_thang": 12679701.509999998,
+        "luyke": 49362485.02,
+        "pct_thang": 119.27926166867341,
+        "pct_luyke": 115.87626325538263,
+        "v2025_thang": 10630264.92,
+        "v2025_luyke": 42599306.91
+      },
+      {
+        "chitieu": "Dịch vụ lưu trú",
+        "th_truoc": 69413.25,
+        "uoc_thang": 69651,
+        "luyke": 277204.39,
+        "pct_thang": 120.65229253386964,
+        "pct_luyke": 123.81695266649342,
+        "v2025_thang": 57728.7,
+        "v2025_luyke": 223882.42
+      },
+      {
+        "chitieu": "Dịch vụ ăn uống",
+        "th_truoc": 2350295.06,
+        "uoc_thang": 2378698.77,
+        "luyke": 9394924.14,
+        "pct_thang": 111.25538221049327,
+        "pct_luyke": 110.07153955670574,
+        "v2025_thang": 2138052.76,
+        "v2025_luyke": 8535289.12
+      },
+      {
+        "chitieu": "Dịch vụ lữ hành và hoạt động hỗ trợ du lịch",
+        "th_truoc": 18673.54,
+        "uoc_thang": 19023.31,
+        "luyke": 74445.95,
+        "pct_thang": 141.7434993376023,
+        "pct_luyke": 156.41420314026212,
+        "v2025_thang": 13420.94,
+        "v2025_luyke": 47595.39
+      },
+      {
+        "chitieu": "Dịch vụ khác",
+        "th_truoc": 3814523.55,
+        "uoc_thang": 4022262.5,
+        "luyke": 15702648.010000002,
+        "pct_thang": 123.14253635984227,
+        "pct_luyke": 122.34270016567652,
+        "v2025_thang": 3266346.97,
+        "v2025_luyke": 12834969.3
+      }
+    ]
+  },
+  {
+    "month": 5,
+    "file": "5. SCT-TMDV_Thang 5-26_SoCT.xlsx",
+    "sheet": "Tổng mức",
+    "unit": "Triệu đồng",
+    "rows": [
+      {
+        "chitieu": "Tổng số",
+        "th_truoc": 19222077.22,
+        "uoc_thang": 19372614.01,
+        "luyke": 94236861.65,
+        "pct_thang": 118.858325755665,
+        "pct_luyke": 117.006349698573,
+        "v2025_thang": 16298912.08,
+        "v2025_luyke": 80539955.22
+      },
+      {
+        "chitieu": "Bán lẻ hàng hóa",
+        "th_truoc": 12739299.9,
+        "uoc_thang": 12990725.38,
+        "luyke": 62412608.79,
+        "pct_thang": 121.225918240118,
+        "pct_luyke": 117.062925794444,
+        "v2025_thang": 10716128.67,
+        "v2025_luyke": 53315435.58
+      },
+      {
+        "chitieu": "Dịch vụ lưu trú",
+        "th_truoc": 68886.47,
+        "uoc_thang": 68952,
+        "luyke": 345391.86,
+        "pct_thang": 117.33944150088,
+        "pct_luyke": 122.199766512986,
+        "v2025_thang": 58762.85,
+        "v2025_luyke": 282645.27
+      },
+      {
+        "chitieu": "Dịch vụ ăn uống",
+        "th_truoc": 2369380.69,
+        "uoc_thang": 2375105.96,
+        "luyke": 11760712.02,
+        "pct_thang": 113.80958306773,
+        "pct_luyke": 110.718219099977,
+        "v2025_thang": 2086912.1,
+        "v2025_luyke": 10622201.22
+      },
+      {
+        "chitieu": "Dịch vụ lữ hành và hoạt động hỗ trợ du lịch",
+        "th_truoc": 19124.86,
+        "uoc_thang": 19045.87,
+        "luyke": 93593.37,
+        "pct_thang": 142.327305716596,
+        "pct_luyke": 153.489300004772,
+        "v2025_thang": 13381.74,
+        "v2025_luyke": 60977.13
+      },
+      {
+        "chitieu": "Dịch vụ khác",
+        "th_truoc": 4025385.3,
+        "uoc_thang": 3918784.8,
+        "luyke": 19624555.61,
+        "pct_thang": 114.459626161484,
+        "pct_luyke": 120.70190369328,
+        "v2025_thang": 3423726.72,
+        "v2025_luyke": 16258696.02
+      }
+    ]
+  },
+  {
+    "month": 6,
+    "file": "6. SCT - TMDV_T6.xlsx",
+    "sheet": "TM T",
+    "unit": "Triệu đồng",
+    "rows": [
+      {
+        "chitieu": "Tổng số",
+        "th_truoc": 19363946.34,
+        "uoc_thang": 19510119.37,
+        "luyke": 113738513.35,
+        "pct_thang": 122.350416042983,
+        "pct_luyke": 117.850830039573,
+        "v2025_thang": 15946099.74,
+        "v2025_luyke": 96510574.69
+      },
+      {
+        "chitieu": "Bán lẻ hàng hóa",
+        "th_truoc": 12910298.24,
+        "uoc_thang": 13164915.67,
+        "luyke": 75497297.32,
+        "pct_thang": 126.257855248956,
+        "pct_luyke": 118.4411735972,
+        "v2025_thang": 10427007.21,
+        "v2025_luyke": 63742442.79
+      },
+      {
+        "chitieu": "Dịch vụ lưu trú",
+        "th_truoc": 69222.46,
+        "uoc_thang": 69972,
+        "luyke": 415634.32,
+        "pct_thang": 116.747332423897,
+        "pct_luyke": 121.324807709783,
+        "v2025_thang": 59934.56,
+        "v2025_luyke": 342579.83
+      },
+      {
+        "chitieu": "Dịch vụ ăn uống",
+        "th_truoc": 2388316.66,
+        "uoc_thang": 2413029.93,
+        "luyke": 14186952.65,
+        "pct_thang": 114.70571269148,
+        "pct_luyke": 111.481187797163,
+        "v2025_thang": 2103670.23,
+        "v2025_luyke": 12725871.45
+      },
+      {
+        "chitieu": "Dịch vụ lữ hành và hoạt động hỗ trợ du lịch",
+        "th_truoc": 19226.39,
+        "uoc_thang": 20083.89,
+        "luyke": 113857.78,
+        "pct_thang": 136.902632547614,
+        "pct_luyke": 150.511300266645,
+        "v2025_thang": 14670.2,
+        "v2025_luyke": 75647.33
+      },
+      {
+        "chitieu": "Dịch vụ khác",
+        "th_truoc": 3976882.59,
+        "uoc_thang": 3842117.88,
+        "luyke": 23524771.28,
+        "pct_thang": 114.167394474601,
+        "pct_luyke": 119.877351054446,
+        "v2025_thang": 3365337.27,
+        "v2025_luyke": 19624033.29
+      }
+    ]
+  },
+  {
+    "month": 7,
+    "file": "7. SCT -TMDV - Thang 7.xlsx",
+    "sheet": "Tổng mức",
+    "unit": "Triệu đồng",
+    "rows": [
+      {
+        "chitieu": "Tổng số",
+        "th_truoc": 19576796.36,
+        "uoc_thang": 19978654.56,
+        "luyke": 133753844.9,
+        "pct_thang": 124.152173805633,
+        "pct_luyke": 118.783928579076,
+        "v2025_thang": 16092069.87,
+        "v2025_luyke": 112602644.57
+      },
+      {
+        "chitieu": "Bán lẻ hàng hóa",
+        "th_truoc": 13154803.45,
+        "uoc_thang": 13401333.6,
+        "luyke": 88888518.7,
+        "pct_thang": 129.3845151767,
+        "pct_luyke": 119.957191780703,
+        "v2025_thang": 10357756.94,
+        "v2025_luyke": 74100199.73
+      },
+      {
+        "chitieu": "Dịch vụ lưu trú",
+        "th_truoc": 69664.67,
+        "uoc_thang": 69806,
+        "luyke": 485132.99,
+        "pct_thang": 115.246817488341,
+        "pct_luyke": 120.335395672139,
+        "v2025_thang": 60570.87,
+        "v2025_luyke": 403150.7
+      },
+      {
+        "chitieu": "Dịch vụ ăn uống",
+        "th_truoc": 2415873.88,
+        "uoc_thang": 2419882.44,
+        "luyke": 16609679.04,
+        "pct_thang": 114.482579550666,
+        "pct_luyke": 111.927870502092,
+        "v2025_thang": 2113756.04,
+        "v2025_luyke": 14839627.49
+      },
+      {
+        "chitieu": "Dịch vụ lữ hành và hoạt động hỗ trợ du lịch",
+        "th_truoc": 20162.87,
+        "uoc_thang": 20230.56,
+        "luyke": 134167.32,
+        "pct_thang": 129.918011994767,
+        "pct_luyke": 147.082453766272,
+        "v2025_thang": 15571.79,
+        "v2025_luyke": 91219.12
+      },
+      {
+        "chitieu": "Dịch vụ khác",
+        "th_truoc": 3916291.49,
+        "uoc_thang": 4067401.96,
+        "luyke": 27636346.85,
+        "pct_thang": 114.755265340022,
+        "pct_luyke": 119.284413935857,
+        "v2025_thang": 3544414.23,
+        "v2025_luyke": 23168447.53
+      }
+    ]
+  },
+  {
+    "month": 8,
+    "file": "8. SCT- TMDV thang 8.xlsx",
+    "sheet": "Tổng mức",
+    "unit": "Triệu đồng",
+    "rows": [
+      {
+        "chitieu": "Tổng số",
+        "th_truoc": 20012454.18,
+        "uoc_thang": 20150332.81,
+        "luyke": 153937977.33,
+        "pct_thang": 120.206195787507,
+        "pct_luyke": 118.994352272979,
+        "v2025_thang": 16763139.93,
+        "v2025_luyke": 129365784.5
+      },
+      {
+        "chitieu": "Bán lẻ hàng hóa",
+        "th_truoc": 13399670.32,
+        "uoc_thang": 13558532.78,
+        "luyke": 102445388.2,
+        "pct_thang": 124.136410505135,
+        "pct_luyke": 120.492112523403,
+        "v2025_thang": 10922285.19,
+        "v2025_luyke": 85022484.92
+      },
+      {
+        "chitieu": "Dịch vụ lưu trú",
+        "th_truoc": 70142.21,
+        "uoc_thang": 70009,
+        "luyke": 555478.2,
+        "pct_thang": 113.180905796445,
+        "pct_luyke": 119.455997328554,
+        "v2025_thang": 61855.84,
+        "v2025_luyke": 465006.54
+      },
+      {
+        "chitieu": "Dịch vụ ăn uống",
+        "th_truoc": 2429578.4,
+        "uoc_thang": 2424023.75,
+        "luyke": 19043398.75,
+        "pct_thang": 113.807487206666,
+        "pct_luyke": 112.22092784905,
+        "v2025_thang": 2129933.46,
+        "v2025_luyke": 16969560.95
+      },
+      {
+        "chitieu": "Dịch vụ lữ hành và hoạt động hỗ trợ du lịch",
+        "th_truoc": 20275.68,
+        "uoc_thang": 20083.85,
+        "luyke": 154296.29,
+        "pct_thang": 126.168547210218,
+        "pct_luyke": 144.017219385315,
+        "v2025_thang": 15918.27,
+        "v2025_luyke": 107137.39
+      },
+      {
+        "chitieu": "Dịch vụ khác",
+        "th_truoc": 4092787.57,
+        "uoc_thang": 4077683.43,
+        "luyke": 31739415.89,
+        "pct_thang": 112.235569713008,
+        "pct_luyke": 118.42360965424,
+        "v2025_thang": 3633147.17,
+        "v2025_luyke": 26801594.7
+      }
+    ]
+  }
+]

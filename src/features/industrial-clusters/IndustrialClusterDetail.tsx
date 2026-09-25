@@ -13,7 +13,7 @@ import { DetailDrawer } from "@/components/common/DetailDrawer";
 import { ClusterStatusBadge } from "@/components/industry/ClusterStatusBadge";
 import { ProgressMilestone } from "@/components/industry/ProgressMilestone";
 import { DocumentAttachmentItem } from "@/components/industry/DocumentAttachmentItem";
-import { formatCurrency, formatNumber } from "@/lib/co/co-service";
+import { formatNumber } from "@/lib/report-service";
 import type { ClusterDossier } from "@/lib/industrial-clusters/industrial-cluster-types";
 import { CLUSTER_STATUS_LABELS } from "@/lib/industrial-clusters/industrial-cluster-types";
 
@@ -114,7 +114,7 @@ export function IndustrialClusterDetail({
                 <InfoRow label="Tên chủ đầu tư" value={cluster.investor ?? "—"} />
                 <InfoRow label="Mã số thuế" value={cluster.investorTaxCode ?? "—"} />
                 <InfoRow label="Địa chỉ" value={cluster.investorAddress ?? "—"} />
-                <InfoRow label="Vốn đầu tư" value={cluster.investmentCapital ? formatCurrency(cluster.investmentCapital) + " tỷ" : "—"} />
+                <InfoRow label="Vốn đầu tư" value={cluster.investmentCapital ? `${formatNumber(cluster.investmentCapital)} tỷ đồng` : "—"} />
                 <InfoRow label="Hình thức" value={cluster.investmentForm ? "BT/BOT/PPP/Other" : "—"} />
               </InfoCard>
 

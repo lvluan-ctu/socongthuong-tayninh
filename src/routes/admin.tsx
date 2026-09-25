@@ -70,8 +70,12 @@ export const Route = createFileRoute("/admin")({
 type Row = UserRow & { permissions: string[] };
 
 const ROLE_NAME_TO_ID: Record<string, RoleId> = {
+  // Tên ngắn đang dùng trong mock USERS
   "Lãnh đạo Sở": "leader",
   "Lãnh đạo phòng": "dept",
+  // Tên chuẩn trong ROLES (nav.ts) — hỗ trợ cả hai để không mất quyền
+  "Lãnh đạo UBND/Sở": "leader",
+  "Lãnh đạo phòng/đơn vị": "dept",
   "Chuyên viên": "specialist",
   "Cán bộ GIS": "gis",
   "Cán bộ điều tra": "surveyor",

@@ -604,3 +604,20 @@
     margin: 22mm 18mm 22mm 30mm;
   }
 }
+
+/* Màu thanh Gantt theo trạng thái nhiệm vụ (frappe-gantt custom_class) */
+.gantt .bar-completed .bar-progress {
+  fill: #16a34a;
+}
+.gantt .bar-in_progress .bar-progress {
+  fill: #2563eb;
+}
+.gantt .bar-recurring .bar-progress {
+  fill: #0d9488;
+}
+.gantt .bar-blocked .bar-progress {
+  fill: #dc2626;
+}
+.gantt .bar-pending .bar-progress {
+  fill: #d97706;
+}

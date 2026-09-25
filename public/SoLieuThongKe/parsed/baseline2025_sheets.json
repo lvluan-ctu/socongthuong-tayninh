@@ -1,0 +1,314 @@
+[
+  {
+    "sheet": "5. IIP thang",
+    "sampleRows": [
+      [
+        "5. Chỉ số sản xuất công nghiệp tháng 9 và 9 tháng năm 2025",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "",
+        "Đơn vị tính: %",
+        "",
+        ""
+      ],
+      [
+        "",
+        "Tháng 8",
+        "Tháng 9 ",
+        "Tháng 9 ",
+        "9 tháng",
+        "",
+        ""
+      ],
+      [
+        "",
+        "năm báo cáo",
+        "năm báo cáo",
+        "năm báo cáo",
+        "năm báo cáo",
+        "",
+        ""
+      ],
+      [
+        "",
+        "so với",
+        "so với",
+        "so với",
+        "so với",
+        "",
+        ""
+      ],
+      [
+        "",
+        "cùng kỳ",
+        "tháng 8",
+        "cùng kỳ",
+        "cùng kỳ ",
+        "",
+        ""
+      ],
+      [
+        "",
+        "năm trước",
+        "năm báo cáo",
+        "năm trước",
+        "năm trước",
+        "",
+        ""
+      ],
+      [
+        "Toàn ngành công nghiệp",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ],
+    "totalRows": 42
+  },
+  {
+    "sheet": "6. IIPquy",
+    "sampleRows": [
+      [
+        "6. Chỉ số sản xuất công nghiệp các quý đầu năm 2025",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "Đơn vị tính: %",
+        "",
+        "",
+        ""
+      ],
+      [
+        "",
+        "Thực hiện quý I năm báo cáo so với cùng kỳ năm trước",
+        "Thực hiện \nquý II năm báo cáo so với cùng kỳ năm trước",
+        "Ước tính \nquý III  năm báo cáo so với cùng kỳ năm trước",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Toàn ngành công nghiệp",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Khai khoáng",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Khai khoáng khác",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Công nghiệp chế biến, chế tạo",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ],
+    "totalRows": 76
+  },
+  {
+    "sheet": "7. SPCNthang",
+    "sampleRows": [
+      [
+        "7. Sản lượng một số sản phẩm công nghiệp chủ yếu tháng 9 và 9 tháng năm 2025",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "     ",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Tên sản phẩm ",
+        "Đơn \nvị tính",
+        "Thực hiện tháng 8 \nnăm 2025",
+        "Ước tính \n9 tháng \nnăm 2025",
+        "Cộng dồn \n9 tháng \nnăm 2025",
+        "So với cùng kỳ (%)",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Tháng 9 năm 2025",
+        "9 tháng năm 2025"
+      ],
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Thuỷ hải sản đã được chế biến bảo quản khác dùng làm thức ăn cho người",
+        "Tấn",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Gạo đã xát toàn bộ hoặc sơ bộ, đã hoặc chưa đánh bóng hạt hoặc hồ",
+        "Tấn",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ],
+    "totalRows": 84
+  },
+  {
+    "sheet": "8. SPCN quý",
+    "sampleRows": [
+      [
+        "8. Sản lượng một số sản phẩm công nghiệp chủ yếu các quý đầu năm 2025",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "     ",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Tên sản phẩm ",
+        "Đơn vị \ntính",
+        "Thực hiện \nquý I \nnăm 2025",
+        "Thực hiện \nquý II \nnăm 2025",
+        "Ước tính \nquý III\nnăm 2025",
+        "So với cùng kỳ (%)",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Quý I \nnăm 2025",
+        "Quý II \nnăm 2025"
+      ],
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Thuỷ hải sản đã được chế biến bảo quản khác dùng làm thức ăn cho người",
+        "Tấn",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ],
+    "totalRows": 85
+  }
+]

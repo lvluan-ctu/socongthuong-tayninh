@@ -79,6 +79,11 @@ function Page() {
 
   const dashboardStats = useMemo(() => getClusterDashboardSnapshot(), []);
   const allDossiers = useMemo(() => getAllDossiers(), []);
+  // Tính 1 lần để tránh O(n²) khi render từng ward
+  const maxWardArea = useMemo(
+    () => Math.max(...dashboardStats.byWard.map((item) => item.totalArea), 1),
+    [dashboardStats],
+  );
   const statusBreakdown = [
     { label: "Đang hoạt động", count: dashboardStats.active, color: "bg-success" },
     { label: "Đang đầu tư hạ tầng", count: dashboardStats.constructing, color: "bg-gov" },
@@ -258,7 +263,6 @@ function Page() {
                   .slice()
                   .sort((a, b) => b.totalArea - a.totalArea)
                   .map((ward) => {
-                    const maxArea = Math.max(...dashboardStats.byWard.map((item) => item.totalArea), 1);
                     return (
                       <div key={ward.wardId} className="space-y-1">
                         <div className="flex items-center justify-between gap-3 text-xs">
@@ -270,7 +274,7 @@ function Page() {
                         <div className="h-2 overflow-hidden rounded-full bg-muted">
                           <div
                             className="h-full rounded-full bg-gov"
-                            style={{ width: `${(ward.totalArea / maxArea) * 100}%` }}
+                            style={{ width: `${(ward.totalArea / maxWardArea) * 100}%` }}
                           />
                         </div>
                       </div>
@@ -353,8 +357,4 @@ function Page() {
       />
     </>
   );
-}
-
-function fmtArea(value: number) {
-  return new Intl.NumberFormat("vi-VN", { maximumFractionDigits: 1 }).format(value);
 }
