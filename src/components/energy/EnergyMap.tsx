@@ -421,7 +421,16 @@ function entityFeatureDetail(
 }
 
 function rowHtml(label: string, value: string | number | undefined) {
-  return `<div style="display:flex;justify-content:space-between;gap:12px;font-size:11px;padding:2px 0"><span style="color:#64748b">${label}</span><span style="font-weight:600;color:#0f2a4a;text-align:right">${value ?? "Đang cập nhật"}</span></div>`;
+  return `<div style="display:flex;justify-content:space-between;gap:12px;font-size:11px;padding:2px 0"><span style="color:#64748b">${escapeHtml(label)}</span><span style="font-weight:600;color:#0f2a4a;text-align:right">${escapeHtml(value ?? "Đang cập nhật")}</span></div>`;
+}
+
+function escapeHtml(input: string | number): string {
+  return String(input)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
 }
 
 function markerColor(
@@ -483,7 +492,7 @@ function buildPopup(entity: EnergyMapEntity, onOpen: () => void): HTMLElement {
 
   if (entity.kind === "substation") {
     const s = entity.item;
-    el.innerHTML = `<div style="font-weight:700;color:#0f2a4a;margin-bottom:8px">${s.name}</div>
+    el.innerHTML = `<div style="font-weight:700;color:#0f2a4a;margin-bottom:8px">${escapeHtml(s.name)}</div>
       ${rowHtml("Cấp điện áp", s.voltageLevel)}
       ${rowHtml("Công suất", `${s.designCapacity ?? 0} MVA`)}
       ${rowHtml("Mức tải", `${s.loadFactor ?? 0}%`)}
@@ -492,7 +501,7 @@ function buildPopup(entity: EnergyMapEntity, onOpen: () => void): HTMLElement {
       <button class="energy-open-profile" style="margin-top:10px;width:100%;padding:7px 10px;border:0;border-radius:7px;background:#1565C0;color:#fff;font-size:12px;font-weight:700;cursor:pointer">Xem hồ sơ</button>`;
   } else if (entity.kind === "project") {
     const p = entity.item;
-    el.innerHTML = `<div style="font-weight:700;color:#0f2a4a;margin-bottom:8px">${p.name}</div>
+    el.innerHTML = `<div style="font-weight:700;color:#0f2a4a;margin-bottom:8px">${escapeHtml(p.name)}</div>
       ${rowHtml("Loại nguồn", p.type)}
       ${rowHtml("Công suất", `${p.designCapacityMw ?? 0} MW`)}
       ${rowHtml("Địa bàn", p.district)}
@@ -500,7 +509,7 @@ function buildPopup(entity: EnergyMapEntity, onOpen: () => void): HTMLElement {
       <button class="energy-open-profile" style="margin-top:10px;width:100%;padding:7px 10px;border:0;border-radius:7px;background:#1565C0;color:#fff;font-size:12px;font-weight:700;cursor:pointer">Xem hồ sơ</button>`;
   } else if (entity.kind === "rooftop") {
     const r = entity.item;
-    el.innerHTML = `<div style="font-weight:700;color:#0f2a4a;margin-bottom:8px">${r.owner}</div>
+    el.innerHTML = `<div style="font-weight:700;color:#0f2a4a;margin-bottom:8px">${escapeHtml(r.owner)}</div>
       ${rowHtml("Mã hệ thống", r.code)}
       ${rowHtml("Loại hình", r.customerType)}
       ${rowHtml("Công suất", `${r.installedCapacityKw ?? 0} kWp`)}
@@ -510,7 +519,7 @@ function buildPopup(entity: EnergyMapEntity, onOpen: () => void): HTMLElement {
       <button class="energy-open-profile" style="margin-top:10px;width:100%;padding:7px 10px;border:0;border-radius:7px;background:#1565C0;color:#fff;font-size:12px;font-weight:700;cursor:pointer">Xem hồ sơ</button>`;
   } else if (entity.kind === "incident") {
     const i = entity.item;
-    el.innerHTML = `<div style="font-weight:700;color:#0f2a4a;margin-bottom:8px">${i.code}</div>
+    el.innerHTML = `<div style="font-weight:700;color:#0f2a4a;margin-bottom:8px">${escapeHtml(i.code)}</div>
       ${rowHtml("Loại", i.type)}
       ${rowHtml("Thời gian", i.time)}
       ${rowHtml("Địa điểm", i.location)}
@@ -518,14 +527,14 @@ function buildPopup(entity: EnergyMapEntity, onOpen: () => void): HTMLElement {
       <button class="energy-open-profile" style="margin-top:10px;width:100%;padding:7px 10px;border:0;border-radius:7px;background:#1565C0;color:#fff;font-size:12px;font-weight:700;cursor:pointer">Xem hồ sơ</button>`;
   } else if (entity.kind === "emission") {
     const e = entity.item;
-    el.innerHTML = `<div style="font-weight:700;color:#0f2a4a;margin-bottom:8px">${e.unit}</div>
+    el.innerHTML = `<div style="font-weight:700;color:#0f2a4a;margin-bottom:8px">${escapeHtml(e.unit)}</div>
       ${rowHtml("Nguồn", e.sourceType)}
       ${rowHtml("CO2e", `${e.co2e.toLocaleString("vi-VN")} tấn`)}
       ${rowHtml("Cường độ", `${e.intensity} gCO2e/kWh`)}
       <button class="energy-open-profile" style="margin-top:10px;width:100%;padding:7px 10px;border:0;border-radius:7px;background:#1565C0;color:#fff;font-size:12px;font-weight:700;cursor:pointer">Xem hồ sơ</button>`;
   } else if (entity.kind === "consumer") {
     const k = entity.item;
-    el.innerHTML = `<div style="font-weight:700;color:#0f2a4a;margin-bottom:8px">${k.name}</div>
+    el.innerHTML = `<div style="font-weight:700;color:#0f2a4a;margin-bottom:8px">${escapeHtml(k.name)}</div>
       ${rowHtml("Loại đơn vị", k.type)}
       ${rowHtml("Lĩnh vực", k.sector)}
       ${rowHtml("Tiêu thụ", `${k.consumptionKwh.toLocaleString("vi-VN")} kWh`)}
@@ -534,7 +543,7 @@ function buildPopup(entity: EnergyMapEntity, onOpen: () => void): HTMLElement {
       <button class="energy-open-profile" style="margin-top:10px;width:100%;padding:7px 10px;border:0;border-radius:7px;background:#1565C0;color:#fff;font-size:12px;font-weight:700;cursor:pointer">Xem hồ sơ</button>`;
   } else {
     const c = entity.item;
-    el.innerHTML = `<div style="font-weight:700;color:#0f2a4a;margin-bottom:8px">${c.name}</div>
+    el.innerHTML = `<div style="font-weight:700;color:#0f2a4a;margin-bottom:8px">${escapeHtml(c.name)}</div>
       ${rowHtml("Công suất", `${c.powerKw} kW`)}
       ${rowHtml("Số cổng", c.ports.ccs2 + c.ports.chademo + c.ports.acType2)}
       ${rowHtml("Cổng trống", c.freePorts)}
@@ -550,10 +559,10 @@ function buildExtraMarkerPopup(marker: EnergyMapExtraMarker): HTMLElement {
   const el = document.createElement("div");
   el.style.minWidth = "220px";
   el.style.fontFamily = "Inter, system-ui, sans-serif";
-  el.innerHTML = `<div style="font-weight:700;color:#0f2a4a;margin-bottom:6px">${marker.label}</div>
+  el.innerHTML = `<div style="font-weight:700;color:#0f2a4a;margin-bottom:6px">${escapeHtml(marker.label)}</div>
     ${
       marker.sublabel
-        ? `<div style="color:#64748b;font-size:11px;margin-bottom:8px">${marker.sublabel}</div>`
+        ? `<div style="color:#64748b;font-size:11px;margin-bottom:8px">${escapeHtml(marker.sublabel)}</div>`
         : ""
     }
     <button class="energy-open-profile" style="margin-top:8px;width:100%;padding:7px 10px;border:0;border-radius:7px;background:${marker.color};color:#fff;font-size:12px;font-weight:700;cursor:pointer">Xem chi tiết</button>`;
@@ -863,7 +872,7 @@ export function EnergyMap({
           .addTo(layer)
           .bindPopup(
             `<div style="min-width:230px;font-family:Inter,system-ui,sans-serif">
-              <div style="font-weight:700;color:#0f2a4a;margin-bottom:8px">${line.name}</div>
+              <div style="font-weight:700;color:#0f2a4a;margin-bottom:8px">${escapeHtml(line.name)}</div>
               ${rowHtml("Mã tuyến", line.code)}
               ${rowHtml("Cấp điện áp", line.voltageLevel)}
               ${rowHtml("Điểm đầu", line.fromPoint)}
@@ -898,7 +907,7 @@ export function EnergyMap({
             .addTo(layer)
             .bindPopup(
               `<div style="min-width:200px;font-family:Inter,system-ui,sans-serif">
-                <div style="font-weight:700;color:#0f2a4a;margin-bottom:8px">${pole.code}</div>
+                <div style="font-weight:700;color:#0f2a4a;margin-bottom:8px">${escapeHtml(pole.code)}</div>
                 ${rowHtml("Số trụ", pole.number)}
                 ${rowHtml("Tuyến", pole.lineCode)}
                 ${rowHtml("Loại", pole.type)}

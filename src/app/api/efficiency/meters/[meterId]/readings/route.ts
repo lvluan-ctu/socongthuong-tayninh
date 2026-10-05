@@ -170,6 +170,7 @@ export async function POST(request: Request, context: RouteContext) {
     if (!meter) return NextResponse.json({ message: 'Không tìm thấy công tơ.' }, { status: 404 });
     if (!meter.measurementPointId) return NextResponse.json({ message: 'Công tơ chưa có measurement point.' }, { status: 422 });
     const measuredAt = new Date(payload.measuredAt);
+    if (Number.isNaN(measuredAt.getTime())) return NextResponse.json({ message: 'Thời điểm đo không hợp lệ.' }, { status: 400 });
     const result = await db.transaction(async (tx) => {
       await ensureCanonicalMetricDefinition(tx, payload.metricCode);
       const [row] = await tx.insert(energyMeasurements).values({

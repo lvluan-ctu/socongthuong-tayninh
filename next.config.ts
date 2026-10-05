@@ -7,7 +7,8 @@ import type { NextConfig } from "next";
 // Note: a lot of client code calls fetch("/api/...") with a root-relative path (not
 // basePath-aware). When basePath is set, the reverse proxy in front of this app must
 // forward unprefixed "/api/*" requests to "<basePath>/api/*" — see DEPLOY.md.
-const basePath = (process.env.NEXT_PUBLIC_BASE_PATH ?? "").trim().replace(/\/+$/, "");
+const rawBasePath = (process.env.NEXT_PUBLIC_BASE_PATH ?? "").trim().replace(/\/+$/, "");
+const basePath = rawBasePath ? (rawBasePath.startsWith("/") ? rawBasePath : `/${rawBasePath}`) : "";
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,

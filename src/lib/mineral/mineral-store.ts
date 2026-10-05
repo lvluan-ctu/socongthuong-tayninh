@@ -44,6 +44,39 @@ async function ensureLicensesLoaded(): Promise<void> {
   }
 }
 
+// Các store còn lại dùng chung helper để tránh cache rỗng vĩnh viễn
+// (get luôn trả [] và create ghi đè file chỉ với bản ghi trong RAM).
+const storeLoadedFlags: Record<string, boolean> = {};
+
+async function ensureStoreLoaded<T>(key: string, filePath: string, assign: (data: T[]) => void): Promise<void> {
+  if (storeLoadedFlags[key]) return;
+  storeLoadedFlags[key] = true;
+  const data = await readJSON<T[]>(filePath, []);
+  if (Array.isArray(data) && data.length > 0) {
+    assign(data);
+  }
+}
+
+function ensureStationsLoaded(): Promise<void> {
+  return ensureStoreLoaded<WeighbridgeStation>('stations', STATIONS_PATH, (data) => { stationCache = data; });
+}
+
+function ensureVehiclesLoaded(): Promise<void> {
+  return ensureStoreLoaded<Vehicle>('vehicles', VEHICLES_PATH, (data) => { vehicleCache = data; });
+}
+
+function ensureDeclarationsLoaded(): Promise<void> {
+  return ensureStoreLoaded<DeclarationRecord>('declarations', DECLARATIONS_PATH, (data) => { declarationCache = data; });
+}
+
+function ensureTripsLoaded(): Promise<void> {
+  return ensureStoreLoaded<Trip>('trips', TRIPS_PATH, (data) => { tripCache = data; });
+}
+
+function ensureAlertsLoaded(): Promise<void> {
+  return ensureStoreLoaded<Alert>('alerts', ALERTS_PATH, (data) => { alertCache = data; });
+}
+
 export async function getLicenses(filters?: {
   status?: LicenseStatus;
   mineralCategory?: MineralCategory;
@@ -114,6 +147,7 @@ export async function updateLicense(
   id: string,
   updates: Partial<Omit<MineralLicense, 'id' | 'createdAt' | 'updatedAt'>>,
 ): Promise<MineralLicense | undefined> {
+  await ensureLicensesLoaded();
   const idx = licenseCache.findIndex((l) => l.id === id);
   if (idx === -1) return undefined;
   licenseCache[idx] = { ...licenseCache[idx], ...updates, updatedAt: new Date().toISOString() };
@@ -122,6 +156,7 @@ export async function updateLicense(
 }
 
 export async function deleteLicense(id: string): Promise<boolean> {
+  await ensureLicensesLoaded();
   const idx = licenseCache.findIndex((l) => l.id === id);
   if (idx === -1) return false;
   licenseCache.splice(idx, 1);
@@ -139,6 +174,7 @@ export async function getStations(filters?: {
   status?: WeighbridgeStation['status'];
   province?: string;
 }): Promise<WeighbridgeStation[]> {
+  await ensureStationsLoaded();
   let items = [...stationCache];
   if (filters?.status) items = items.filter((s) => s.status === filters.status);
   if (filters?.province) items = items.filter((s) => s.province === filters.province);
@@ -146,10 +182,12 @@ export async function getStations(filters?: {
 }
 
 export async function getStation(id: string): Promise<WeighbridgeStation | undefined> {
+  await ensureStationsLoaded();
   return stationCache.find((s) => s.id === id);
 }
 
 export async function createStation(station: Omit<WeighbridgeStation, 'id'>): Promise<WeighbridgeStation> {
+  await ensureStationsLoaded();
   const newStation: WeighbridgeStation = {
     id: `WS-${Date.now()}-${Math.random().toString(36).substr(2, 6).toUpperCase()}`,
     ...station,
@@ -160,6 +198,7 @@ export async function createStation(station: Omit<WeighbridgeStation, 'id'>): Pr
 }
 
 export async function updateStation(id: string, updates: Partial<WeighbridgeStation>): Promise<WeighbridgeStation | undefined> {
+  await ensureStationsLoaded();
   const idx = stationCache.findIndex((s) => s.id === id);
   if (idx === -1) return undefined;
   stationCache[idx] = { ...stationCache[idx], ...updates };
@@ -168,6 +207,7 @@ export async function updateStation(id: string, updates: Partial<WeighbridgeStat
 }
 
 export async function deleteStation(id: string): Promise<boolean> {
+  await ensureStationsLoaded();
   const idx = stationCache.findIndex((s) => s.id === id);
   if (idx === -1) return false;
   stationCache.splice(idx, 1);
@@ -185,6 +225,7 @@ export async function getVehicles(filters?: {
   status?: Vehicle['status'];
   mineId?: string;
 }): Promise<Vehicle[]> {
+  await ensureVehiclesLoaded();
   let items = [...vehicleCache];
   if (filters?.status) items = items.filter((v) => v.status === filters.status);
   if (filters?.mineId) items = items.filter((v) => v.mineId === filters.mineId);
@@ -192,10 +233,12 @@ export async function getVehicles(filters?: {
 }
 
 export async function getVehicle(id: string): Promise<Vehicle | undefined> {
+  await ensureVehiclesLoaded();
   return vehicleCache.find((v) => v.id === id);
 }
 
 export async function createVehicle(vehicle: Omit<Vehicle, 'id'>): Promise<Vehicle> {
+  await ensureVehiclesLoaded();
   const newVehicle: Vehicle = {
     id: `VEH-${Date.now()}-${Math.random().toString(36).substr(2, 8).toUpperCase()}`,
     ...vehicle,
@@ -206,6 +249,7 @@ export async function createVehicle(vehicle: Omit<Vehicle, 'id'>): Promise<Vehic
 }
 
 export async function updateVehicle(id: string, updates: Partial<Vehicle>): Promise<Vehicle | undefined> {
+  await ensureVehiclesLoaded();
   const idx = vehicleCache.findIndex((v) => v.id === id);
   if (idx === -1) return undefined;
   vehicleCache[idx] = { ...vehicleCache[idx], ...updates };
@@ -214,6 +258,7 @@ export async function updateVehicle(id: string, updates: Partial<Vehicle>): Prom
 }
 
 export async function deleteVehicle(id: string): Promise<boolean> {
+  await ensureVehiclesLoaded();
   const idx = vehicleCache.findIndex((v) => v.id === id);
   if (idx === -1) return false;
   vehicleCache.splice(idx, 1);
@@ -233,6 +278,7 @@ export async function getDeclarations(filters?: {
   periodValue?: string;
   status?: DeclarationRecord['status'];
 }): Promise<DeclarationRecord[]> {
+  await ensureDeclarationsLoaded();
   let items = [...declarationCache];
   if (filters?.licenseId) items = items.filter((d) => d.licenseId === filters.licenseId);
   if (filters?.period) items = items.filter((d) => d.period === filters.period);
@@ -242,10 +288,12 @@ export async function getDeclarations(filters?: {
 }
 
 export async function getDeclaration(id: string): Promise<DeclarationRecord | undefined> {
+  await ensureDeclarationsLoaded();
   return declarationCache.find((d) => d.id === id);
 }
 
 export async function createDeclaration(decl: Omit<DeclarationRecord, 'id' | 'createdAt' | 'updatedAt'>): Promise<DeclarationRecord> {
+  await ensureDeclarationsLoaded();
   const newDecl: DeclarationRecord = {
     id: `DEC-${Date.now()}-${Math.random().toString(36).substr(2, 8).toUpperCase()}`,
     ...decl,
@@ -258,6 +306,7 @@ export async function createDeclaration(decl: Omit<DeclarationRecord, 'id' | 'cr
 }
 
 export async function updateDeclaration(id: string, updates: Partial<DeclarationRecord>): Promise<DeclarationRecord | undefined> {
+  await ensureDeclarationsLoaded();
   const idx = declarationCache.findIndex((d) => d.id === id);
   if (idx === -1) return undefined;
   declarationCache[idx] = { ...declarationCache[idx], ...updates, updatedAt: new Date().toISOString() };
@@ -266,6 +315,7 @@ export async function updateDeclaration(id: string, updates: Partial<Declaration
 }
 
 export async function deleteDeclaration(id: string): Promise<boolean> {
+  await ensureDeclarationsLoaded();
   const idx = declarationCache.findIndex((d) => d.id === id);
   if (idx === -1) return false;
   declarationCache.splice(idx, 1);
@@ -285,6 +335,7 @@ export async function getTrips(filters?: {
   startDate?: string;
   endDate?: string;
 }): Promise<Trip[]> {
+  await ensureTripsLoaded();
   let items = [...tripCache];
   const { vehicleId, licenseId, startDate, endDate } = filters ?? {};
   if (vehicleId) items = items.filter((t) => t.vehicleId === vehicleId);
@@ -295,10 +346,12 @@ export async function getTrips(filters?: {
 }
 
 export async function getTrip(id: string): Promise<Trip | undefined> {
+  await ensureTripsLoaded();
   return tripCache.find((t) => t.id === id);
 }
 
 export async function createTrip(trip: Omit<Trip, 'id'>): Promise<Trip> {
+  await ensureTripsLoaded();
   const newTrip: Trip = {
     id: `TP-${Date.now()}-${Math.random().toString(36).substr(2, 8).toUpperCase()}`,
     ...trip,
@@ -309,6 +362,7 @@ export async function createTrip(trip: Omit<Trip, 'id'>): Promise<Trip> {
 }
 
 export async function updateTrip(id: string, updates: Partial<Trip>): Promise<Trip | undefined> {
+  await ensureTripsLoaded();
   const idx = tripCache.findIndex((t) => t.id === id);
   if (idx === -1) return undefined;
   tripCache[idx] = { ...tripCache[idx], ...updates };
@@ -317,6 +371,7 @@ export async function updateTrip(id: string, updates: Partial<Trip>): Promise<Tr
 }
 
 export async function deleteTrip(id: string): Promise<boolean> {
+  await ensureTripsLoaded();
   const idx = tripCache.findIndex((t) => t.id === id);
   if (idx === -1) return false;
   tripCache.splice(idx, 1);
@@ -336,6 +391,7 @@ export async function getAlerts(filters?: {
   relatedType?: Alert['relatedType'];
   acknowledged?: boolean;
 }): Promise<Alert[]> {
+  await ensureAlertsLoaded();
   let items = [...alertCache];
   if (filters?.severity) items = items.filter((a) => a.severity === filters.severity);
   if (filters?.type) items = items.filter((a) => a.type === filters.type);
@@ -345,10 +401,12 @@ export async function getAlerts(filters?: {
 }
 
 export async function getAlert(id: string): Promise<Alert | undefined> {
+  await ensureAlertsLoaded();
   return alertCache.find((a) => a.id === id);
 }
 
 export async function createAlert(alert: Omit<Alert, 'id'>): Promise<Alert> {
+  await ensureAlertsLoaded();
   const newAlert: Alert = {
     id: `AL-${Date.now()}-${Math.random().toString(36).substr(2, 8).toUpperCase()}`,
     ...alert,
@@ -359,6 +417,7 @@ export async function createAlert(alert: Omit<Alert, 'id'>): Promise<Alert> {
 }
 
 export async function updateAlert(id: string, updates: Partial<Alert>): Promise<Alert | undefined> {
+  await ensureAlertsLoaded();
   const idx = alertCache.findIndex((a) => a.id === id);
   if (idx === -1) return undefined;
   alertCache[idx] = { ...alertCache[idx], ...updates };
@@ -367,6 +426,7 @@ export async function updateAlert(id: string, updates: Partial<Alert>): Promise<
 }
 
 export async function deleteAlert(id: string): Promise<boolean> {
+  await ensureAlertsLoaded();
   const idx = alertCache.findIndex((a) => a.id === id);
   if (idx === -1) return false;
   alertCache.splice(idx, 1);
@@ -434,6 +494,7 @@ export function computeReconciliation(license: MineralLicense, actualVolume: num
   // Rule 4: License hết hạn sắp tới (within 3 months)
   else if (license.expiryDate) {
     const expiryDate = new Date(license.expiryDate);
+    if (!Number.isNaN(expiryDate.getTime())) {
     const now = new Date();
     const diffMonths = (expiryDate.getFullYear() - now.getFullYear()) * 12 + (expiryDate.getMonth() - now.getMonth());
     if (diffMonths <= 3 && diffMonths > 0) {
@@ -449,6 +510,7 @@ export function computeReconciliation(license: MineralLicense, actualVolume: num
         timestamp: new Date().toISOString(),
         acknowledged: false,
       });
+    }
     }
   }
 

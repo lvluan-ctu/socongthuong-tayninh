@@ -74,6 +74,10 @@ export async function POST(request: Request) {
   const location = input.latitude != null && input.longitude != null
     ? `SRID=4326;POINT(${input.longitude} ${input.latitude})`
     : null;
+    const commissionedAt = new Date(`${input.commissionedAt}T00:00:00+07:00`);
+    if (Number.isNaN(commissionedAt.getTime())) {
+      return NextResponse.json({ message: 'Ngày vận hành không hợp lệ.', issues: [{ path: ['commissionedAt'], message: 'Ngày vận hành không hợp lệ.' }] }, { status: 400 });
+    }
 
     const result = await db.transaction(async (tx) => {
       const [site] = await tx.insert(energySites).values({
@@ -94,7 +98,7 @@ export async function POST(request: Request) {
       code: input.code,
       name: input.name,
       status: input.status,
-      commissionedAt: new Date(`${input.commissionedAt}T00:00:00+07:00`),
+      commissionedAt,
       location,
       classification: 'INTERNAL',
       metadata: {

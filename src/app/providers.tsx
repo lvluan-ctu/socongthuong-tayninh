@@ -34,7 +34,7 @@ const theme = createTheme({
 
 export function Providers({ children }: { children: ReactNode }) {
   const [queryClient] = useState(() => new QueryClient());
-  const pathname = usePathname();
+  const pathname = usePathname() ?? "";
   const isPublicPortal = pathname.startsWith("/trang-thong-tin");
 
   return (

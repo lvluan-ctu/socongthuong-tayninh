@@ -103,7 +103,16 @@ export const LINE_COLOR: Record<string, string> = {
 };
 
 export function rowHtml(label: string, value: string | number | undefined) {
-  return `<div style="display:flex;justify-content:space-between;gap:12px;font-size:11px;padding:2px 0"><span style="color:#64748b">${label}</span><span style="font-weight:600;color:#0f2a4a;text-align:right">${value ?? "Đang cập nhật"}</span></div>`;
+  return `<div style="display:flex;justify-content:space-between;gap:12px;font-size:11px;padding:2px 0"><span style="color:#64748b">${escapeHtml(label)}</span><span style="font-weight:600;color:#0f2a4a;text-align:right">${escapeHtml(value ?? "Đang cập nhật")}</span></div>`;
+}
+
+function escapeHtml(input: string | number): string {
+  return String(input)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
 }
 
 export function entityKey(entity: GridMapEntity) {
@@ -119,9 +128,10 @@ function normalizeSearchValue(value: string) {
 }
 
 export function wirePopupButton(target: Layer, onClick: () => void) {
+  target.off("popupopen");
   target.on("popupopen", () => {
     const btn = target.getPopup()?.getElement()?.querySelector<HTMLElement>(".grid-open-profile");
-    btn?.addEventListener("click", onClick);
+    btn?.addEventListener("click", onClick, { once: true });
   });
 }
 
@@ -137,7 +147,7 @@ export function buildSubstationPopup(s: GridSubstation, onOpen: () => void) {
   const el = document.createElement("div");
   el.style.minWidth = "250px";
   el.style.fontFamily = "Inter, system-ui, sans-serif";
-  el.innerHTML = `<div style="font-weight:700;color:#0f2a4a;margin-bottom:8px">${s.name}</div>
+  el.innerHTML = `<div style="font-weight:700;color:#0f2a4a;margin-bottom:8px">${escapeHtml(s.name)}</div>
     ${rowHtml("Mã trạm", s.code)}
     ${rowHtml("Cấp điện áp", s.voltageLevel)}
     ${rowHtml("Công suất TK", `${s.designCapacity ?? 0} MVA`)}
@@ -154,7 +164,7 @@ export function buildLinePopup(l: GridPowerLine, onOpen: () => void) {
   const el = document.createElement("div");
   el.style.minWidth = "250px";
   el.style.fontFamily = "Inter, system-ui, sans-serif";
-  el.innerHTML = `<div style="font-weight:700;color:#0f2a4a;margin-bottom:8px">${l.name}</div>
+  el.innerHTML = `<div style="font-weight:700;color:#0f2a4a;margin-bottom:8px">${escapeHtml(l.name)}</div>
     ${rowHtml("Mã tuyến", l.code)}
     ${rowHtml("Cấp điện áp", l.voltageLevel)}
     ${rowHtml("Chiều dài", `${l.lengthKm} km`)}
@@ -467,7 +477,7 @@ export function GridMap({
             })
               .addTo(layer)
               .bindPopup(
-                `<div style="min-width:220px;font-family:Inter,system-ui,sans-serif"><div style="font-weight:700;color:#0f2a4a;margin-bottom:6px">${area.name}</div>${rowHtml("Trạm nguồn", area.substationId)}${rowHtml("Địa bàn", area.district)}</div>`,
+                `<div style="min-width:220px;font-family:Inter,system-ui,sans-serif"><div style="font-weight:700;color:#0f2a4a;margin-bottom:6px">${escapeHtml(area.name)}</div>${rowHtml("Trạm nguồn", area.substationId)}${rowHtml("Địa bàn", area.district)}</div>`,
               );
           });
         });
@@ -485,7 +495,7 @@ export function GridMap({
             })
               .addTo(layer)
               .bindPopup(
-                `<div style="min-width:220px;font-family:Inter,system-ui,sans-serif"><div style="font-weight:700;color:#0f2a4a;margin-bottom:6px">${area.name}</div>${rowHtml("Địa bàn", area.district)}${rowHtml("Phụ tải cực đại", `${area.peakMw} MW`)}</div>`,
+                `<div style="min-width:220px;font-family:Inter,system-ui,sans-serif"><div style="font-weight:700;color:#0f2a4a;margin-bottom:6px">${escapeHtml(area.name)}</div>${rowHtml("Địa bàn", area.district)}${rowHtml("Phụ tải cực đại", `${area.peakMw} MW`)}</div>`,
               );
           });
         });
@@ -510,7 +520,7 @@ export function GridMap({
           })
             .addTo(layer)
             .bindPopup(
-              `<div style="min-width:230px;font-family:Inter,system-ui,sans-serif"><div style="font-weight:700;color:#0f2a4a;margin-bottom:6px">Hành lang an toàn — ${line.name}</div>${rowHtml("Cấp điện áp", line.voltageLevel)}${rowHtml("Bề rộng mỗi phía", `${widthM} m`)}${rowHtml("Căn cứ", "NĐ 14/2014/NĐ-CP, Điều 11")}${rowHtml("Tình trạng", line.corridorStatus ?? "Chưa đánh giá")}</div>`,
+              `<div style="min-width:230px;font-family:Inter,system-ui,sans-serif"><div style="font-weight:700;color:#0f2a4a;margin-bottom:6px">Hành lang an toàn — ${escapeHtml(line.name)}</div>${rowHtml("Cấp điện áp", line.voltageLevel)}${rowHtml("Bề rộng mỗi phía", `${widthM} m`)}${rowHtml("Căn cứ", "NĐ 14/2014/NĐ-CP, Điều 11")}${rowHtml("Tình trạng", line.corridorStatus ?? "Chưa đánh giá")}</div>`,
             );
               });
       }
@@ -528,7 +538,7 @@ export function GridMap({
             })
               .addTo(layer)
               .bindPopup(
-                `<div style="min-width:240px;font-family:Inter,system-ui,sans-serif"><div style="font-weight:700;color:#C62828;margin-bottom:6px">${zone.label}</div>${rowHtml("Địa bàn", zone.district)}${rowHtml("Hệ số tải", `${zone.loadFactorPct}%`)}${rowHtml("Ghi chú", zone.note)}</div>`,
+                `<div style="min-width:240px;font-family:Inter,system-ui,sans-serif"><div style="font-weight:700;color:#C62828;margin-bottom:6px">${escapeHtml(zone.label)}</div>${rowHtml("Địa bàn", zone.district)}${rowHtml("Hệ số tải", `${zone.loadFactorPct}%`)}${rowHtml("Ghi chú", zone.note)}</div>`,
               );
           });
         });
@@ -577,7 +587,7 @@ export function GridMap({
           })
             .addTo(layer)
             .bindPopup(
-              `<div style="min-width:240px;font-family:Inter,system-ui,sans-serif"><div style="font-weight:700;color:#C62828;margin-bottom:6px">${inc.code} — ${inc.type}</div>${rowHtml("Thời gian", inc.time)}${rowHtml("Tuyến", inc.lineCode)}${rowHtml("Vị trí", inc.location)}${rowHtml("Mất điện", `${inc.customersAffected ?? 0} khách hàng · ${inc.lostLoadMw ?? 0} MW`)}${rowHtml("Xử lý", inc.handler)}${rowHtml("Tiến độ", inc.progress)}<button class="grid-open-detail" style="margin-top:10px;width:100%;padding:7px 10px;border:0;border-radius:7px;background:#C62828;color:#fff;font-size:12px;font-weight:700;cursor:pointer">Xem chi tiết</button></div>`,
+              `<div style="min-width:240px;font-family:Inter,system-ui,sans-serif"><div style="font-weight:700;color:#C62828;margin-bottom:6px">${escapeHtml(inc.code)} — ${escapeHtml(inc.type)}</div>${rowHtml("Thời gian", inc.time)}${rowHtml("Tuyến", inc.lineCode)}${rowHtml("Vị trí", inc.location)}${rowHtml("Mất điện", `${inc.customersAffected ?? 0} khách hàng · ${inc.lostLoadMw ?? 0} MW`)}${rowHtml("Xử lý", inc.handler)}${rowHtml("Tiến độ", inc.progress)}<button class="grid-open-detail" style="margin-top:10px;width:100%;padding:7px 10px;border:0;border-radius:7px;background:#C62828;color:#fff;font-size:12px;font-weight:700;cursor:pointer">Xem chi tiết</button></div>`,
             );
           markerByKeyRef.current.set(`incident:${inc.id}`, marker);
           marker.on("popupopen", () => {
@@ -605,7 +615,7 @@ export function GridMap({
             })
               .addTo(layer)
               .bindPopup(
-                `<div style="min-width:220px;font-family:Inter,system-ui,sans-serif"><div style="font-weight:700;color:#0F766E;margin-bottom:6px">${p.name}</div>${rowHtml("Loại", p.type)}${rowHtml("Cấp điện áp", p.voltageLevel)}${rowHtml("Trạm chủ", s.name)}${rowHtml("Trạng thái", p.status)}</div>`,
+                `<div style="min-width:220px;font-family:Inter,system-ui,sans-serif"><div style="font-weight:700;color:#0F766E;margin-bottom:6px">${escapeHtml(p.name)}</div>${rowHtml("Loại", p.type)}${rowHtml("Cấp điện áp", p.voltageLevel)}${rowHtml("Trạm chủ", s.name)}${rowHtml("Trạng thái", p.status)}</div>`,
               );
           });
         });
@@ -662,7 +672,7 @@ export function GridMap({
           const marker = L.marker([r.latitude, r.longitude], { icon, title: r.owner })
             .addTo(layer)
             .bindPopup(
-              `<div style="min-width:240px;font-family:Inter,system-ui,sans-serif"><div style="font-weight:700;color:#2E7D32;margin-bottom:6px">${r.owner}</div>${rowHtml("Mã nguồn", r.code)}${rowHtml("Loại", r.type)}${rowHtml("Công suất lắp đặt", `${r.installedKw} / ${r.capacityKw} kW`)}${rowHtml("Trạm đấu nối", r.hostSubstationId)}${rowHtml("Điểm đấu nối", r.connectionPoint)}${rowHtml("Quá tải", r.overload)}${rowHtml("Trạng thái", r.status)}<button class="grid-open-detail" style="margin-top:10px;width:100%;padding:7px 10px;border:0;border-radius:7px;background:#1565C0;color:#fff;font-size:12px;font-weight:700;cursor:pointer">Xem chi tiết</button></div>`,
+              `<div style="min-width:240px;font-family:Inter,system-ui,sans-serif"><div style="font-weight:700;color:#2E7D32;margin-bottom:6px">${escapeHtml(r.owner)}</div>${rowHtml("Mã nguồn", r.code)}${rowHtml("Loại", r.type)}${rowHtml("Công suất lắp đặt", `${r.installedKw} / ${r.capacityKw} kW`)}${rowHtml("Trạm đấu nối", r.hostSubstationId)}${rowHtml("Điểm đấu nối", r.connectionPoint)}${rowHtml("Quá tải", r.overload)}${rowHtml("Trạng thái", r.status)}<button class="grid-open-detail" style="margin-top:10px;width:100%;padding:7px 10px;border:0;border-radius:7px;background:#1565C0;color:#fff;font-size:12px;font-weight:700;cursor:pointer">Xem chi tiết</button></div>`,
             );
           markerByKeyRef.current.set(`renewable:${r.id}`, marker);
           marker.on("popupopen", () => {
@@ -711,7 +721,7 @@ export function GridMap({
             })
               .addTo(layer)
               .bindPopup(
-                `<div style="min-width:240px;font-family:Inter,system-ui,sans-serif"><div style="font-weight:700;color:#0f2a4a;margin-bottom:6px">${a.name}</div>${rowHtml("Mã", a.code)}${rowHtml("Cấp điện áp", a.voltageLevel)}${rowHtml("Tiến độ", a.progress)}${rowHtml("Nhà đầu tư", a.investor)}<button class="grid-open-profile" style="margin-top:10px;width:100%;padding:7px 10px;border:0;border-radius:7px;background:#1565C0;color:#fff;font-size:12px;font-weight:700;cursor:pointer">Xem chi tiết</button></div>`,
+                `<div style="min-width:240px;font-family:Inter,system-ui,sans-serif"><div style="font-weight:700;color:#0f2a4a;margin-bottom:6px">${escapeHtml(a.name)}</div>${rowHtml("Mã", a.code)}${rowHtml("Cấp điện áp", a.voltageLevel)}${rowHtml("Tiến độ", a.progress)}${rowHtml("Nhà đầu tư", a.investor)}<button class="grid-open-profile" style="margin-top:10px;width:100%;padding:7px 10px;border:0;border-radius:7px;background:#1565C0;color:#fff;font-size:12px;font-weight:700;cursor:pointer">Xem chi tiết</button></div>`,
               );
             wirePopupButton(polyline, () => onSelectEntity?.({ kind: "plan", item: a }));
           });
@@ -731,7 +741,7 @@ export function GridMap({
           })
             .addTo(layer)
             .bindPopup(
-              `<div style="min-width:210px;font-family:Inter,system-ui,sans-serif"><div style="font-weight:700;color:#0f2a4a;margin-bottom:6px">${pole.code}</div>${rowHtml("Số trụ", pole.number)}${rowHtml("Tuyến", pole.lineCode)}${rowHtml("Kết cấu dự kiến", pole.planning?.structureType ?? pole.type)}${rowHtml("Khoảng cột", `${pole.planning?.spacingKm ?? "—"} km`)}${rowHtml("Giải phóng mặt bằng", pole.planning?.clearanceStatus)}<button class="grid-open-profile" style="margin-top:10px;width:100%;padding:7px 10px;border:0;border-radius:7px;background:#1565C0;color:#fff;font-size:12px;font-weight:700;cursor:pointer">Xem chi tiết</button></div>`,
+              `<div style="min-width:210px;font-family:Inter,system-ui,sans-serif"><div style="font-weight:700;color:#0f2a4a;margin-bottom:6px">${escapeHtml(pole.code)}</div>${rowHtml("Số trụ", pole.number)}${rowHtml("Tuyến", pole.lineCode)}${rowHtml("Kết cấu dự kiến", pole.planning?.structureType ?? pole.type)}${rowHtml("Khoảng cột", `${pole.planning?.spacingKm ?? "—"} km`)}${rowHtml("Giải phóng mặt bằng", pole.planning?.clearanceStatus)}<button class="grid-open-profile" style="margin-top:10px;width:100%;padding:7px 10px;border:0;border-radius:7px;background:#1565C0;color:#fff;font-size:12px;font-weight:700;cursor:pointer">Xem chi tiết</button></div>`,
             );
           wirePopupButton(marker, () => onSelectEntity?.(entity));
         });
@@ -752,7 +762,7 @@ export function GridMap({
           })
             .addTo(layer)
             .bindPopup(
-              `<div style="min-width:200px;font-family:Inter,system-ui,sans-serif"><div style="font-weight:700;color:#0f2a4a;margin-bottom:6px">${pole.code}</div>${rowHtml("Số trụ", pole.number)}${rowHtml("Tuyến", pole.lineCode)}${rowHtml("Loại trụ", pole.type)}${rowHtml("Hành lang", pole.safetyCorridor)}<button class="grid-open-profile" style="margin-top:10px;width:100%;padding:7px 10px;border:0;border-radius:7px;background:#1565C0;color:#fff;font-size:12px;font-weight:700;cursor:pointer">Xem chi tiết</button></div>`,
+              `<div style="min-width:200px;font-family:Inter,system-ui,sans-serif"><div style="font-weight:700;color:#0f2a4a;margin-bottom:6px">${escapeHtml(pole.code)}</div>${rowHtml("Số trụ", pole.number)}${rowHtml("Tuyến", pole.lineCode)}${rowHtml("Loại trụ", pole.type)}${rowHtml("Hành lang", pole.safetyCorridor)}<button class="grid-open-profile" style="margin-top:10px;width:100%;padding:7px 10px;border:0;border-radius:7px;background:#1565C0;color:#fff;font-size:12px;font-weight:700;cursor:pointer">Xem chi tiết</button></div>`,
             );
           wirePopupButton(marker, () => onSelectEntity?.(entity));
         });
@@ -830,7 +840,7 @@ export function GridMap({
           })
             .addTo(layer)
             .bindPopup(
-              `<div style="min-width:240px;font-family:Inter,system-ui,sans-serif"><div style="font-weight:700;color:#0f2a4a;margin-bottom:6px">${a.name}</div>${rowHtml("Mã", a.code)}${rowHtml("Cấp điện áp", a.voltageLevel)}${rowHtml("Tiến độ", a.progress)}${rowHtml("Năm hoàn thành", a.year)}<button class="grid-open-profile" style="margin-top:10px;width:100%;padding:7px 10px;border:0;border-radius:7px;background:#1565C0;color:#fff;font-size:12px;font-weight:700;cursor:pointer">Xem chi tiết</button></div>`,
+              `<div style="min-width:240px;font-family:Inter,system-ui,sans-serif"><div style="font-weight:700;color:#0f2a4a;margin-bottom:6px">${escapeHtml(a.name)}</div>${rowHtml("Mã", a.code)}${rowHtml("Cấp điện áp", a.voltageLevel)}${rowHtml("Tiến độ", a.progress)}${rowHtml("Năm hoàn thành", a.year)}<button class="grid-open-profile" style="margin-top:10px;width:100%;padding:7px 10px;border:0;border-radius:7px;background:#1565C0;color:#fff;font-size:12px;font-weight:700;cursor:pointer">Xem chi tiết</button></div>`,
             );
           markerByKeyRef.current.set(key, marker);
           wirePopupButton(marker, () => onSelectEntity?.(entity));

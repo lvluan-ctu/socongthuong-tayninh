@@ -261,8 +261,14 @@ export async function GET(request: NextRequest) {
     const input = parsed.data;
     const geocoded =
       input.lat == null || input.lng == null ? await geocode(input.address ?? "") : null;
-    const lat = input.lat ?? geocoded!.lat;
-    const lng = input.lng ?? geocoded!.lng;
+    const lat = input.lat ?? geocoded?.lat;
+    const lng = input.lng ?? geocoded?.lng;
+    if (lat == null || lng == null) {
+      return NextResponse.json(
+        { error: "Không xác định được tọa độ từ địa chỉ. Hãy nhập lat/lng trực tiếp." },
+        { status: 400 },
+      );
+    }
     const radiusMeters = input.radiusKm * 1_000;
 
     const [

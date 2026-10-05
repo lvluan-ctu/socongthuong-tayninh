@@ -1,3 +1,5 @@
+import "dotenv/config";
+
 const baseUrl = (process.env.MANAGEMENT_TEST_BASE_URL || 'http://localhost:3113').replace(/\/$/, '');
 const stamp = new Date().toISOString().replace(/\D/g, '').slice(0, 14);
 const checks = [];

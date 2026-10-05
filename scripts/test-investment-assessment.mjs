@@ -1,3 +1,5 @@
+import "dotenv/config";
+
 const baseUrl = process.env.APP_BASE_URL ?? "http://localhost:3113";
 
 function assert(condition, message) {

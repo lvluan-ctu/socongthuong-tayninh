@@ -13,6 +13,12 @@ function periodDate(period: string) { const date = new Date(`${period.length ===
 export async function GET(request: Request) {
   try {
     const params = new URL(request.url).searchParams; const activityId = params.get('activityId'); const reviewStatus = params.get('reviewStatus');
+    if (activityId && !z.string().uuid().safeParse(activityId).success) {
+      return NextResponse.json({ message: 'Mã activity không hợp lệ.' }, { status: 400 });
+    }
+    if (reviewStatus && !['PENDING_REVIEW', 'APPROVED', 'REJECTED'].includes(reviewStatus)) {
+      return NextResponse.json({ message: 'Trạng thái review không hợp lệ.' }, { status: 400 });
+    }
     const filters = [activityId ? eq(energyEmissionCalculationRuns.activityId, activityId) : null, reviewStatus ? eq(energyEmissionCalculationRuns.reviewStatus, reviewStatus) : null].filter((item): item is NonNullable<typeof item> => item !== null);
     const query = db.select({
       id: energyEmissionCalculationRuns.id, activityId: energyEmissionCalculationRuns.activityId, sourceId: energyEmissionActivities.sourceId, sourceCode: energyEmissionSources.code,

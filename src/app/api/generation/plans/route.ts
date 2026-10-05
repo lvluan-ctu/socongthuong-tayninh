@@ -33,6 +33,9 @@ export async function GET(request: Request) {
   try {
     const params = new URL(request.url).searchParams;
     const projectAssetId = params.get('projectAssetId');
+    if (projectAssetId && !z.string().uuid().safeParse(projectAssetId).success) {
+      return NextResponse.json({ message: 'Mã dự án không hợp lệ.' }, { status: 400 });
+    }
     const wantsPagination = params.get('options') !== 'true' && (params.has('page') || params.has('pageSize'));
     const pagination = parsePagination(params);
     const where = projectAssetId ? eq(energyGenerationPlans.projectAssetId, projectAssetId) : undefined;

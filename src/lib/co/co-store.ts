@@ -59,7 +59,7 @@ export function nextCoNumber(apps: CoApplication[]): string {
   const seq =
     apps
       .filter((a) => a.coNumber?.startsWith(prefix))
-      .map((a) => Number(a.coNumber!.slice(prefix.length)))
+      .map((a) => Number((a.coNumber ?? "").slice(prefix.length)))
       .filter((n) => Number.isFinite(n))
       .reduce((max, n) => Math.max(max, n), 0) + 1;
   return `${prefix}${String(seq).padStart(6, "0")}`;

@@ -60,14 +60,23 @@ export function makeFactoryIcon(L: typeof import("leaflet"), f: Factory, selecte
 }
 
 // ─────────────────────────── HTML helpers ───────────────────────────
+function escapeHtml(input: string | number): string {
+  return String(input)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+}
+
 function rowHtml(k: string, v: string | number): string {
-  return `<div style="display:flex;justify-content:space-between;gap:12px;font-size:11px;padding:2px 0"><span style="color:#64748B">${k}</span><span style="font-weight:500;color:#0F2A4A;text-align:right">${v}</span></div>`;
+  return `<div style="display:flex;justify-content:space-between;gap:12px;font-size:11px;padding:2px 0"><span style="color:#64748B">${escapeHtml(k)}</span><span style="font-weight:500;color:#0F2A4A;text-align:right">${escapeHtml(v)}</span></div>`;
 }
 
 // Tooltip nhanh khi hover Polygon KCN/CCN
 export function buildZoneTooltip(c: Cluster): string {
   return `<div style="min-width:180px">
-    <div style="font-weight:600;font-size:12px;color:#0F2A4A;margin-bottom:6px">${c.name}</div>
+    <div style="font-weight:600;font-size:12px;color:#0F2A4A;margin-bottom:6px">${escapeHtml(c.name)}</div>
     ${rowHtml("Diện tích", `${c.area} ha`)}
     ${rowHtml("Doanh nghiệp", c.enterprises)}
     ${rowHtml("Tỷ lệ lấp đầy", `${c.occupancy}%`)}
@@ -78,7 +87,7 @@ export function buildZoneTooltip(c: Cluster): string {
 export function buildWardTooltip(w: WardZone): string {
   const type = w.type === "phuong" ? "Phường" : "Xã";
   return `<div style="min-width:200px">
-    <div style="font-weight:600;font-size:12px;color:#0F2A4A;margin-bottom:4px">${w.name}</div>
+    <div style="font-weight:600;font-size:12px;color:#0F2A4A;margin-bottom:4px">${escapeHtml(w.name)}</div>
     <div style="font-size:11px;color:#64748B;margin-bottom:6px">${type} · trực thuộc tỉnh (chính quyền 2 cấp)</div>
     ${rowHtml("KCN/CCN trong vùng", w.clusters.length)}
     ${rowHtml("Bấm để", "xem tổng quan địa bàn")}
@@ -95,9 +104,9 @@ export function buildFactoryPopup(
   el.style.minWidth = "250px";
   el.style.fontFamily = "inherit";
   el.innerHTML = `
-    <div style="font-weight:600;font-size:13px;line-height:1.35;color:#0F2A4A;margin-bottom:8px">${f.name}</div>
+    <div style="font-weight:600;font-size:13px;line-height:1.35;color:#0F2A4A;margin-bottom:8px">${escapeHtml(f.name)}</div>
     <div style="display:flex;align-items:center;gap:6px;margin-bottom:6px;flex-wrap:wrap">
-      <span style="display:inline-block;padding:2px 8px;border-radius:999px;background:#E8F0FA;color:#1565C0;font-size:11px;font-weight:600">${f.sector}</span>
+      <span style="display:inline-block;padding:2px 8px;border-radius:999px;background:#E8F0FA;color:#1565C0;font-size:11px;font-weight:600">${escapeHtml(f.sector)}</span>
       <span style="display:inline-flex;align-items:center;gap:4px;font-size:11px;color:#2E7D32"><span style="width:8px;height:8px;border-radius:999px;background:${FACTORY_STATUS_COLOR[f.status]};display:inline-block"></span>${FACTORY_STATUS_LABEL[f.status]}</span>
     </div>
     ${rowHtml("Khu/Cụm", zoneName ?? "—")}

@@ -1,5 +1,6 @@
 import { desc, eq, sql } from 'drizzle-orm';
 import { NextResponse } from 'next/server';
+import { z } from 'zod';
 import { energyAssets, energySubstations } from '@/db/schema';
 import { db } from '@/lib/db';
 
@@ -27,6 +28,9 @@ export async function GET(request: Request) {
 
     if (!rootId) {
       return NextResponse.json({ roots, nodes: [] });
+    }
+    if (!z.string().uuid().safeParse(rootId).success) {
+      return NextResponse.json({ message: 'Mã nút gốc không hợp lệ.' }, { status: 400 });
     }
 
     const queryResult = await db.execute(sql`
